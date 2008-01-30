@@ -1,0 +1,20 @@
+[% PROCESS site/macros %]
+
+<h2>Bem-vindo(a) [% usuario.login %]</h2>
+
+[% IF data_uacesso %]
+<p>Seu último acesso foi em <strong>[% data_uacesso %]</strong> pelo computador <strong>[% ip_uacesso %]</strong>.</p>
+[% END %]
+
+<h3>Status da conta</h3>
+
+<table>
+	<tr>
+		<td>Redirecionamentos de URL</td>
+		<td>[% urls.size %]</td>
+	</tr>
+	<tr>
+		<td>Redirecionamentos de e-mail</td>
+		<td>[% mails.size %]</td>
+	<tr>
+</table>

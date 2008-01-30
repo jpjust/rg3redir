@@ -1,0 +1,15 @@
+<!-- BEGIN site/header -->
+<div id="header" class="dontprint">[% template.title or site.title %]</div>
+
+[% IF Catalyst.user_exists %]
+<div class="menu" align="center">
+	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]">Página inicial</a> ::
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]">Criar redirecionamento de URL</a> ::
+	<a href="[% Catalyst.uri_for('/redir/novo_mail') %]">Criar redirecionamento de e-mail</a> ::
+	<a href="[% Catalyst.uri_for('/redir/lista') %]">Listar redirecionamentos</a> ::
+	<a href="[% Catalyst.uri_for('/usuarios/editar') %]">Alterar e-mail e/ou senha</a> ::
+	<a href="[% Catalyst.uri_for('/logout') %]">Sair</a>
+</div>
+[% END %]
+
+<!-- END site/header -->

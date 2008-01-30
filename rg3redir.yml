@@ -1,0 +1,14 @@
+---
+name: RG3Redir
+authentication:
+ dbic:
+  user_class: RG3RedirDB::Usuarios
+  user_field: login
+  password_field: senha
+
+authorization:
+ dbic:
+  role_class: RG3RedirDB::Grupos
+  role_field: nome
+  role_rel: usuarios
+  user_role_user_field: uid

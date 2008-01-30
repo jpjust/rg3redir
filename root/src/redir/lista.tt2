@@ -1,0 +1,47 @@
+[% PROCESS site/macros %]
+
+<h2>Redirecionamentos</h2>
+
+<h3>URL ([% urls.size %])</h3>
+
+<table width="100%">
+	<tr>
+		<th>Redirecionamento</th>
+		<th>Destino</th>
+		<th>Acessos</th>
+		<th>Ações</th>
+	</tr>
+	
+	[% FOREACH redirecionamento IN urls %]
+	<tr class="lista">
+		<td>[% redirecionamento.de %].[% redirecionamento.dominio.nome %]</td>
+		<td>[% redirecionamento.para %]</td>
+		<td>[% redirecionamento.acessos %]</td>
+		<td>
+			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]">Editar</a>
+			<br><a href="[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]">Remover</a>
+		</td>
+	</tr>
+	[% END %]
+</table>
+
+<h3>E-mail ([% mails.size %])</h3>
+
+<table width="100%">
+	<tr>
+		<th>Redirecionamento</th>
+		<th>Destino</th>
+		<th>Ações</th>
+	</tr>
+	
+	[% FOREACH redirecionamento IN mails %]
+	<tr class="lista">
+		<td>[% redirecionamento.de %].[% redirecionamento.dominio.nome %]</td>
+		<td>[% redirecionamento.para %]</td>
+		<td>
+			<a href="[% Catalyst.uri_for('/redir/editar_mail/') _ redirecionamento.id %]">Editar</a>
+			<br><a href="[% Catalyst.uri_for('/redir/excluir_mail/') _ redirecionamento.id %]">Remover</a>
+		</td>
+	</tr>
+	[% END %]
+</table>

@@ -1,0 +1,186 @@
+* {
+	text-decoration: none;
+}
+
+body {
+/*	width: 750px; */
+	margin: 0px;
+	padding: 0px; 
+}
+
+html {
+	font-size: 10pt;
+	font-family: tahoma, verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #004400;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+tr.lista:hover {
+	background-color: #aaffaa;
+}
+
+td {
+	font-size: 10pt;
+}
+
+th {
+	font-size: 10pt;
+	background-color: #dddddd;
+}
+
+h1 {
+	color: #009900;
+	font-size: 18pt;
+}
+
+h2 {
+	color: #009900;
+	font-size: 16pt;
+}
+
+h3 {
+	color: #007700;
+	font-size: 14pt;
+}
+
+h4 {
+	color: #003300;
+	font-size: 8pt;
+}
+
+input {
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 10pt;
+}
+
+img {
+	border: none;
+}
+
+#header {
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 18pt;
+	font-weight: bold;
+	background-color: #009900;
+	color: white;
+}
+
+#footer {
+	background-color: #009900;
+	text-align: center;
+	color: white;
+	border-top: 1px solid #001100;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0px;
+}
+
+#content {
+	width: 70%;
+	padding: 10px;
+	position: relative;
+	left: 15%;
+	right: 15%;
+}
+
+.mytextbox {
+	background-color: #ffffff;
+	color: black;
+	border-style: solid;
+	border-color: #003300;
+	border-width: 1px;
+	padding: 10px;
+}
+
+.mytextbox_green {
+	background-color: #ddffdd;
+	color: black;
+	border-style: solid;
+	border-color: #003300;
+	border-width: 1px;
+	padding: 10px;
+}
+
+.errorbox {
+	color: #aa0000;
+	font-weight: bold;
+}
+
+.missing {
+	background-color: #ff9999;
+}
+
+.message {
+	color: #00aa00;
+}
+
+.error {
+	color: #aa0000;
+}
+
+.menu {
+	padding: 0px;
+	font-size: 9pt;
+	font-family: tahoma, verdana, sans-serif;
+	background-color: #007700;
+	color: black;
+	border-width: 1px;
+	border-color: #001100;
+	border-style: solid;
+}
+
+.menu a {
+	padding: 0px;
+	color: white;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	background-color: #009900;
+}
+
+@media print {
+	a {
+		display: none;
+	}
+	
+	td {
+		font-size: 8pt;
+	}
+	
+	h1.p_cadastro {
+		color: #000000;
+		font-size: 18pt;
+	}
+
+	h2.p_cadastro {
+		color: #000000;
+		font-size: 16pt;
+	}
+	
+	td.p_cadastro {
+		font-size: 12pt;
+	}
+
+	.mypage {
+		page-break-after: always;
+	}
+	
+	.dontprint {
+		display: none;
+	}
+	
+	.menu {
+		display: none;
+	}
+}
