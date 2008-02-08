@@ -2,6 +2,11 @@
 
 <h2>Redirecionamentos</h2>
 
+<p>
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> Criar redirecionamento de URL</a> ::
+	<a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> Criar redirecionamento de e-mail</a>
+</p>
+
 <h3>URL ([% urls.size %])</h3>
 
 <table width="100%">
@@ -18,8 +23,8 @@
 		<td>[% redirecionamento.para %]</td>
 		<td>[% redirecionamento.acessos %]</td>
 		<td>
-			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]">Editar</a>
-			<br><a href="[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]">Remover</a>
+			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/application_form_edit.png" align="top">Editar</a>
+			<br><a href="[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/delete.png" align="top">Remover</a>
 		</td>
 	</tr>
 	[% END %]
@@ -39,8 +44,8 @@
 		<td>[% redirecionamento.de %].[% redirecionamento.dominio.nome %]</td>
 		<td>[% redirecionamento.para %]</td>
 		<td>
-			<a href="[% Catalyst.uri_for('/redir/editar_mail/') _ redirecionamento.id %]">Editar</a>
-			<br><a href="[% Catalyst.uri_for('/redir/excluir_mail/') _ redirecionamento.id %]">Remover</a>
+			<a href="[% Catalyst.uri_for('/redir/editar_mail/') _ redirecionamento.id %]"><img src="/static/images/application_form_edit.png" align="top">Editar</a>
+			<br><a href="[% Catalyst.uri_for('/redir/excluir_mail/') _ redirecionamento.id %]"><img src="/static/images/delete.png" align="top">Remover</a>
 		</td>
 	</tr>
 	[% END %]

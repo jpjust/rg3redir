@@ -3,6 +3,9 @@ package RG3Redir::Controller::Usuarios;
 use strict;
 use warnings;
 use base 'Catalyst::Controller';
+use FindBin;
+use lib "$FindBin::Bin/../..";
+use EasyCat;
 use Data::FormValidator;
 
 =head1 NAME

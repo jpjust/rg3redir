@@ -18,3 +18,12 @@
 </table>
 
 </form>
+
+<div id="footer">
+	<br><br>
+	<a href="http://www.justsoft.com.br/" target="_blank"><img src="/static/images/justsoft.png" alt="Justsoft Informática Ltda." border="0"></a><br>
+	Copyright © 2008 Justsoft Informática Ltda.<br>
+	Todos os direitos reservados.<br>
+	<br>
+	Ícones por <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a>
+</div>

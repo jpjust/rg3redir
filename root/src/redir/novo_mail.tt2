@@ -9,30 +9,30 @@
 <form action="[% Catalyst.uri_for('/redir/novo_mail_do') %]" method="POST">
 <input type="hidden" name="id" value="[% redir.id %]">
 
-<table>
-	<tr>
-		<td colspan="2">Redirecionamento:</td>
-	</tr>
-	<tr>
-		<td><input type="text" name="de" size="30" value="[% redir.de %]" [% IF val.missing('de') %]class="missing"[% END %]></td>
-		<td><strong>@</strong>
-			<select name="dominio">
-				[% FOREACH dominio IN dominios %]
-				<option value="[% dominio.id %]" [% IF redir.id_dominio == dominio.id %]selected[% END %]>[% dominio.nome %]</option>
-				[% END %]
-			</select>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">Endereço de destino:</td>
-	</tr>
-	<tr>
-		<td colspan="2"><input type="text" name="para" size="40" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></td>
-	<tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><input type="submit" value="Salvar"></td>
-	</tr>
-</table>
+<h3>Redirecionamento</h3>
+
+<p>Digite no campo abaixo o e-mail do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo e-mail. Não é necessário digitar &quot;@&quot;.</p>
+
+<p><i>Ex.: joao</i></p>
+
+<p>
+<input type="text" name="de" size="30" value="[% redir.de %]" [% IF val.missing('de') %]class="missing"[% END %]>
+<strong>@</strong>
+<select name="dominio">
+	[% FOREACH dominio IN dominios %]
+	<option value="[% dominio.id %]" [% IF redir.id_dominio == dominio.id %]selected[% END %]>[% dominio.nome %]</option>
+	[% END %]
+</select>
+</p>
+
+<h3>E-mail de destino</h3>
+
+<p>Digite no campo abaixo o e-mail real completo para onde deseja redirecionar.</p>
+
+<p><i>Ex.: joao@provedor.com</i></p>
+
+<p><input type="text" name="para" size="60" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></p>
+
+<p align="center"><input type="submit" value="Salvar"></p>
 
 </form>

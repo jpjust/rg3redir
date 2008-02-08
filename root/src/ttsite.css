@@ -48,7 +48,7 @@ h2 {
 
 h3 {
 	color: #007700;
-	font-size: 14pt;
+	font-size: 12pt;
 }
 
 h4 {
@@ -65,6 +65,7 @@ img {
 	border: none;
 }
 
+/*
 #header {
 	font-family: tahoma, verdana, sans-serif;
 	font-size: 18pt;
@@ -72,12 +73,15 @@ img {
 	background-color: #009900;
 	color: white;
 }
+*/
 
 #footer {
-	background-color: #009900;
-	text-align: center;
-	color: white;
-	border-top: 1px solid #001100;
+	background-color: #ffffff;
+	text-align: right;
+	color: black;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
 	position: relative;
 	bottom: 0;
 	left: 0;
@@ -86,7 +90,7 @@ img {
 }
 
 #content {
-	width: 70%;
+	width: 80%;
 	padding: 10px;
 	position: relative;
 	left: 15%;
@@ -148,6 +152,32 @@ img {
 	text-decoration: none;
 	background-color: #009900;
 }
+
+/* Menu superior */
+.topbanner {
+	height: 105px;
+	text-align: center;
+	vertical-align: super;
+	background-image: url("/redirapp/static/images/bg_top_ad.png");
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+.topmenu {
+	height: 30px;
+	background-image: url("/redirapp/static/images/bg_top_menu.png");
+	background-repeat: repeat-x;
+	color: white;
+	font-weight: bold;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.topmenu a {
+	color: #ffffff;
+}
+
 
 @media print {
 	a {

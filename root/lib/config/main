@@ -12,8 +12,8 @@
 
    # define a data structure to hold sitewide data
    site = {
-     title     => 'Catalyst::View::TTSite Example Page',
-     copyright => '2008 Your Name Here',
+     title     => 'RG3.Net - Redirecionamentos',
+     copyright => '2008 Justsoft Informática Ltda.',
    };
 
    # load up any other configuration items 

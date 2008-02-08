@@ -9,30 +9,31 @@
 <form action="[% Catalyst.uri_for('/redir/novo_url_do') %]" method="POST">
 <input type="hidden" name="id" value="[% redir.id %]">
 
-<table>
-	<tr>
-		<td colspan="2">Redirecionamento:</td>
-	</tr>
-	<tr>
-		<td><input type="text" name="de" size="30" value="[% redir.de %]" [% IF val.missing('de') %]class="missing"[% END %]></td>
-		<td><strong>.</strong>
-			<select name="dominio">
-				[% FOREACH dominio IN dominios %]
-				<option value="[% dominio.id %]" [% IF redir.id_dominio == dominio.id %]selected[% END %]>[% dominio.nome %]</option>
-				[% END %]
-			</select>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">Endereço de destino:</td>
-	</tr>
-	<tr>
-		<td colspan="2"><input type="text" name="para" size="40" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></td>
-	<tr>
-	<tr>
-		<td>&nbsp;</td>
-		<td><input type="submit" value="Salvar"></td>
-	</tr>
-</table>
+<h3>Redirecionamento</h3>
+
+<p>Digite no campo abaixo o endereço do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo endereço. Não é necessário digitar &quot;www.&quot; antes do endereço.</p>
+
+<p><i>Ex.: joao</i></p>
+
+<p>
+<strong>www.</strong>
+<input type="text" name="de" size="30" value="[% redir.de %]" [% IF val.missing('de') %]class="missing"[% END %]>
+<strong>.</strong>
+<select name="dominio">
+	[% FOREACH dominio IN dominios %]
+	<option value="[% dominio.id %]" [% IF redir.id_dominio == dominio.id %]selected[% END %]>[% dominio.nome %]</option>
+	[% END %]
+</select>
+</p>
+
+<h3>Endereço de destino</h3>
+
+<p>Digite no campo abaixo o endereço real completo do site para onde deseja redirecionar.</p>
+
+<p><i>Ex.: http://www.joao.provedor.com.br</i></p>
+
+<p><input type="text" name="para" size="60" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></p>
+
+<p align="center"><input type="submit" value="Salvar"></p>
 
 </form>

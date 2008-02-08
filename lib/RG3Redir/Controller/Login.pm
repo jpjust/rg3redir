@@ -3,6 +3,9 @@ package RG3Redir::Controller::Login;
 use strict;
 use warnings;
 use base 'Catalyst::Controller';
+use FindBin;
+use lib "$FindBin::Bin/../..";
+use EasyCat;
 use POSIX qw(strftime);
 
 =head1 NAME
@@ -17,6 +20,39 @@ Catalyst Controller.
 
 =cut
 
+=head2 get_frame
+
+Retorna HTML do frame de redirecionamento.
+
+=cut
+
+sub get_frame : Private {
+	my ($destino, $titulo, $descricao, $palavras_chaves) = @_;
+	
+	my $html = <<HTML
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+	"http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<HEAD>
+<TITLE>$titulo</TITLE>
+</HEAD>
+<LINK rel="shortcut icon" href="http://www.rg3.net/favicon.ico">
+<META name="description" content="$descricao">
+<META name="keywords" content="$palavras_chaves">
+<FRAMESET frameborder="0" framespacing="0" border="0" rows="0, *">
+	<FRAME>
+	<FRAME src="$destino">
+	<NOFRAMES>
+		<META http-equiv="refresh" content="0; url=$destino">
+		<A href="$destino">$destino</A>
+	</NOFRAMES>
+</FRAMESET>
+</HTML>
+HTML
+;
+
+	return $html;
+}
 
 =head2 index 
 
@@ -37,7 +73,7 @@ sub index : Private {
 			$c->stash->{data_uacesso} = $usuario->data_uacesso;
 			
 			$usuario->update({
-				ip_uacesso		=> $c->req->hostname,
+				ip_uacesso		=> $c->req->address,
 				data_uacesso	=> strftime "%Y-%m-%d %H:%M:%S", localtime
 			});
 			
@@ -67,13 +103,14 @@ sub go_redir : Local {
 	if ($dominio) {
 		my $redir = $c->model('RG3RedirDB::RedirURL')->search({id_dominio => $dominio->id, de => $parte_redir})->first;
 		if ($redir) {
-			$c->response->redirect($redir->para);
+			$c->response->content_type('text/html');
+			$c->response->write(&get_frame($redir->para, '', '', ''));
 		} else {
 			$c->response->redirect('http://www.rg3.net/errodom');
 		}
 	}
 	
-	return 0;
+	$c->finalize;
 }
 
 =head1 AUTHOR

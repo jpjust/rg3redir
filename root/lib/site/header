@@ -1,15 +1,57 @@
 <!-- BEGIN site/header -->
-<div id="header" class="dontprint">[% template.title or site.title %]</div>
+<div class="topbanner">
+	<table border="0" align="center">
 
-[% IF Catalyst.user_exists %]
-<div class="menu" align="center">
-	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]">Página inicial</a> ::
-	<a href="[% Catalyst.uri_for('/redir/novo_url') %]">Criar redirecionamento de URL</a> ::
-	<a href="[% Catalyst.uri_for('/redir/novo_mail') %]">Criar redirecionamento de e-mail</a> ::
-	<a href="[% Catalyst.uri_for('/redir/lista') %]">Listar redirecionamentos</a> ::
-	<a href="[% Catalyst.uri_for('/usuarios/editar') %]">Alterar e-mail e/ou senha</a> ::
-	<a href="[% Catalyst.uri_for('/logout') %]">Sair</a>
+		<tr>
+			<td>
+				<a href="http://www.rg3.net"><img src="/redirapp/static/images/rg3_identidade.png" alt="RG3.Net" border="0"></a>
+			</td>
+			<td>
+				<!-- Banner 468x60 -->
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-7433711546438356";
+				google_ad_width = 468;
+				google_ad_height = 60;
+				google_ad_format = "468x60_as";
+				google_ad_type = "text_image";
+				//2007-03-07: Banner 468x60
+				google_ad_channel = "8558176533";
+				google_color_border = "A8DDA0";
+				google_color_bg = "EBFFED";
+				google_color_link = "0000CC";
+				google_color_text = "6F6F6F";
+				google_color_url = "008000";
+				//--></script>
+				<script type="text/javascript"
+ 					src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+
+			</td>
+			<td>
+				<!-- Google Referência AdSense -->
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-7433711546438356";
+				google_ad_width = 120;
+				google_ad_height = 60;
+				google_ad_format = "120x60_as_rimg";
+				google_cpa_choice = "CAAQiYOajAIaCG4pN1riKkYxKJvL93M";
+				google_ad_channel = "4074091507";
+				//--></script>
+					<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+			</td>
+		</tr>
+	</table>
+
 </div>
+
+<div class="topmenu" align="center">
+[% IF Catalyst.user_exists %]
+	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Página inicial</a> ::
+	<a href="[% Catalyst.uri_for('/redir/lista') %]"><img src="/redirapp/static/images/arrow_rotate_clockwise.png" align="top"> Listar redirecionamentos</a> ::
+	<a href="[% Catalyst.uri_for('/usuarios/editar') %]"><img src="/redirapp/static/images/user_edit.png" align="top"> Alterar e-mail e/ou senha</a> ::
+	<a href="[% Catalyst.uri_for('/logout') %]"><img src="/redirapp/static/images/disconnect.png" align="top"> Sair ([% Catalyst.user %])</a>
 [% END %]
+</div>
 
 <!-- END site/header -->

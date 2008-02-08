@@ -1,20 +1,25 @@
 [% PROCESS site/macros %]
 
-<h2>Bem-vindo(a) [% usuario.login %]</h2>
+<h2>Bem-vindo(a), [% usuario.login %].</h2>
 
 [% IF data_uacesso %]
-<p>Seu último acesso foi em <strong>[% data_uacesso %]</strong> pelo computador <strong>[% ip_uacesso %]</strong>.</p>
+<p>Seu último acesso foi em <strong>[% data2normal(data_uacesso) %]</strong> pelo computador <strong>[% ip_uacesso %]</strong>.</p>
 [% END %]
+
+<p>
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> Criar redirecionamento de URL</a> ::
+	<a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> Criar redirecionamento de e-mail</a>
+</p>
 
 <h3>Status da conta</h3>
 
 <table>
 	<tr>
-		<td>Redirecionamentos de URL</td>
+		<td>Redirecionamentos de URL:</td>
 		<td>[% urls.size %]</td>
 	</tr>
 	<tr>
-		<td>Redirecionamentos de e-mail</td>
+		<td>Redirecionamentos de e-mail:</td>
 		<td>[% mails.size %]</td>
 	<tr>
 </table>
