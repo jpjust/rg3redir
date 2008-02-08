@@ -1,0 +1,7 @@
+[% PROCESS site/macros %]
+
+<h2>Novo usuário RG3.Net cadastrado</h2>
+
+<p>Pronto! A conta <strong>[% usuario.login %]</strong> foi criada. A sua senha provisória foi enviada para o e-mail <strong>[% usuario.email %]</strong>. Acesse seu e-mail para poder ver sua senha e entrar na sua conta.</p>
+
+<p><a href="[% Catalyst.uri_for('/login') %]">Ir para a página inicial</a></p>

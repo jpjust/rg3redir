@@ -7,7 +7,7 @@ __PACKAGE__->load_components(qw/PK::Auto Core/);
 # Set the table name
 __PACKAGE__->table('redirurl');
 # Set columns in table
-__PACKAGE__->add_columns(qw/id uid id_dominio de para acessos/);
+__PACKAGE__->add_columns(qw/id uid id_dominio de para acessos data_criacao data_umod titulo descricao keywords/);
 # Set the primary key for the table
 __PACKAGE__->set_primary_key(qw/id/);
 

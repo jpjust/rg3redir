@@ -3,6 +3,7 @@ package RG3Redir::Controller::Redir;
 use strict;
 use warnings;
 use base 'Catalyst::Controller';
+use POSIX qw(strftime);
 
 =head1 NAME
 
@@ -75,7 +76,15 @@ sub novo_url_do : Local {
 
 	# Parâmetros
 	my $p = $c->request->params;
-	
+
+	# Verifica se o redirecionamento já existe
+	if ($c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first) {
+		$c->stash->{erro_redir} = 'O redirecionamento escolhido já está cadastrado. Por favor, escolha outro nome.';
+		$c->stash->{redir} = $p;
+		$c->forward('novo_url');
+		return;
+	}
+
 	# Hash com alterações
 	my $dados = {
 		id			=> $p->{id} || -1,
@@ -83,6 +92,10 @@ sub novo_url_do : Local {
 		de			=> $p->{de},
 		id_dominio	=> $p->{dominio},
 		para		=> $p->{para},
+		titulo		=> $p->{titulo},
+		descricao	=> $p->{descricao},
+		keywords	=> $p->{keywords},
+		data_umod	=> strftime "%Y-%m-%d %H:%M:%S", localtime,
 	};
 	
 	# Valida formulário
@@ -161,6 +174,14 @@ sub novo_mail_do : Local {
 	# Parâmetros
 	my $p = $c->request->params;
 	
+	# Verifica se o redirecionamento já existe
+	if ($c->model('RG3RedirDB::RedirMail')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first) {
+		$c->stash->{erro_redir} = 'O redirecionamento escolhido já está cadastrado. Por favor, escolha outro nome.';
+		$c->stash->{redir} = $p;
+		$c->forward('novo_mail');
+		return;
+	}
+
 	# Hash com alterações
 	my $dados = {
 		id			=> $p->{id} || -1,
@@ -168,6 +189,7 @@ sub novo_mail_do : Local {
 		de			=> $p->{de},
 		id_dominio	=> $p->{dominio},
 		para		=> $p->{para},
+		data_umod	=> strftime "%Y-%m-%d %H:%M:%S", localtime,
 	};
 	
 	# Valida formulário

@@ -7,6 +7,7 @@ use FindBin;
 use lib "$FindBin::Bin/../..";
 use EasyCat;
 use Data::FormValidator;
+use Data::Validate::Email qw(is_email is_email_rfc822);
 
 =head1 NAME
 
@@ -80,6 +81,18 @@ sub editar_do : Local {
 	# Parâmetros
 	my $p = $c->request->params;
 	
+	# Verifica se o e-mail é válido
+	if (!is_email($p->{email})) {
+		$p->{email} = undef;
+	}
+
+	# Verifica se o e-mail já existe
+	if ($c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first) {
+		$c->stash->{erro_email} = 'Este e-mail já está cadastrado. Por favor, use outro e-mail para atualizar seu cadastro.';
+		$c->forward('editar');
+		return;
+	}
+
 	# Hash com alterações
 	my $dados = {
 		email	=> $p->{email},
@@ -88,7 +101,7 @@ sub editar_do : Local {
 	# Verifica as senhas
 	if ($p->{pwd1} ne '') {
 		if ($p->{pwd1} eq $p->{pwd2}) {
-			$dados->{senha} = $p->{pwd1};
+			$dados->{senha} = md5_hex($p->{pwd1});
 		} else {
 			$c->stash->{error_msg} = 'As senhas digitadas não coincidem.';
 			$c->forward('editar');

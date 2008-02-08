@@ -11,9 +11,11 @@
 
 <h3>Redirecionamento</h3>
 
-<p>Digite no campo abaixo o endereço do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo endereço. Não é necessário digitar &quot;www.&quot; antes do endereço.</p>
+<p>Digite no campo abaixo o endereço do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo endereço. Apenas letras, números, hífens (-) e sublinhados (_) são permitidos. Não é necessário digitar &quot;www.&quot; antes do endereço.</p>
 
 <p><i>Ex.: joao</i></p>
+
+<div class="error">[% erro_redir %]</div>
 
 <p>
 <strong>www.</strong>
@@ -33,6 +35,22 @@
 <p><i>Ex.: http://www.joao.provedor.com.br</i></p>
 
 <p><input type="text" name="para" size="60" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></p>
+
+<h3>Informações do site (opcional)</h3>
+
+<p>Você pode preencher os campos abaixo com informações sobre seu site, que poderão ser incluídas em sistemas de busca.
+
+<p>Título do site:</p>
+
+<p><input type="text" name="titulo" size="60" value="[% redir.titulo %]"></p>
+
+<p>Descrição:</p>
+
+<p><input type="text" name="descricao" size="60" value="[% redir.descricao %]"></p>
+
+<p>Palavras-chave (separe as palavras por espaços):</p>
+
+<p><input type="text" name="keywords" size="60" value="[% redir.keywords %]"></p>
 
 <p align="center"><input type="submit" value="Salvar"></p>
 

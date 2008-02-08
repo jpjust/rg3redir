@@ -5,6 +5,8 @@ authentication:
   user_class: RG3RedirDB::Usuarios
   user_field: login
   password_field: senha
+  password_type: hashed
+  password_hash_type: MD5
 
 authorization:
  dbic:
