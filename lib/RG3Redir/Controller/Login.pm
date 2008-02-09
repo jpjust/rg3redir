@@ -57,13 +57,13 @@ HTML
 	return $html;
 }
 
-=head2 get_mail
+=head2 mail_cadastro
 
-Retorna e-mail de cadastro
+Envia e-mail de cadastro
 
 =cut
 
-sub get_mail : Private {
+sub mail_cadastro : Private {
 	my ($to, $login, $senha) = @_;
 	
 	my $mail = <<__MAIL__
@@ -86,7 +86,40 @@ Obrigado por preferir a RG3.Net.
 __MAIL__
 ;
 
-	return $mail;
+	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
+	print SENDMAIL $mail;
+	close(SENDMAIL);
+}
+
+=head2 mail_cadastro
+
+Envia e-mail de cadastro
+
+=cut
+
+sub mail_resgate : Private {
+	my ($to, $login, $senha) = @_;
+	
+	my $mail = <<__MAIL__
+To: $to
+From: rg3\@rg3.net
+Subject: Resgate de senha RG3.Net
+
+Ola, $login
+
+Como solicitado atraves do nosso sistema, uma nova senha foi gerada para
+sua conta.
+
+Nome de usuario: $login
+Senha: $senha
+
+Recomendamos alterar esta senha logo apos acessar sua conta.
+__MAIL__
+;
+
+	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
+	print SENDMAIL $mail;
+	close(SENDMAIL);
 }
 
 =head2 index 
@@ -196,9 +229,7 @@ sub novo_do : Local {
 	
 	# Envia e-mail com a senha
 	$c->stash->{senha} = $senha[0];
-	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
-	print SENDMAIL &get_mail($usuario->email, $usuario->login, $senha[0]);
-	close(SENDMAIL);
+	&mail_cadastro($usuario->email, $usuario->login, $senha[0]);
 	
 	# Exibe a página de conclusão
 	$c->stash->{usuario} = $usuario;
@@ -237,6 +268,91 @@ sub go_redir : Local {
 	}
 	
 	$c->response->redirect('http://www.rg3.net/errodom');
+}
+
+=head2 esqueci
+
+Mostra a página para recuperar a senha.
+
+=cut
+
+sub esqueci : Local {
+	my ($self, $c) = @_;
+	$c->stash->{dominios} = [$c->model('RG3RedirDB::Dominios')->all];
+	$c->stash->{template} = 'esqueci.tt2';
+}
+
+=head2 resgate_login
+
+Recupera a senha através do login.
+
+=cut
+
+sub resgate_login : Local {
+	my ($self, $c) = @_;
+	
+	# Parâmetros
+	my $p = $c->request->params;
+	
+	my $usuario = $c->model('RG3RedirDB::Usuarios')->search({login => $p->{login}})->first;
+	if ($usuario) {
+ 		my @senha = rand_words;
+ 		$usuario->update({senha => md5_hex($senha[0])});
+ 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		$c->stash->{usuario} = $usuario;
+ 		$c->stash->{template} = 'lembrei.tt2';
+ 	} else {
+ 		$c->stash->{template} = 'nao_lembrei.tt2';
+ 	}
+}
+
+=head2 resgate_email
+
+Recupera a senha através do e-mail.
+
+=cut
+
+sub resgate_email : Local {
+	my ($self, $c) = @_;
+	
+	# Parâmetros
+	my $p = $c->request->params;
+	
+	my $usuario = $c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first;
+	if ($usuario) {
+ 		my @senha = rand_words;
+ 		$usuario->update({senha => md5_hex($senha[0])});
+ 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		$c->stash->{usuario} = $usuario;
+ 		$c->stash->{template} = 'lembrei.tt2';
+ 	} else {
+ 		$c->stash->{template} = 'nao_lembrei.tt2';
+ 	}
+}
+
+=head2 resgate_redir
+
+Recupera a senha através de um redirecionamento.
+
+=cut
+
+sub resgate_redir : Local {
+	my ($self, $c) = @_;
+	
+	# Parâmetros
+	my $p = $c->request->params;
+	
+	my $redir = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{redir}, id_dominio => $p->{dominio}})->first;
+	if ($redir) {
+ 		my @senha = rand_words;
+ 		my $usuario = $redir->usuario;
+ 		$usuario->update({senha => md5_hex($senha[0])});
+ 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		$c->stash->{usuario} = $usuario;
+ 		$c->stash->{template} = 'lembrei.tt2';
+ 	} else {
+ 		$c->stash->{template} = 'nao_lembrei.tt2';
+ 	}
 }
 
 =head1 AUTHOR

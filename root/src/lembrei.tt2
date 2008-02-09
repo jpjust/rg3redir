@@ -1,0 +1,7 @@
+<h2>Encontramos sua senha</h2>
+
+<p>Pronto! A conta <strong>[% usuario.login %]</strong> foi localizada e uma nova senha gerada e enviada para o e-mail <strong>[% usuario.email %]</strong>.</p>
+
+<p>Em poucos instantes, verifique seu e-mail e use a nova senha para entrar na sua conta.</p>
+
+<p><i>Se o e-mail exibido acima está incorreto ou não existe mais, não será possível receber a senha. Em caso de e-mail desativado, reative-o para receber a senha. Em caso de e-mail incorreto, nada poderá ser feito.</i></p>

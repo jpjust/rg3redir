@@ -8,6 +8,7 @@ use lib "$FindBin::Bin/../..";
 use EasyCat;
 use Data::FormValidator;
 use Data::Validate::Email qw(is_email is_email_rfc822);
+use Digest::MD5 qw(md5 md5_hex md5_base64);
 
 =head1 NAME
 
@@ -53,7 +54,7 @@ sub inicio : Local {
 	my ($self, $c) = @_;
 	$c->stash->{usuario} = $c->user;
 	$c->stash->{urls} = [$c->model('RG3RedirDB::RedirURL')->search({uid => $c->user->uid})];
-	$c->stash->{mails} = [$c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid})];
+	#$c->stash->{mails} = [$c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid})];
 	$c->stash->{template} = 'usuarios/inicio.tt2';
 }
 
@@ -87,8 +88,9 @@ sub editar_do : Local {
 	}
 
 	# Verifica se o e-mail já existe
-	if ($c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first) {
-		$c->stash->{erro_email} = 'Este e-mail já está cadastrado. Por favor, use outro e-mail para atualizar seu cadastro.';
+	my $ver = $c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first;
+	if (($ver) && ($ver->uid != $c->user->uid)) {
+		$c->stash->{error_msg} = 'Este e-mail já está cadastrado. Por favor, use outro e-mail para atualizar seu cadastro.';
 		$c->forward('editar');
 		return;
 	}

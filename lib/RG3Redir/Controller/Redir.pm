@@ -36,7 +36,7 @@ Exibe a página com a lista de redirecionamentos.
 sub lista : Local {
 	my ($self, $c) = @_;
 	$c->stash->{urls} = [$c->model('RG3RedirDB::RedirURL')->search({uid => $c->user->uid})];
-	$c->stash->{mails} = [$c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid})];
+	#$c->stash->{mails} = [$c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid})];
 	$c->stash->{template} = 'redir/lista.tt2';
 }
 
@@ -78,7 +78,8 @@ sub novo_url_do : Local {
 	my $p = $c->request->params;
 
 	# Verifica se o redirecionamento já existe
-	if ($c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first) {
+	my $ver = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first;
+	if (($ver) && ($ver->id != $p->{id})) {
 		$c->stash->{erro_redir} = 'O redirecionamento escolhido já está cadastrado. Por favor, escolha outro nome.';
 		$c->stash->{redir} = $p;
 		$c->forward('novo_url');

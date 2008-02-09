@@ -22,7 +22,6 @@ __PACKAGE__->load_classes({
 		Usuarios
 		Dominios
 		RedirURL
-		RedirMail
 	/]
 });
 
