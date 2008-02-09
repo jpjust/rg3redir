@@ -141,6 +141,7 @@ sub index : Private {
 			$c->stash->{data_uacesso} = $usuario->data_uacesso;
 			
 			$usuario->update({
+				ativado			=> 1,
 				ip_uacesso		=> $c->req->address,
 				data_uacesso	=> strftime "%Y-%m-%d %H:%M:%S", localtime
 			});

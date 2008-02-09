@@ -7,7 +7,7 @@ __PACKAGE__->load_components(qw/PK::Auto Core/);
 # Set the table name
 __PACKAGE__->table('usuarios');
 # Set columns in table
-__PACKAGE__->add_columns(qw/uid id_grupo login senha email data_cadastro data_uacesso ip_cadastro ip_uacesso/);
+__PACKAGE__->add_columns(qw/uid id_grupo login senha email ativado data_cadastro data_uacesso ip_cadastro ip_uacesso/);
 # Set the primary key for the table
 __PACKAGE__->set_primary_key(qw/uid/);
 
