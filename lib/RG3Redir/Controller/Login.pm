@@ -268,7 +268,7 @@ sub go_redir : Local {
 		}
 	}
 	
-	$c->response->redirect('http://www.rg3.net/errodom');
+	$c->response->redirect('http://www.rg3.net/');
 }
 
 =head2 esqueci
