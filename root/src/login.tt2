@@ -28,7 +28,7 @@
 
 <h2>Crie sua conta</h2>
 
-<p><a href="[% Catalyst.uri_for('/login/criar') %]">Crie sua conta</a> gratuitamente no RG3.Net e passe a usar nossos serviços de redirecionamento. A criação da conta é muito fácil e leva menos de um minuto. <a href="[% Catalyst.uri_for('/login/criar') %]">Clique aqui pra criar sua conta</a>.</p>
+<p><a href="[% Catalyst.uri_for('/login/termos') %]">Crie sua conta</a> gratuitamente no RG3.Net e passe a usar nossos serviços de redirecionamento. A criação da conta é muito fácil e leva menos de um minuto. <a href="[% Catalyst.uri_for('/login/termos') %]">Clique aqui pra criar sua conta</a>.</p>
 
 </td>
 </table>
@@ -43,5 +43,7 @@
 	Copyright © 2008 Justsoft Informática Ltda.<br>
 	Todos os direitos reservados.<br>
 	<br>
-	Ícones por <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a>
+	Ícones por <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a><br>
+	<br>
+	<a href="[% Catalyst.uri_for('/login/termos') %]">Termos de uso do serviço</a>
 </div>

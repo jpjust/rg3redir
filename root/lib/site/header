@@ -40,10 +40,12 @@
 
 <div class="topmenu" align="center">
 [% IF Catalyst.user_exists %]
-	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Página inicial</a> ::
+	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]"><img src="/redirapp/static/images/information.png" align="top"> Status da conta</a> ::
 	<a href="[% Catalyst.uri_for('/redir/lista') %]"><img src="/redirapp/static/images/arrow_rotate_clockwise.png" align="top"> Listar redirecionamentos</a> ::
 	<a href="[% Catalyst.uri_for('/usuarios/editar') %]"><img src="/redirapp/static/images/user_edit.png" align="top"> Alterar e-mail e/ou senha</a> ::
 	<a href="[% Catalyst.uri_for('/logout') %]"><img src="/redirapp/static/images/disconnect.png" align="top"> Sair ([% Catalyst.user %])</a>
+[% ELSE %]
+	<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Página inicial</a>
 [% END %]
 </div>
 

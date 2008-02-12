@@ -156,6 +156,17 @@ sub index : Private {
 	$c->stash->{template} = 'login.tt2';
 }
 
+=head2 termos
+
+Exibe página com os Termos de uso do serviço.
+
+=cut
+
+sub termos : Local {
+	my ($self, $c) = @_;
+	$c->stash->{template} = 'termos.tt2';
+}
+
 =head2 criar
 
 Exibe página para criar novo login.

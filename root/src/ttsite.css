@@ -97,10 +97,10 @@ img {
 }
 
 .mytextbox {
-	background-color: #ffffff;
+	background-color: #eeeeee;
 	color: black;
 	border-style: solid;
-	border-color: #003300;
+	border-color: black;
 	border-width: 1px;
 	padding: 10px;
 }

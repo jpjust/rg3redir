@@ -5,3 +5,5 @@
 <p>Em poucos instantes, verifique seu e-mail e use a nova senha para entrar na sua conta.</p>
 
 <p><i>Se o e-mail exibido acima está incorreto ou não existe mais, não será possível receber a senha. Em caso de e-mail desativado, reative-o para receber a senha. Em caso de e-mail incorreto, nada poderá ser feito.</i></p>
+
+<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Voltar para a página de login</a></p>

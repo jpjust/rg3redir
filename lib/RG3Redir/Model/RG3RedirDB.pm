@@ -6,7 +6,7 @@ use base 'Catalyst::Model::DBIC::Schema';
 __PACKAGE__->config(
     schema_class => 'RG3RedirDB',
     connect_info => [
-        'dbi:mysql:database=rg3_redir;host=localhost',
+        'dbi:mysql:database=rg3;host=localhost',
         'rg3',
         'rg3',
         { AutoCommit => 1 },
