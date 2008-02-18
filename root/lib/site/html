@@ -1,9 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
  <head>
+  <meta name="verify-v1" content="PRdFr7nEpScau+nmqM0tuT+BJzPIO+PPRw+yjm7jzsg=" />
   <meta name="Keywords" content="rg3 net redirecionamento url endereco site sites gratuito irg3.net minhapagina.info minhahome.com minhahomepage.com">
   <meta name="Description" content="Redirecionamento gratuito de URLs sem propagandas e Internet via Rádio.">
   <title>[% template.title or site.title %]</title>
+  <base href="http://www.rg3.net/">
   <style type="text/css">
 [% PROCESS ttsite.css %]
   </style>

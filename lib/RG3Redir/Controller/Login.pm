@@ -135,6 +135,14 @@ sub index : Private {
 	if ($username && $password) {
 		if ($c->login($username, $password)) {
 			
+			# Verifica se a conta está bloqueada
+			if ($c->user->bloqueado == 1) {
+				$c->stash->{usuario} = $c->user;
+				$c->stash->{template} = 'bloqueado.tt2';
+				$c->logout;
+				return;
+			}
+			
 			# Atualiza último acesso
 			my $usuario = $c->model('RG3RedirDB::Usuarios')->search({uid => $c->user->uid})->first;
 			$c->stash->{ip_uacesso} = $usuario->ip_uacesso;
@@ -269,13 +277,21 @@ sub go_redir : Local {
 	if ($dominio) {
 		my $redir = $c->model('RG3RedirDB::RedirURL')->search({id_dominio => $dominio->id, de => $parte_redir})->first;
 		if ($redir) {
+			# Verifica se a conta está bloqueada
+			if ($redir->usuario->bloqueado == 1) {
+				$c->stash->{usuario} = $redir->usuario;
+				$c->stash->{template} = 'bloqueado.tt2';
+				return;
+			}
+			
+			# Contabiliza um acesso e faz o redirecionamento
 			my $acessos = $redir->acessos;
 			$acessos++;
 			$redir->update({acessos => $acessos});
 			$c->response->content_type('text/html');
 			$c->response->write(&get_frame($redir->para, $redir->titulo, $redir->descricao, $redir->keywords));
 			$c->response->redirect('');
-			return 0;
+			return;
 		}
 	}
 	
@@ -356,6 +372,12 @@ sub resgate_redir : Local {
 	
 	my $redir = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{redir}, id_dominio => $p->{dominio}})->first;
 	if ($redir) {
+		if ($redir->usuario->login eq 'rg3') {
+			$c->stash->{redir} = $redir->de . '.' . $redir->dominio->nome;
+			$c->stash->{template} = 'orfao.tt2';
+			return;
+		}
+		
  		my @senha = rand_words;
  		my $usuario = $redir->usuario;
  		$usuario->update({senha => md5_hex($senha[0])});
