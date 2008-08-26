@@ -148,9 +148,15 @@ sub index : Private {
 			$c->stash->{ip_uacesso} = $usuario->ip_uacesso;
 			$c->stash->{data_uacesso} = $usuario->data_uacesso;
 			
+			# Cria uma variável com o IP externo + IP interno (caso ele esteja acessando com um proxy)
+			my $ip = $c->req->address;
+			if ($c->request->header('X-Forwarded-For')) {
+				$ip .= ' (' . $c->request->header('X-Forwarded-For') . ')';
+			}
+			
 			$usuario->update({
 				ativado			=> 1,
-				ip_uacesso		=> $c->req->address,
+				ip_uacesso		=> $ip,
 				data_uacesso	=> strftime "%Y-%m-%d %H:%M:%S", localtime
 			});
 			
