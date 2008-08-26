@@ -76,6 +76,15 @@ sub novo_url_do : Local {
 
 	# Parâmetros
 	my $p = $c->request->params;
+	
+	# Permite apenas caracteres alfanuméricos, traços e underlines no nome do redirecionamento
+	$p->{de} = undef if ($p->{de} !~ /^[a-zA-Z0-9_-]+$/);
+	
+	# Não permite tags HTML em nenhuma variável que irá para o código HTML do redirecionamento
+	$p->{para}		= undef if ($p->{para} =~ /[\"<>]/);
+	$p->{titulo}	= undef if ($p->{titulo} =~ /[\"<>]/);
+	$p->{descricao}	= undef if ($p->{descricao} =~ /[\"<>]/);
+	$p->{keywords}	= undef if ($p->{keywords} =~ /[\"<>]/);
 
 	# Verifica se o redirecionamento já existe
 	my $ver = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first;

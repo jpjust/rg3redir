@@ -132,6 +132,42 @@ sub editar_do : Local {
 	$c->forward('/usuarios/inicio');
 }
 
+=head2 excluir
+
+Exibe a página para excluir uma conta.
+
+=cut
+
+sub excluir : Local {
+	my ($self, $c) = @_;
+	$c->stash->{usuario} = $c->user;
+	$c->stash->{redirs} = [$c->model('RG3RedirDB::RedirURL')->search({uid => $c->user->uid})];
+	$c->stash->{template} = 'usuarios/excluir.tt2';
+}
+
+=head2 excluir_do
+
+Exclui a conta do usuário.
+
+=cut
+
+sub excluir_do : Local {
+	my ($self, $c) = @_;
+
+	# Parâmetros
+	my $p = $c->request->params;
+	
+	# Apaga os redirecionamentos do usuário
+	$c->model('RG3RedirDB::RedirURL')->search({uid => $c->user->uid})->delete;
+	
+	# Apaga a conta do usuário
+	$c->model('RG3RedirDB::Usuarios')->search({uid => $c->user->uid})->delete;
+	
+	# Efetua logout e vai embora
+	$c->logout;
+	$c->response->redirect($c->uri_for('/'));
+}
+
 =head1 AUTHOR
 
 Joao Paulo Just,,,

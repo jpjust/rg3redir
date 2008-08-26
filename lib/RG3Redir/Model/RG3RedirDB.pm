@@ -8,7 +8,7 @@ __PACKAGE__->config(
     connect_info => [
         'dbi:mysql:database=rg3;host=localhost',
         'rg3',
-        'rg3',
+        'cUid64ZZpw',
         { AutoCommit => 1 },
     ],
 );

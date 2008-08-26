@@ -1,0 +1,23 @@
+[% PROCESS site/macros %]
+
+<h2>Cancelamento de conta</h2>
+
+<p><strong>ATENÇÃO:</strong> Ao confirmar no botão abaixo, sua conta e todos os seus redirecionamentos serão excluídos. Não haverá como reverter este procedimento. Os redirecionamentos abaixo serão excluídos:</p>
+
+[% IF redirs.size == 0 %]
+<p><i>Este usuário não possui redirecionamentos cadastrados.</i></p>
+[% ELSE %]
+<ul>
+	[% FOREACH url IN redirs %]
+	<li>[% url.de _ '.' _ url.dominio.nome %]</li>
+	[% END %]
+</ul>
+[% END %]
+
+<p>Tem certeza que deseja excluir a conta <strong>[% usuario %]</strong> e todos os seus redirecionamentos?</p>
+
+<form action="[% Catalyst.uri_for('/usuarios/excluir_do') %]" method="POST">
+
+<p align="center"><input type="submit" value="Sim, quero excluir minha conta!"></p>
+
+</form>

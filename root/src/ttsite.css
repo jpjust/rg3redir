@@ -213,3 +213,14 @@ img {
 		display: none;
 	}
 }
+
+/* Copyright */
+.copyright {
+	color: gray;
+	text-align: center;
+	
+}
+
+.copyright a {
+	color: #338833;
+}
