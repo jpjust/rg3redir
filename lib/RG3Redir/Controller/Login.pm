@@ -40,6 +40,7 @@ sub get_frame : Private {
 <TITLE>$titulo</TITLE>
 </HEAD>
 <LINK rel="shortcut icon" href="http://www.rg3.net/favicon.ico">
+<META http-equiv="content-type" content="text/html; charset=UTF-8">
 <META name="description" content="$descricao">
 <META name="keywords" content="$palavras_chaves">
 <FRAMESET frameborder="0" framespacing="0" border="0" rows="0, *">
