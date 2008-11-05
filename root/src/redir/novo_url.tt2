@@ -1,19 +1,19 @@
 [% PROCESS site/macros %]
 
-<h2>Novo redirecionamento de URL</h2>
+<h2>[% l('Novo redirecionamento de URL') %]</h2>
 
 [% IF val.has_missing() %]
-	<p class="errorbox">Alguns campos obrigatórios estão faltando.</p>
+	<p class="errorbox">[% l('Alguns campos obrigatórios estão faltando.') %]</p>
 [% END %]
 
 <form action="[% Catalyst.uri_for('/redir/novo_url_do') %]" method="POST">
 <input type="hidden" name="id" value="[% redir.id %]">
 
-<h3>Redirecionamento</h3>
+<h3>[% l('Redirecionamento') %]</h3>
 
-<p>Digite no campo abaixo o endereço do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo endereço. Apenas letras, números, hífens (-) e sublinhados (_) são permitidos. Não é necessário digitar &quot;www.&quot; antes do endereço.</p>
+<p>[% l('Digite no campo abaixo o endereço do redirecionamento e escolha na lista ao lado, qual o domínio do seu novo endereço. Apenas letras, números, hífens (-) e sublinhados (_) são permitidos. Não é necessário digitar &quot;www.&quot; antes do endereço.') %]</p>
 
-<p><i>Ex.: joao</i></p>
+<p><i>[% l('Ex.: joao') %]</i></p>
 
 <div class="error">[% erro_redir %]</div>
 
@@ -28,30 +28,30 @@
 </select>
 </p>
 
-<h3>Endereço de destino</h3>
+<h3>[% l('Endereço de destino') %]</h3>
 
-<p>Digite no campo abaixo o endereço real completo do site para onde deseja redirecionar.</p>
+<p>[% l('Digite no campo abaixo o endereço real completo do site para onde deseja redirecionar.') %]</p>
 
-<p><i>Ex.: http://www.joao.provedor.com.br</i></p>
+<p><i>[% l('Ex.: http://www.joao.provedor.com.br') %]</i></p>
 
 <p><input type="text" name="para" size="60" value="[% redir.para %]" [% IF val.missing('para') %]class="missing"[% END %]></p>
 
-<h3>Informações do site (opcional)</h3>
+<h3>[% l('Informações do site (opcional)') %]</h3>
 
-<p>Você pode preencher os campos abaixo com informações sobre seu site, que poderão ser incluídas em sistemas de busca.
+<p>[% l('Você pode preencher os campos abaixo com informações sobre seu site, que poderão ser incluídas em sistemas de busca.') %]</p>
 
-<p>Título do site:</p>
+<p>[% l('Título do site:') %]</p>
 
 <p><input type="text" name="titulo" size="60" value="[% redir.titulo %]"></p>
 
-<p>Descrição:</p>
+<p>[% l('Descrição:') %]</p>
 
 <p><input type="text" name="descricao" size="60" value="[% redir.descricao %]"></p>
 
-<p>Palavras-chave (separe as palavras por espaços):</p>
+<p>[% l('Palavras-chave (separe as palavras por espaços):') %]</p>
 
 <p><input type="text" name="keywords" size="60" value="[% redir.keywords %]"></p>
 
-<p align="center"><input type="submit" value="Salvar"></p>
+<p align="center"><input type="submit" value="[% l('Salvar') %]"></p>
 
 </form>

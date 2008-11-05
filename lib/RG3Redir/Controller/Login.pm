@@ -164,7 +164,7 @@ sub index : Private {
 			$c->forward('/usuarios/inicio');
 			return;
 		} else {
-			$c->stash->{error_msg} = "Usuário e/ou senha inválidos.";
+			$c->stash->{error_msg} = $c->loc("Usuário e/ou senha inválidos.");
 		}
 	}
 	
@@ -207,12 +207,12 @@ sub novo_do : Local {
 
 	# Verifica se o login já existe
 	if ($c->model('RG3RedirDB::Usuarios')->search({login => $p->{login}})->first) {
-		$c->stash->{erro_login} = 'O nome de usuário escolhido já está cadastrado. Por favor, escolha outro nome.';
+		$c->stash->{erro_login} = $c->loc('O nome de usuário escolhido já está cadastrado. Por favor, escolha outro nome.');
 	}
 
 	# Verifica se o e-mail já existe
 	if ($c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first) {
-		$c->stash->{erro_email} = 'Este e-mail já está cadastrado. Por favor, use outro e-mail para efetuar o cadastro.';
+		$c->stash->{erro_email} = $c->loc('Este e-mail já está cadastrado. Por favor, use outro e-mail para efetuar o cadastro.');
 	}
 
 	if (($c->stash->{erro_login}) || ($c->stash->{erro_email})) {

@@ -57,6 +57,11 @@
 	[% valor FILTER format('%.1f') FILTER replace('\.', ',') %] %
 [% END %]
 
+[% # Macro para Catalyst.loc %]
+[% MACRO l(text, args) BLOCK %]
+	[% Catalyst.loc(text, args) %]
+[% END %]
+
 [% ### JavaScripts %]
 <script type="text/javascript">
 // Caixa de diálogo de confirmação

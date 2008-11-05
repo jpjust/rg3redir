@@ -39,6 +39,7 @@ rg3redir_create.pl [options] model|view|controller name [helper] [options]
 
  Examples:
    rg3redir_create.pl controller My::Controller
+   rg3redir_create.pl controller My::Controller BindLex
    rg3redir_create.pl -mechanize controller My::Controller
    rg3redir_create.pl view My::View
    rg3redir_create.pl view MyView TT

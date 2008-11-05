@@ -1,20 +1,20 @@
 [% PROCESS site/macros %]
 
-<h2>Redirecionamentos</h2>
+<h2>[% l('Redirecionamentos') %]</h2>
 
 <p>
-	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> Criar redirecionamento de URL</a>
-	<!-- <a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> Criar redirecionamento de e-mail</a> -->
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Criar redirecionamento de URL') %]</a>
+	<!-- <a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> [% l('Criar redirecionamento de e-mail') %]</a> -->
 </p>
 
-<h3>URLs ([% urls.size %])</h3>
+<h3>[% l('URLs') %] ([% urls.size %])</h3>
 
 <table width="100%">
 	<tr>
-		<th>Redirecionamento</th>
-		<th>Destino</th>
-		<th>Acessos</th>
-		<th>Ações</th>
+		<th>[% l('Redirecionamento') %]</th>
+		<th>[% l('Destino') %]</th>
+		<th>[% l('Acessos') %]</th>
+		<th>[% l('Ações') %]</th>
 	</tr>
 	
 	[% FOREACH redirecionamento IN urls %]
@@ -23,32 +23,9 @@
 		<td>[% redirecionamento.para %]</td>
 		<td>[% redirecionamento.acessos %]</td>
 		<td>
-			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/application_form_edit.png" align="top">Editar</a>
-			<br><a href="javascript:void(0)" onClick="javascript:askuser('Tem certeza que deseja excluir este redirecionamento?', '[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]');"><img src="/redirapp/static/images/delete.png" align="top">Remover</a>
+			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/application_form_edit.png" align="top">[% l('Editar') %]</a>
+			<br><a href="javascript:void(0)" onClick="javascript:askuser('[% l('Tem certeza que deseja excluir este redirecionamento?') %]', '[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]');"><img src="/redirapp/static/images/delete.png" align="top">[% l('Remover') %]</a>
 		</td>
 	</tr>
 	[% END %]
 </table>
-
-<!--
-<h3>E-mail ([% mails.size %])</h3>
-
-<table width="100%">
-	<tr>
-		<th>Redirecionamento</th>
-		<th>Destino</th>
-		<th>Ações</th>
-	</tr>
-	
-	[% FOREACH redirecionamento IN mails %]
-	<tr class="lista">
-		<td>[% redirecionamento.de %].[% redirecionamento.dominio.nome %]</td>
-		<td>[% redirecionamento.para %]</td>
-		<td>
-			<a href="[% Catalyst.uri_for('/redir/editar_mail/') _ redirecionamento.id %]"><img src="/static/images/application_form_edit.png" align="top">Editar</a>
-			<br><a href="[% Catalyst.uri_for('/redir/excluir_mail/') _ redirecionamento.id %]"><img src="/static/images/delete.png" align="top">Remover</a>
-		</td>
-	</tr>
-	[% END %]
-</table>
--->

@@ -1,7 +1,9 @@
-<h2>Usuário bloqueado</h2>
+[% PROCESS site/macros %]
 
-<p>A conta e os redirecionamentos do usuário <strong>[% usuario.login %]</strong> estão bloqueados pelo motivo abaixo:</p>
+<h2>[% l('Usuário bloqueado') %]</h2>
+
+<p>[% l('A conta e os redirecionamentos do usuário <strong>[_1]</strong> estão bloqueados pelo motivo abaixo:', usuario.login) %]</p>
 
 <p><i>[% usuario.motivo_bloqueio %]</i></p>
 
-<p>Se você é o dono dessa conta e deseja maiores esclarecimentos, <a href="/contato.shtml">entre em contato conosco</a>.</p>
+<p>[% l('Se você é o dono dessa conta e deseja maiores esclarecimentos,') %] <a href="/contato.shtml">[% l('entre em contato conosco') %]</a>.</p>

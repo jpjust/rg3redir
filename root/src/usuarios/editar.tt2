@@ -1,35 +1,35 @@
 [% PROCESS site/macros %]
 
-<h2>Dados da conta</h2>
+<h2>[% l('Dados da conta') %]</h2>
 
 [% IF val.has_missing() %]
-	<p class="errorbox">Alguns campos obrigatórios estão faltando.</p>
+	<p class="errorbox">[% l('Alguns campos obrigatórios estão faltando.') %]</p>
 [% END %]
 
-<p>Caso não queira alterar a senha, basta deixar os campos em branco.</p>
+<p>[% l('Caso não queira alterar a senha, basta deixar os campos em branco.') %]</p>
 
 <form action="[% Catalyst.uri_for('/usuarios/editar_do') %]" method="POST">
 
 <table>
 	<tr>
-		<td>Login:</td>
+		<td>[% l('Login:') %]</td>
 		<td>[% usuario.login %]</td>
 	</tr>
 	<tr>
-		<td>Endereço de e-mail:</td>
+		<td>[% l('Endereço de e-mail:') %]</td>
 		<td><input type="text" name="email" value="[% usuario.email %]" size="20" [% IF val.missing('email') %]class="missing"[% END %]></td>
 	<tr>
 	<tr>
-		<td>Nova senha:</td>
+		<td>[% l('Nova senha:') %]</td>
 		<td><input type="password" name="pwd1" size="20"></td>
 	</tr>
 	<tr>
-		<td>Repita a nova senha:</td>
+		<td>[% l('Repita a nova senha:') %]</td>
 		<td><input type="password" name="pwd2" size="20"></td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><input type="submit" value="Salvar"></td>
+		<td><input type="submit" value="[% l('Salvar') %]"></td>
 	</tr>
 </table>
 

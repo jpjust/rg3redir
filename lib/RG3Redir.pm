@@ -14,6 +14,7 @@ use Catalyst::Runtime '5.70';
 #                 directory
 
 use Catalyst qw/
+-Debug
 	ConfigLoader
 	Static::Simple
 	
@@ -26,6 +27,9 @@ use Catalyst qw/
 	Session
 	Session::Store::FastMmap
 	Session::State::Cookie
+	
+	I18N
+	Unicode
 	/;
 
 our $VERSION = '0.01';
@@ -44,6 +48,12 @@ __PACKAGE__->config( name => 'RG3Redir' );
 # Start the application
 __PACKAGE__->setup;
 
+sub begin : Private {
+	my ($self, $c) = @_;
+
+	$c->response->headers->push_header( 'Vary' => 'Accept-Language' );
+	$c->languages(undef);
+}
 
 =head1 NAME
 

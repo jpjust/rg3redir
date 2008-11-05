@@ -1,29 +1,24 @@
 [% PROCESS site/macros %]
 
-<h2>Bem-vindo(a), [% usuario.login %].</h2>
+<h2>[% l('Bem-vindo(a), [_1].', usuario.login) %]</h2>
 
 [% IF data_uacesso %]
-<p>Seu último acesso foi em <strong>[% data2normal(data_uacesso) %]</strong> pelo computador <strong>[% ip_uacesso %]</strong>.</p>
+<p>[% l('Seu último acesso foi em <strong>[_1]</strong> pelo computador <strong>[_2]</strong>.', data2normal(data_uacesso), ip_uacesso) %]</p>
 [% END %]
 
 <p>
-	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> Criar redirecionamento de URL</a>
-	<!-- <a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> Criar redirecionamento de e-mail</a> -->
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Criar redirecionamento de URL') %]</a>
 </p>
 
-<h3>Status da conta</h3>
+<h3>[% l('Status da conta') %]</h3>
 
 <table>
 	<tr>
-		<td>E-mail registrado:</td>
+		<td>[% l('E-mail registrado:') %]</td>
 		<td>[% usuario.email %]</td>
 	</tr>
 	<tr>
-		<td>Redirecionamentos de URL:</td>
+		<td>[% l('Redirecionamentos de URL:') %]</td>
 		<td>[% urls.size %]</td>
 	</tr>
-	<!-- <tr>
-		<td>Redirecionamentos de e-mail:</td>
-		<td>[% mails.size %]</td>
-	<tr> -->
 </table>

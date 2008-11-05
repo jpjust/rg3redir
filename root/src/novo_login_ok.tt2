@@ -1,9 +1,9 @@
 [% PROCESS site/macros %]
 
-<h2>Novo usuário RG3.Net cadastrado</h2>
+<h2>[% l('Novo usuário RG3.Net cadastrado') %]</h2>
 
-<p>Pronto! A conta <strong>[% usuario.login %]</strong> foi criada. A sua senha provisória foi enviada para o e-mail <strong>[% usuario.email %]</strong>. Acesse seu e-mail para poder ver sua senha e entrar na sua conta.</p>
+<p>[% l('Pronto! A conta <strong>[_1]</strong> foi criada. A sua senha provisória foi enviada para o e-mail <strong>[_2]</strong>. Acesse seu e-mail para poder ver sua senha e entrar na sua conta.', usuario.login, usuario.email) %]</p>
 
-<p><strong>Efetue o primeiro acesso à sua conta logo após receber a senha provisória. As contas que não são acessadas na primeira semana da sua criação são automaticamente excluídas.</strong></p>
+<p><strong>[% l('Efetue o primeiro acesso à sua conta logo após receber a senha provisória. As contas que não são acessadas na primeira semana da sua criação são automaticamente excluídas.') %]</strong></p>
 
-<p><a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Ir para a página inicial</a></p>
+<p><a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> [% l('Ir para a página inicial') %]</a></p>

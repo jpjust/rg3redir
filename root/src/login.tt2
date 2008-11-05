@@ -1,23 +1,25 @@
+[% PROCESS site/macros %]
+
 <table width="100%">
 <tr>
 <td valign="top" width="50%">
 
-<h2>Login</h2>
+<h2>[% l('Login') %]</h2>
 
 <form action="[% Catalyst.uri_for('/login') %]" method="POST">
 
 <table>
 	<tr>
-		<td>Login:</td>
+		<td>[% l('Login:') %]</td>
 		<td><input type="text" name="username" size="15"></td>
 	</tr>
 	<tr>
-		<td>Senha:</td>
+		<td>[% l('Senha:') %]</td>
 		<td><input type="password" name="password" size="15"></td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><input type="submit" value="Entrar"></td>
+		<td><input type="submit" value="[% l('Entrar') %]"></td>
 	</tr>
 </table>
 
@@ -26,23 +28,23 @@
 </td>
 <td valign="top" width="50%">
 
-<h2>Crie sua conta</h2>
+<h2>[% l('Crie sua conta') %]</h2>
 
-<p><a href="[% Catalyst.uri_for('/login/termos') %]">Crie sua conta</a> gratuitamente no RG3.Net e passe a usar nossos serviços de redirecionamento. A criação da conta é muito fácil e leva menos de um minuto. <a href="[% Catalyst.uri_for('/login/termos') %]">Clique aqui pra criar sua conta</a>.</p>
+<p><a href="[% Catalyst.uri_for('/login/termos') %]">[% l('Crie sua conta') %]</a> [% l('gratuitamente no RG3.Net e passe a usar nossos serviços de redirecionamento. A criação da conta é muito fácil e leva menos de um minuto.') %] <a href="[% Catalyst.uri_for('/login/termos') %]">[% l('Clique aqui pra criar sua conta') %]</a>.</p>
 
 </td>
 </table>
 
-<h3>Esqueceu a senha?</h3>
+<h3>[% l('Esqueceu a senha?') %]</h3>
 
-<p><a href="[% Catalyst.uri_for('/login/esqueci') %]">Clique aqui</a> caso tenha esquecido a senha ou nome de usuário.</p>
+<p><a href="[% Catalyst.uri_for('/login/esqueci') %]">[% l('Clique aqui') %]</a> [% l('caso tenha esquecido a senha ou nome de usuário.') %]</p>
 
 <div id="footer">
 	<br><br>
 	<a href="http://www.justsoft.com.br/" target="_blank"><img src="/redirapp/static/images/justsoft.png" alt="Justsoft Informática Ltda." border="0"></a><br>
-	Desenvolvido por Justsoft Informática Ltda.<br>
+	[% l('Desenvolvido pela Justsoft Informática Ltda.') %]<br>
 	<br>
-	Ícones por <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a><br>
+	[% l('Ícones por') %] <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a><br>
 	<br>
-	<a href="[% Catalyst.uri_for('/login/termos') %]">Termos de uso do serviço</a>
+	<a href="[% Catalyst.uri_for('/login/termos') %]">[% l('Termos de uso do serviço') %]</a>
 </div>

@@ -1,5 +1,7 @@
-<h2>Não encontramos sua senha</h2>
+[% PROCESS site/macros %]
 
-<p>Infelizmente não encontramos nenhuma conta com a informação fornecida. Volte para a página anterior e tente lembrar do nome de usuário, e-mail ou algum redirecionamento pertencente à sua conta.</p>
+<h2>[% l('Não encontramos sua senha') %]</h2>
 
-<a href="[% Catalyst.uri_for('/login/esqueci') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> Voltar</a></p>
+<p>[% l('Infelizmente não encontramos nenhuma conta com a informação fornecida. Volte para a página anterior e tente lembrar do nome de usuário, e-mail ou algum redirecionamento pertencente à sua conta.') %]</p>
+
+<a href="[% Catalyst.uri_for('/login/esqueci') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> [% l('Voltar') %]</a></p>

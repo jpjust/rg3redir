@@ -2,7 +2,7 @@
 
 BEGIN { 
     $ENV{CATALYST_ENGINE} ||= 'HTTP';
-    $ENV{CATALYST_SCRIPT_GEN} = 29;
+    $ENV{CATALYST_SCRIPT_GEN} = 31;
     require Catalyst::Engine::HTTP;
 }  
 
@@ -17,12 +17,13 @@ my $debug             = 0;
 my $fork              = 0;
 my $help              = 0;
 my $host              = undef;
-my $port              = 3000;
+my $port              = $ENV{RG3REDIR_PORT} || $ENV{CATALYST_PORT} || 3000;
 my $keepalive         = 0;
-my $restart           = 0;
+my $restart           = $ENV{RG3REDIR_RELOAD} || $ENV{CATALYST_RELOAD} || 0;
 my $restart_delay     = 1;
-my $restart_regex     = '\.yml$|\.yaml$|\.pm$';
+my $restart_regex     = '(?:/|^)(?!\.#).+(?:\.yml$|\.yaml$|\.pm)$';
 my $restart_directory = undef;
+my $follow_symlinks   = 0;
 
 my @argv = @ARGV;
 
@@ -36,12 +37,13 @@ GetOptions(
     'restart|r'           => \$restart,
     'restartdelay|rd=s'   => \$restart_delay,
     'restartregex|rr=s'   => \$restart_regex,
-    'restartdirectory=s'  => \$restart_directory,
+    'restartdirectory=s@' => \$restart_directory,
+    'followsymlinks'      => \$follow_symlinks,
 );
 
 pod2usage(1) if $help;
 
-if ( $restart ) {
+if ( $restart && $ENV{CATALYST_ENGINE} eq 'HTTP' ) {
     $ENV{CATALYST_ENGINE} = 'HTTP::Restarter';
 }
 if ( $debug ) {
@@ -60,6 +62,7 @@ RG3Redir->run( $port, $host, {
     restart_delay     => $restart_delay,
     restart_regex     => qr/$restart_regex/,
     restart_directory => $restart_directory,
+    follow_symlinks   => $follow_symlinks,
 } );
 
 1;
@@ -87,9 +90,10 @@ rg3redir_server.pl [options]
                       a restart when modified
                       (defaults to '\.yml$|\.yaml$|\.pm$')
    -restartdirectory  the directory to search for
-                      modified files
-                      (defaults to '../')
-
+                      modified files, can be set mulitple times
+                      (defaults to '[SCRIPT_DIR]/..')
+   -follow_symlinks   follow symlinks in search directories
+                      (defaults to false. this is a no-op on Win32)
  See also:
    perldoc Catalyst::Manual
    perldoc Catalyst::Manual::Intro
