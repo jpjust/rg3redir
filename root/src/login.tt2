@@ -39,6 +39,13 @@
 
 <p><a href="[% Catalyst.uri_for('/login/esqueci') %]">[% l('Click here') %]</a> [% l('in case you have forgotten your password or username.') %]</p>
 
+[% IF Catalyst.language == 'en' %]
+<br><br>
+<h3>Procurando o site em portugues?</h3>
+
+<p><a href="http://www.rg3.net/home.shtml">Clique aqui</a> para abrir o site em portugues com informacoes do nosso provedor de Internet banda larga.</p>
+[% END %]
+
 <div id="footer">
 	<br><br>
 	<a href="http://www.justsoft.com.br/" target="_blank"><img src="/redirapp/static/images/justsoft.png" alt="Justsoft Informatica Ltda." border="0"></a><br>
