@@ -122,7 +122,7 @@ msgstr ""
 msgid "Child pornography, hate or racism spreading."
 msgstr ""
 
-#: root/src/login.tt2:40
+#: root/src/bloqueado.tt2:9 root/src/login.tt2:40
 msgid "Click here"
 msgstr ""
 
@@ -255,7 +255,7 @@ msgstr ""
 msgid "If you forgot your username, but still remember the e-mail address you used when created your account, you can type the e-mail address in the field below to get a new password."
 msgstr ""
 
-#: root/src/bloqueado.tt2:9
+#: root/src/bloqueado.tt2:11
 msgid "If you own this account and want to know why you are blocked,"
 msgstr ""
 
@@ -416,7 +416,7 @@ msgid "The typed passwords don't match."
 msgstr ""
 
 #: root/src/usuarios/excluir.tt2:8
-msgid "This user doesn't have any redirection registered."
+msgid "This user doesn't have any redirections registered."
 msgstr ""
 
 #: root/src/bloqueado.tt2:3
@@ -552,8 +552,12 @@ msgstr ""
 msgid "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
 msgstr ""
 
-#: root/src/bloqueado.tt2:9
+#: root/src/bloqueado.tt2:11
 msgid "contact us"
+msgstr ""
+
+#: root/src/bloqueado.tt2:9
+msgid "http://education.apwg.org/r/en/index.html"
 msgstr ""
 
 #: root/src/login.tt2:40
@@ -562,4 +566,8 @@ msgstr ""
 
 #: root/src/login.tt2:33
 msgid "now for free and start using our URL redirection service. The creation of an account is easy and takes less than one minute."
+msgstr ""
+
+#: root/src/bloqueado.tt2:9
+msgid "to learn how to protect yourself from fraudulent sites and e-mails."
 msgstr ""

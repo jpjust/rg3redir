@@ -173,7 +173,7 @@ msgstr ""
 msgid "Child pornography, hate or racism spreading."
 msgstr "Pornografia infantil, disseminação de ódio ou racismo."
 
-#: root/src/login.tt2:40
+#: root/src/bloqueado.tt2:9 root/src/login.tt2:40
 msgid "Click here"
 msgstr "Clique aqui"
 
@@ -343,7 +343,7 @@ msgstr ""
 "mail que usou para criar sua conta, digite o e-mail no campo abaixo para "
 "receber uma nova senha."
 
-#: root/src/bloqueado.tt2:9
+#: root/src/bloqueado.tt2:11
 msgid "If you own this account and want to know why you are blocked,"
 msgstr "Se você é o dono desta e gostaria de saber porque está bloquedo, "
 
@@ -732,9 +732,13 @@ msgid "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
 msgstr ""
 "Sua última visita foi em <strong>%1</strong> através de <strong>%2</strong>."
 
-#: root/src/bloqueado.tt2:9
+#: root/src/bloqueado.tt2:11
 msgid "contact us"
 msgstr "contate-nos"
+
+#: root/src/bloqueado.tt2:9
+msgid "http://education.apwg.org/r/en/index.html"
+msgstr "http://cartilha.cert.br/"
 
 #: root/src/login.tt2:40
 msgid "in case you have forgotten your password or username."
@@ -747,3 +751,7 @@ msgid ""
 msgstr ""
 "gratuitamente e comece a usar nosso serviço de redirecionamento de URL. O "
 "cadastro de uma conta nova é fácil e leva menos de um minuto."
+
+#: root/src/bloqueado.tt2:9
+msgid "to learn how to protect yourself from fraudulent sites and e-mails."
+msgstr "para aprender como se proteger de sites e e-mails fraudulentos."

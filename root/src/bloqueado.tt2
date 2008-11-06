@@ -6,4 +6,6 @@
 
 <p><i>[% usuario.motivo_bloqueio.motivo %]</i></p>
 
+<p><a href="[% l('http://education.apwg.org/r/en/index.html') %]">[% l('Click here') %]</a> [% l('to learn how to protect yourself from fraudulent sites and e-mails.') %]</p>
+
 <p>[% l('If you own this account and want to know why you are blocked,') %] <a href="/contato.shtml">[% l('contact us') %]</a>.</p>
