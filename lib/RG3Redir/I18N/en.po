@@ -112,11 +112,17 @@ msgstr ""
 "As any other free service, we have defined some rules which must be followed "
 "by every RG3.Net user."
 
+#: lib/RG3Redir/Controller/Login.pm:96
+msgid ""
+"As requested, a new password has been generated.\n"
+"\n"
+msgstr ""
+
 #: root/src/novo_login.tt2:31
 msgid "Attention:"
 msgstr "Attention:"
 
-#: lib/RG3Redir/Controller/Login.pm:167
+#: lib/RG3Redir/Controller/Login.pm:149
 msgid "Authentication failure."
 msgstr "Authentication failure."
 
@@ -202,7 +208,7 @@ msgstr "Delete"
 msgid "Description:"
 msgstr "Description:"
 
-#: root/src/login.tt2:45
+#: root/src/login.tt2:52
 msgid "Developed by Justsoft Informatica Ltda."
 msgstr "Developed by Justsoft Informatica Ltda."
 
@@ -266,6 +272,14 @@ msgstr ""
 "Great! The account <strong>%1</strong> was localized and a new password was "
 "generated and sent to <strong>%2</strong>."
 
+#. ($login)
+#: lib/RG3Redir/Controller/Login.pm:95
+#, fuzzy
+msgid ""
+"Hello, %1.\n"
+"\n"
+msgstr "Welcome, %1."
+
 #: root/src/redir/lista.tt2:15
 msgid "Hits"
 msgstr "Hits"
@@ -286,7 +300,7 @@ msgstr "I don't remember anything!"
 msgid "I forgot my password :-( or even my username :p"
 msgstr "I forgot my password :-( or even my username :p"
 
-#: root/src/login.tt2:47
+#: root/src/login.tt2:54
 msgid "Icons by"
 msgstr "Icons by"
 
@@ -414,6 +428,14 @@ msgstr "New password:"
 msgid "Password:"
 msgstr "Password:"
 
+#. ($senha)
+#: lib/RG3Redir/Controller/Login.pm:74 lib/RG3Redir/Controller/Login.pm:98
+#, fuzzy
+msgid ""
+"Password: %1\n"
+"\n"
+msgstr "Password:"
+
 #: root/lib/site/html:10
 msgid "RG3.Net - URL redirections"
 msgstr "RG3.Net - URL redirections"
@@ -455,13 +477,29 @@ msgstr "Site title:"
 msgid "Some mandatory fields are missing."
 msgstr "Some mandatory fields are missing."
 
+#: lib/RG3Redir/Controller/Login.pm:94
+msgid ""
+"Subject: RG3.Net password recovery\n"
+"\n"
+msgstr ""
+
+#: lib/RG3Redir/Controller/Login.pm:70
+msgid ""
+"Subject: RG3.Net registration\n"
+"\n"
+msgstr ""
+
 #: root/src/redir/lista.tt2:14 root/src/redir/novo_url.tt2:31
 msgid "Target address"
 msgstr "Target address"
 
-#: root/src/login.tt2:49 root/src/termos.tt2:3
+#: root/src/login.tt2:56 root/src/termos.tt2:3
 msgid "Terms of service"
 msgstr "Terms of service"
+
+#: lib/RG3Redir/Controller/Login.pm:77
+msgid "Thank you for preferring RG3.Net.\n"
+msgstr ""
 
 #. (usuario.login)
 #: root/src/bloqueado.tt2:5
@@ -477,13 +515,13 @@ msgid "The choosen address has already been taken. Please, choose another one."
 msgstr ""
 "The choosen address has already been taken. Please, choose another one."
 
-#: lib/RG3Redir/Controller/Login.pm:210
+#: lib/RG3Redir/Controller/Login.pm:192
 msgid ""
 "The choosen username has already been taken. Please, choose another one."
 msgstr ""
 "The choosen username has already been taken. Please, choose another one."
 
-#: lib/RG3Redir/Controller/Login.pm:215
+#: lib/RG3Redir/Controller/Login.pm:197
 msgid ""
 "The typed e-mail address has already been registered. Please, use another e-"
 "mail address."
@@ -590,6 +628,12 @@ msgstr "Username"
 msgid "Username:"
 msgstr "Username:"
 
+#. ($login)
+#: lib/RG3Redir/Controller/Login.pm:74 lib/RG3Redir/Controller/Login.pm:98
+#, fuzzy
+msgid "Username: %1\n"
+msgstr "Username:"
+
 #: root/src/esqueci.tt2:15
 msgid "Using my e-mail address"
 msgstr "Using my e-mail address"
@@ -610,6 +654,17 @@ msgstr "We couldn't find your password"
 msgid "We have found your password"
 msgstr "We have found your password"
 
+#: lib/RG3Redir/Controller/Login.pm:100
+msgid ""
+"We recommend you change this password as soon as you log into your account.\n"
+msgstr ""
+
+#: lib/RG3Redir/Controller/Login.pm:75
+msgid ""
+"We recommend you change this password as soon as you log into your account.\n"
+"\n"
+msgstr ""
+
 #: root/src/novo_login.tt2:11
 msgid ""
 "We thank you the interest of joining our group of users. You just need to "
@@ -617,6 +672,12 @@ msgid ""
 msgstr ""
 "We thank you the interest of joining our group of users. You just need to "
 "fill the two fields below to complete your registration."
+
+#: lib/RG3Redir/Controller/Login.pm:71
+msgid ""
+"Welcome to RG3.Net!\n"
+"\n"
+msgstr ""
 
 #. (usuario.login)
 #: root/src/usuarios/inicio.tt2:3
@@ -638,6 +699,13 @@ msgid ""
 msgstr ""
 "You can fill the fields below with some information about your site, which "
 "can be later included in some search engines."
+
+#: lib/RG3Redir/Controller/Login.pm:72
+msgid ""
+"Your account has been created. To activate it, go to http://www.rg3.net and "
+"log into your account using the username and password below.\n"
+"\n"
+msgstr ""
 
 #. ([ data2normal(data_uacesso), ip_uacesso ])
 #: root/src/usuarios/inicio.tt2:6

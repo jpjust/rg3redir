@@ -65,58 +65,40 @@ Envia e-mail de cadastro
 =cut
 
 sub mail_cadastro : Private {
-	my ($to, $login, $senha) = @_;
-	
-	my $mail = <<__MAIL__
-To: $to
-From: rg3\@rg3.net
-Subject: Cadastro RG3.Net concluido
+	my ($c, $to, $login, $senha) = @_;
 
-Bem-vindo(a) a RG3.Net!
-
-Seu conta foi criada em nosso banco de dados. Para efetivar seu cadastro,
-acesse nosso site em http://www.rg3.net e entre na sua conta com os dados
-abaixo.
-
-Nome de usuario: $login
-Senha: $senha
-
-Recomendamos alterar sua senha logo apos acessar sua conta.
-
-Obrigado por preferir a RG3.Net.
-__MAIL__
-;
+	my $mail = "To: $to\n" .
+		"From: rg3\@rg3.net\n" .
+		$c->loc("Subject: RG3.Net registration\n\n") .
+		$c->loc("Welcome to RG3.Net!\n\n") .
+		$c->loc("Your account has been created. To activate it, go to http://www.rg3.net and log into your account using the username and password below.\n\n") .
+		$c->loc("Username: [_1]\n", $login) .
+		$c->loc("Password: [_1]\n\n", $senha) .
+		$c->loc("We recommend you change this password as soon as you log into your account.\n\n") .
+		$c->loc("Thank you for preferring RG3.Net.\n");
 
 	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
 	print SENDMAIL $mail;
 	close(SENDMAIL);
 }
 
-=head2 mail_cadastro
+=head2 mail_resgate
 
-Envia e-mail de cadastro
+Envia e-mail de resgate de senha
 
 =cut
 
 sub mail_resgate : Private {
-	my ($to, $login, $senha) = @_;
+	my ($c, $to, $login, $senha) = @_;
 	
-	my $mail = <<__MAIL__
-To: $to
-From: rg3\@rg3.net
-Subject: Resgate de senha RG3.Net
-
-Ola, $login
-
-Como solicitado atraves do nosso sistema, uma nova senha foi gerada para
-sua conta.
-
-Nome de usuario: $login
-Senha: $senha
-
-Recomendamos alterar esta senha logo apos acessar sua conta.
-__MAIL__
-;
+	my $mail = "To: $to\n" .
+		"From: rg3\@rg3.net\n" .
+		$c->loc("Subject: RG3.Net password recovery\n\n") .
+		$c->loc("Hello, [_1].\n\n", $login) .
+		$c->loc("As requested, a new password has been generated.\n\n") .
+		$c->loc("Username: [_1]\n", $login) .
+		$c->loc("Password: [_1]\n\n", $senha) .
+		$c->loc("We recommend you change this password as soon as you log into your account.\n");
 
 	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
 	print SENDMAIL $mail;
@@ -256,7 +238,7 @@ sub novo_do : Local {
 	
 	# Envia e-mail com a senha
 	$c->stash->{senha} = $senha[0];
-	&mail_cadastro($usuario->email, $usuario->login, $senha[0]);
+	&mail_cadastro($c, $usuario->email, $usuario->login, $senha[0]);
 	
 	# Exibe a página de conclusão
 	$c->stash->{usuario} = $usuario;
@@ -333,7 +315,7 @@ sub resgate_login : Local {
 	if ($usuario) {
  		my @senha = rand_words;
  		$usuario->update({senha => md5_hex($senha[0])});
- 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		&mail_resgate($c, $usuario->email, $usuario->login, $senha[0]);
  		$c->stash->{usuario} = $usuario;
  		$c->stash->{template} = 'lembrei.tt2';
  	} else {
@@ -357,7 +339,7 @@ sub resgate_email : Local {
 	if ($usuario) {
  		my @senha = rand_words;
  		$usuario->update({senha => md5_hex($senha[0])});
- 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		&mail_resgate($c, $usuario->email, $usuario->login, $senha[0]);
  		$c->stash->{usuario} = $usuario;
  		$c->stash->{template} = 'lembrei.tt2';
  	} else {
@@ -382,7 +364,7 @@ sub resgate_redir : Local {
  		my @senha = rand_words;
  		my $usuario = $redir->usuario;
  		$usuario->update({senha => md5_hex($senha[0])});
- 		&mail_resgate($usuario->email, $usuario->login, $senha[0]);
+ 		&mail_resgate($c, $usuario->email, $usuario->login, $senha[0]);
  		$c->stash->{usuario} = $usuario;
  		$c->stash->{template} = 'lembrei.tt2';
  	} else {
