@@ -554,7 +554,7 @@ msgid "The typed passwords don't match."
 msgstr "As senhas digitadas não coincidem."
 
 #: root/src/usuarios/excluir.tt2:8
-msgid "This user doesn't have any redirection registered."
+msgid "This user doesn't have any redirections registered."
 msgstr "Este usuário não possui nenhum redirecionamento cadastrado."
 
 #: root/src/bloqueado.tt2:3

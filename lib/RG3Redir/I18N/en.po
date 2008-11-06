@@ -542,8 +542,8 @@ msgid "The typed passwords don't match."
 msgstr "The typed passwords don't match."
 
 #: root/src/usuarios/excluir.tt2:8
-msgid "This user doesn't have any redirection registered."
-msgstr "This user doesn't have any redirection registered."
+msgid "This user doesn't have any redirections registered."
+msgstr "This user doesn't have any redirections registered."
 
 #: root/src/bloqueado.tt2:3
 msgid "This user is blocked!"

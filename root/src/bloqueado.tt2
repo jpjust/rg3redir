@@ -4,6 +4,6 @@
 
 <p>[% l('The account and redirections of user <strong>[_1]</strong> are blocked by the reason below:', usuario.login) %]</p>
 
-<p><i>[% usuario.motivo_bloqueio %]</i></p>
+<p><i>[% usuario.motivo_bloqueio.motivo %]</i></p>
 
 <p>[% l('If you own this account and want to know why you are blocked,') %] <a href="/contato.shtml">[% l('contact us') %]</a>.</p>

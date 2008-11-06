@@ -23,6 +23,7 @@ __PACKAGE__->load_classes({
 		Dominios
 		RedirURL
 		Grupos
+		Motivos
 	/]
 });
 
