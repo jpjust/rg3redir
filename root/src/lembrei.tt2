@@ -1,11 +1,11 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Encontramos sua senha') %]</h2>
+<h2>[% l('We have found your password') %]</h2>
 
-<p>[% l('Pronto! A conta <strong>[_1]</strong> foi localizada e uma nova senha gerada e enviada para o e-mail <strong>[_2]</strong>.', usuario.login, usuario.email) %]</p>
+<p>[% l('Great! The account <strong>[_1]</strong> was localized and a new password was generated and sent to <strong>[_2]</strong>.', [usuario.login, usuario.email]) %]</p>
 
-<p>[% l('Em poucos instantes, verifique seu e-mail e use a nova senha para entrar na sua conta.') %]</p>
+<p>[% l('In a few minutes, check your inbox and use your new password to log into your account.') %]</p>
 
-<p><i>[% l('Se o e-mail exibido acima está incorreto ou não existe mais, não será possível receber a senha. Em caso de e-mail desativado, reative-o para receber a senha. Em caso de e-mail incorreto, nada poderá ser feito.') %]</i></p>
+<p><i>[% l("If the e-mail address above is incorrect or doesn't existe anymore, it won't be possible get a new password. In the case of a deactivated e-mail, re-activate it and request your new password again. If the e-mail address is incorrect, nothing can be done :-(") %]</i></p>
 
-<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> [% l('Voltar para a página de login') %]</a></p>
+<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> [% l('Go back to the log in page') %]</a></p>

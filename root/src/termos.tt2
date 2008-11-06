@@ -1,37 +1,36 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Termos de uso do serviço') %]</h2>
+<h2>[% l('Terms of service') %]</h2>
 
-<p>[% l('Como qualquer outro serviço gratuito, definimos algumas regras que deverão ser seguidas por todos os usuários da RG3.Net.') %]</p>
+<p>[% l('As any other free service, we have defined some rules which must be followed by every RG3.Net user.') %]</p>
 
 <div class="mytextbox">
 
-<p>[% l('1. Site de todos os temas são permitidos, inclusive sites de conteúdo adulto. Porém, os conteúdos listados abaixo são proibidos:') %]</p>
+<p>[% l('1. All kind of sites are allowed, including adult ones. However, the contents and kinds of sites listed below are forbidden:') %]</p>
 
 <ul>
-	<li>[% l('Pornografia infantil, propaganda de divulgação ódio ou racismo.') %]</li>
-	<li>[% l('Qualquer espécie de material que viole marcas e patentes, marcas registradas ou direitos autorais.') %]</li>
-	<li>[% l('Qualquer material abusivo, difamatório, de invasão de privacidade, direitos de publicidade.') %]</li>
-	<li>[% l('Material vulgar, obceno, profano, indescente quando violar regras locais de conduta ou legais.') %]</li>
-	<li>[% l('Qualquer tipo de propaganda ou material que promova ou encorage atividades ilegais.') %]</li>
-	<li>[% l('Material de computador com vírus ou dados corrompidos, que possam danificar o computador de um visitante do subdomínio, bem como softwares ilegais ou piratas.') %]</li>
-	<li>[% l('Envio de material não solicitado, por e-mail (SPAM), com qualquer referência a um subdomínio rg3.net.') %]</li>
-	<li>[% l('Material que difame os serviços da RG3.Net ou as empresas RG3.Net Comércio e Serviços Ltda. e Justsoft Informática Ltda.') %]</li>
+	<li>[% l('Child pornography, hate or racism spreading.') %]</li>
+	<li>[% l('Any kind of material which violates patents, trademarks or copyrights.') %]</li>
+	<li>[% l('Any abusive, defamatory or privacy breaking materials.') %]</li>
+	<li>[% l('Any kind of advertising or material which promotes illegal activities.') %]</li>
+	<li>[% l("Computer data containing viruses or corrupted files, which could damage a visitor's computer, as well as illegal or pirate softwares.") %]</li>
+	<li>[% l('Sending of SPAM with any reference to any RG3.Net sub-domain.') %]</li>
+	<li>[% l('Material which defames RG3.Net services or the companies RG3.Net Comercio e Servicos Ltda. and Justsoft Informatica Ltda.') %]</li>
 </ul>
 
-<p>[% l('2. Usuários que efetuarem tentativas de prejudicar o serviço, de qualquer forma, incluindo ataques ao servidor ou ao sistema de redirecionamento, terão suas contas bloqueadas e seus endereços de e-mail serão banidos do sistema.') %]</p>
+<p>[% l('2. Users who try to prejudice our service, in any way, including attacks to our servers or to our services, will have their accounts blocked and their e-mail addresses banned from our system.') %]</p>
 
-<p>[% l('3. Por ser um serviço gratuito, a RG3.Net não poderá ser responsabilizada por danos aos usuários que vierem a ser causados por falhas no sistema de redirecionamento, falhas nos servidores que executam o serviço ou interrupções temporárias do serviço.') %]</p>
+<p>[% l('3. As a free service, RG3.Net will not take any responsibilities for any kind of damage caused by system failures, servers failures or temporary interruptions.') %]</p>
 
-<p>[% l('4. A RG3.Net se reserva ao direito de alterar a qualquer momento os termos de uso deste serviço, sendo responsabilidade do usuário manter-se atualizado sobre as regras aqui descritas.') %]</p>
+<p>[% l("4. RG3.Net can, at any moment, change the terms of this service, being users' responsability of keep up to date with the rules here described.") %]</p>
 
-<p>[% l('5. A RG3.Net poderá fornecer dados de acesso dos usuários, como data de cadastro, data do último acesso, endereço IP usado no momento do cadastro e endereço IP usado no momento do último acesso, para autoridades, mediante solicitações oficiais, a fim de colaborar em investigações, buscas e outras atividades da lei.') %]</p>
+<p>[% l("5. RG3.Net can give users' information, as registration date, last visit date and IP address, to authorities when requested.") %]</p>
 
 </div>
 
-<p>[% l('Ao clicar em &quot;Aceito os Termos&quot; e efetuando seu cadastro, você está concordando com os termos acima.') %]</p>
+<p>[% l('By clicking &quot;I accept the terms&quot; and completing your registration, you are agreeing with the terms above.') %]</p>
 
 <p align="center">
-	<a href="[% Catalyst.uri_for('/login/criar') %]"><img src="/redirapp/static/images/accept.png" align="top"> [% l('Aceito os Termos') %]</a> ::
-	<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> [% l('Voltar') %]</a>
+	<a href="[% Catalyst.uri_for('/login/criar') %]"><img src="/redirapp/static/images/accept.png" align="top"> [% l('I accept the terms') %]</a> ::
+	<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> [% l('Back') %]</a>
 </p>

@@ -1,3 +1,5 @@
+[% PROCESS site/macros %]
+
 <!-- BEGIN site/header -->
 <div class="topbanner">
 	<table border="0" align="center">
@@ -27,13 +29,13 @@
 
 <div class="topmenu" align="center">
 [% IF Catalyst.user_exists %]
-	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]"><img src="/redirapp/static/images/information.png" align="top"> Status da conta</a> ::
-	<a href="[% Catalyst.uri_for('/redir/lista') %]"><img src="/redirapp/static/images/arrow_rotate_clockwise.png" align="top"> Listar redirecionamentos</a> ::
-	<a href="[% Catalyst.uri_for('/usuarios/editar') %]"><img src="/redirapp/static/images/user_edit.png" align="top"> Alterar e-mail e/ou senha</a> ::
-	<a href="[% Catalyst.uri_for('/usuarios/excluir') %]"><img src="/redirapp/static/images/delete.png" align="top"> Cancelar conta</a> ::
-	<a href="[% Catalyst.uri_for('/logout') %]"><img src="/redirapp/static/images/disconnect.png" align="top"> Sair ([% Catalyst.user %])</a>
+	<a href="[% Catalyst.uri_for('/usuarios/inicio') %]"><img src="/redirapp/static/images/information.png" align="top"> [% l('Account status') %]</a> ::
+	<a href="[% Catalyst.uri_for('/redir/lista') %]"><img src="/redirapp/static/images/arrow_rotate_clockwise.png" align="top"> [% l('Show my URL redirections') %]</a> ::
+	<a href="[% Catalyst.uri_for('/usuarios/editar') %]"><img src="/redirapp/static/images/user_edit.png" align="top"> [% l('Change e-mail and/or password') %]</a> ::
+	<a href="[% Catalyst.uri_for('/usuarios/excluir') %]"><img src="/redirapp/static/images/delete.png" align="top"> [% l('Cancel my account') %]</a> ::
+	<a href="[% Catalyst.uri_for('/logout') %]"><img src="/redirapp/static/images/disconnect.png" align="top"> [% l('Log out') %] ([% Catalyst.user %])</a>
 [% ELSE %]
-	<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Página inicial</a>
+	<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> [% l('Home page') %]</a>
 [% END %]
 </div>
 

@@ -1,7 +1,7 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Não encontramos sua senha') %]</h2>
+<h2>[% l("We couldn't find your password") %]</h2>
 
-<p>[% l('Infelizmente não encontramos nenhuma conta com a informação fornecida. Volte para a página anterior e tente lembrar do nome de usuário, e-mail ou algum redirecionamento pertencente à sua conta.') %]</p>
+<p>[% l("Unfortunately, we didn't find any account with the information provided. Go back to the previous page and try to remember your username, registered e-mail address or any URL redirection of your account.") %]</p>
 
-<a href="[% Catalyst.uri_for('/login/esqueci') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> [% l('Voltar') %]</a></p>
+<a href="[% Catalyst.uri_for('/login/esqueci') %]"><img src="/redirapp/static/images/arrow_left.png" align="top"> [% l('Back') %]</a></p>

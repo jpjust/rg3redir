@@ -40,7 +40,7 @@ Handle Catalyst::Plugin::Authorization::ACL access denied exceptions
 
 sub access_denied : Private {
 	my ($self, $c) = @_;
-	$c->stash->{error_msg} = $c->loc('Você não tem permissão para acessar este recurso.');
+	$c->stash->{error_msg} = $c->loc('You are not allowed to access this resource.');
 	$c->forward('inicio');
 }
 
@@ -89,7 +89,7 @@ sub editar_do : Local {
 	# Verifica se o e-mail já existe
 	my $ver = $c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first;
 	if (($ver) && ($ver->uid != $c->user->uid)) {
-		$c->stash->{error_msg} = $c->loc('Este e-mail já está cadastrado. Por favor, use outro e-mail para atualizar seu cadastro.');
+		$c->stash->{error_msg} = $c->loc('The typed e-mail address has already been registered. Please, use another one to update your registry.');
 		$c->forward('editar');
 		return;
 	}
@@ -104,7 +104,7 @@ sub editar_do : Local {
 		if ($p->{pwd1} eq $p->{pwd2}) {
 			$dados->{senha} = md5_hex($p->{pwd1});
 		} else {
-			$c->stash->{error_msg} = $c->loc('As senhas digitadas não coincidem.');
+			$c->stash->{error_msg} = $c->loc("The typed passwords don't match.");
 			$c->forward('editar');
 			return;
 		}
@@ -127,7 +127,7 @@ sub editar_do : Local {
 	$usuario->update($dados);
 	
 	# Volta para a página inicial
-	$c->stash->{status_msg} = $c->loc('Dados salvos com sucesso.');
+	$c->stash->{status_msg} = $c->loc('Data successfully saved.');
 	$c->forward('/usuarios/inicio');
 }
 

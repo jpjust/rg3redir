@@ -23,6 +23,5 @@ __PACKAGE__->belongs_to(grupo => 'RG3RedirDB::Grupos', 'id_grupo');
 #     2) Name of the model class referenced by this relationship
 #     3) Column name in *foreign* table
 __PACKAGE__->has_many(urls => 'RG3RedirDB::RedirURL', 'id_dominio');
-__PACKAGE__->has_many(mails => 'RG3RedirDB::RedirMail', 'id_dominio');
 
 1;

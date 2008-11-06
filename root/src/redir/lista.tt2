@@ -1,20 +1,19 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Redirecionamentos') %]</h2>
+<h2>[% l('URL redirections') %]</h2>
 
 <p>
-	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Criar redirecionamento de URL') %]</a>
-	<!-- <a href="[% Catalyst.uri_for('/redir/novo_mail') %]"><img src="/redirapp/static/images/email_add.png" align="top"> [% l('Criar redirecionamento de e-mail') %]</a> -->
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Create a new URL redirection') %]</a>
 </p>
 
 <h3>[% l('URLs') %] ([% urls.size %])</h3>
 
 <table width="100%">
 	<tr>
-		<th>[% l('Redirecionamento') %]</th>
-		<th>[% l('Destino') %]</th>
-		<th>[% l('Acessos') %]</th>
-		<th>[% l('Ações') %]</th>
+		<th>[% l("Redirection's address") %]</th>
+		<th>[% l('Target address') %]</th>
+		<th>[% l('Hits') %]</th>
+		<th>[% l('Actions') %]</th>
 	</tr>
 	
 	[% FOREACH redirecionamento IN urls %]
@@ -23,8 +22,8 @@
 		<td>[% redirecionamento.para %]</td>
 		<td>[% redirecionamento.acessos %]</td>
 		<td>
-			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/application_form_edit.png" align="top">[% l('Editar') %]</a>
-			<br><a href="javascript:void(0)" onClick="javascript:askuser('[% l('Tem certeza que deseja excluir este redirecionamento?') %]', '[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]');"><img src="/redirapp/static/images/delete.png" align="top">[% l('Remover') %]</a>
+			<a href="[% Catalyst.uri_for('/redir/editar_url/') _ redirecionamento.id %]"><img src="/redirapp/static/images/application_form_edit.png" align="top">[% l('Edit') %]</a>
+			<br><a href="javascript:void(0)" onClick="javascript:askuser('[% l("Are you sure you want to delete this URL redirection?") %]', '[% Catalyst.uri_for('/redir/excluir_url/') _ redirecionamento.id %]');"><img src="/redirapp/static/images/delete.png" align="top">[% l('Delete') %]</a>
 		</td>
 	</tr>
 	[% END %]

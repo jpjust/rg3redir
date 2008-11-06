@@ -1,7 +1,0 @@
-<h2>Redirecionamento órfão</h2>
-
-<p>O redirecionamento <strong>[% redir %]</strong> está órfão. Isto significa que ele pertencia a uma conta antiga que não foi unificada na versão anterior do sistema. Ou seja, este redirecionamento não tem dono.</p>
-
-<p>É possível tomar posse deste redirecionamento. Caso queira fazê-lo, <a href="/contato.shtml">entre em contato conosco</a>.</p>
-
-<a href="[% Catalyst.uri_for('/login') %]"><img src="/redirapp/static/images/application_home.png" align="top"> Voltar para a página de login</a></p>

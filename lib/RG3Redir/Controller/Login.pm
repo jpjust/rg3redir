@@ -164,7 +164,7 @@ sub index : Private {
 			$c->forward('/usuarios/inicio');
 			return;
 		} else {
-			$c->stash->{error_msg} = $c->loc("Usuário e/ou senha inválidos.");
+			$c->stash->{error_msg} = $c->loc("Authentication failure.");
 		}
 	}
 	
@@ -207,12 +207,12 @@ sub novo_do : Local {
 
 	# Verifica se o login já existe
 	if ($c->model('RG3RedirDB::Usuarios')->search({login => $p->{login}})->first) {
-		$c->stash->{erro_login} = $c->loc('O nome de usuário escolhido já está cadastrado. Por favor, escolha outro nome.');
+		$c->stash->{erro_login} = $c->loc('The choosen username has already been taken. Please, choose another one.');
 	}
 
 	# Verifica se o e-mail já existe
 	if ($c->model('RG3RedirDB::Usuarios')->search({email => $p->{email}})->first) {
-		$c->stash->{erro_email} = $c->loc('Este e-mail já está cadastrado. Por favor, use outro e-mail para efetuar o cadastro.');
+		$c->stash->{erro_email} = $c->loc('The typed e-mail address has already been registered. Please, use another e-mail address.');
 	}
 
 	if (($c->stash->{erro_login}) || ($c->stash->{erro_email})) {
@@ -379,12 +379,6 @@ sub resgate_redir : Local {
 	
 	my $redir = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{redir}, id_dominio => $p->{dominio}})->first;
 	if ($redir) {
-		if ($redir->usuario->login eq 'rg3') {
-			$c->stash->{redir} = $redir->de . '.' . $redir->dominio->nome;
-			$c->stash->{template} = 'orfao.tt2';
-			return;
-		}
-		
  		my @senha = rand_words;
  		my $usuario = $redir->usuario;
  		$usuario->update({senha => md5_hex($senha[0])});

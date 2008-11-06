@@ -88,7 +88,7 @@ sub novo_url_do : Local {
 	# Verifica se o redirecionamento já existe
 	my $ver = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first;
 	if (($ver) && ($ver->id != $p->{id})) {
-		$c->stash->{erro_redir} = $c->loc('O redirecionamento escolhido já está cadastrado. Por favor, escolha outro nome.');
+		$c->stash->{erro_redir} = $c->loc('The choosen address has already been taken. Please, choose another one.');
 		$c->stash->{redir} = $p;
 		$c->forward('novo_url');
 		return;
@@ -124,7 +124,7 @@ sub novo_url_do : Local {
 	my $redir = $c->model('RG3RedirDB::RedirURL')->update_or_create($dados);
 	
 	# Volta para a página inicial
-	$c->stash->{status_msg} = $c->loc('Redirecionamento criado/alterado com sucesso.');
+	$c->stash->{status_msg} = $c->loc('URL redirection successfully created/edited.');
 	$c->forward('/redir/lista');
 }
 
@@ -139,103 +139,9 @@ sub excluir_url : Local {
 	my $redir = $c->model('RG3RedirDB::RedirURL')->search({uid => $c->user->uid, id => $id})->first;
 	if ($redir) {
 		$redir->delete;
-		$c->stash->{error_msg} = $c->loc('Redirecionamento excluído.');
+		$c->stash->{error_msg} = $c->loc('URL redirection deleted.');
 	} else {
-		$c->stash->{error_msg} = $c->loc('Redirecionamento não encontrado.');
-	}
-	$c->forward('lista');
-}
-
-=head2 novo_mail
-
-Exibe a página para criação de novo redirecionamento de e-mail.
-
-=cut
-
-sub novo_mail : Local {
-	my ($self, $c) = @_;
-	$c->stash->{dominios} = [$c->model('RG3RedirDB::Dominios')->all];
-	$c->stash->{template} = 'redir/novo_mail.tt2';
-}
-
-=head2 editar_mail
-
-Exibe a página para edirção de um redirecionamento de e-mail.
-
-=cut
-
-sub editar_mail : Local {
-	my ($self, $c, $id) = @_;
-	$c->stash->{redir} = $c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid, id => $id})->first;
-	$c->stash->{dominios} = [$c->model('RG3RedirDB::Dominios')->all];
-	$c->stash->{template} = 'redir/novo_mail.tt2';
-}
-
-=head2 novo_mail_do
-
-Salva as alterações do redirecionamento.
-
-=cut
-
-sub novo_mail_do : Local {
-	my ($self, $c) = @_;
-
-	# Parâmetros
-	my $p = $c->request->params;
-	
-	# Verifica se o redirecionamento já existe
-	if ($c->model('RG3RedirDB::RedirMail')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first) {
-		$c->stash->{erro_redir} = $c->loc('O redirecionamento escolhido já está cadastrado. Por favor, escolha outro nome.');
-		$c->stash->{redir} = $p;
-		$c->forward('novo_mail');
-		return;
-	}
-
-	# Hash com alterações
-	my $dados = {
-		id			=> $p->{id} || -1,
-		uid			=> $c->user->uid,
-		de			=> $p->{de},
-		id_dominio	=> $p->{dominio},
-		para		=> $p->{para},
-		data_umod	=> strftime "%Y-%m-%d %H:%M:%S", localtime,
-	};
-	
-	# Valida formulário
-	my $val = Data::FormValidator->check(
-		$dados,
-		{required => [qw(uid de id_dominio para)]}
-	);
-	
-	if (!$val->success()) {
-		$c->stash->{val} = $val;
-		$c->stash->{redir} = $p;
-		$c->forward('novo_mail');
-		return;
-	}
-	
-	# Cria ou atualiza
-	my $redir = $c->model('RG3RedirDB::RedirMail')->update_or_create($dados);
-	
-	# Volta para a página inicial
-	$c->stash->{status_msg} = $c->loc('Redirecionamento criado/alterado com sucesso.');
-	$c->forward('/redir/lista');
-}
-
-=head2 excluir_mail
-
-Apaga um redirecionamento de e-mail.
-
-=cut
-
-sub excluir_mail : Local {
-	my ($self, $c, $id) = @_;
-	my $redir = $c->model('RG3RedirDB::RedirMail')->search({uid => $c->user->uid, id => $id})->first;
-	if ($redir) {
-		$redir->delete;
-		$c->stash->{error_msg} = $c->loc('Redirecionamento excluído.');
-	} else {
-		$c->stash->{error_msg} = $c->loc('Redirecionamento não encontrado.');
+		$c->stash->{error_msg} = $c->loc('URL redirection not found.');
 	}
 	$c->forward('lista');
 }

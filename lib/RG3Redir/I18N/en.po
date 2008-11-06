@@ -1,0 +1,661 @@
+# English translations for RG package.
+# Copyright (C) 2008 THE RG'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the RG package.
+# Joao Paulo Just <just@rg3.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: RG 3Redir\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2008-11-06 10:31+0000\n"
+"Last-Translator: Joao Paulo Just <just@rg3.net>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: root/src/termos.tt2:9
+msgid ""
+"1. All kind of sites are allowed, including adult ones. However, the "
+"contents and kinds of sites listed below are forbidden:"
+msgstr ""
+"1. All kind of sites are allowed, including adult ones. However, the "
+"contents and kinds of sites listed below are forbidden:"
+
+#: root/src/termos.tt2:21
+msgid ""
+"2. Users who try to prejudice our service, in any way, including attacks to "
+"our servers or to our services, will have their accounts blocked and their e-"
+"mail addresses banned from our system."
+msgstr ""
+"2. Users who try to prejudice our service, in any way, including attacks to "
+"our servers or to our services, will have their accounts blocked and their e-"
+"mail addresses banned from our system."
+
+#: root/src/termos.tt2:23
+msgid ""
+"3. As a free service, RG3.Net will not take any responsibilities for any "
+"kind of damage caused by system failures, servers failures or temporary "
+"interruptions."
+msgstr ""
+"3. As a free service, RG3.Net will not take any responsibilities for any "
+"kind of damage caused by system failures, servers failures or temporary "
+"interruptions."
+
+#: root/src/termos.tt2:25
+msgid ""
+"4. RG3.Net can, at any moment, change the terms of this service, being "
+"users' responsability of keep up to date with the rules here described."
+msgstr ""
+"4. RG3.Net can, at any moment, change the terms of this service, being "
+"users' responsability of keep up to date with the rules here described."
+
+#: root/src/termos.tt2:27
+msgid ""
+"5. RG3.Net can give users' information, as registration date, last visit "
+"date and IP address, to authorities when requested."
+msgstr ""
+"5. RG3.Net can give users' information, as registration date, last visit "
+"date and IP address, to authorities when requested."
+
+#: root/src/usuarios/excluir.tt2:5
+msgid "ATTENTION:"
+msgstr "ATTENTION:"
+
+#: root/src/usuarios/excluir.tt2:3
+msgid "Account cancelation"
+msgstr "Account cancelation"
+
+#: root/src/usuarios/editar.tt2:3
+msgid "Account information"
+msgstr "Account information"
+
+#: root/lib/site/header:32 root/src/usuarios/inicio.tt2:13
+msgid "Account status"
+msgstr "Account status"
+
+#: root/src/redir/lista.tt2:16
+msgid "Actions"
+msgstr "Actions"
+
+#: root/src/termos.tt2:14
+msgid "Any abusive, defamatory or privacy breaking materials."
+msgstr "Any abusive, defamatory or privacy breaking materials."
+
+#: root/src/termos.tt2:15
+msgid "Any kind of advertising or material which promotes illegal activities."
+msgstr "Any kind of advertising or material which promotes illegal activities."
+
+#: root/src/termos.tt2:13
+msgid "Any kind of material which violates patents, trademarks or copyrights."
+msgstr "Any kind of material which violates patents, trademarks or copyrights."
+
+#. (usuario)
+#: root/src/usuarios/excluir.tt2:17
+msgid ""
+"Are you sure you want to delete the account <strong>%1</strong> and all of "
+"its redirections?"
+msgstr ""
+"Are you sure you want to delete the account <strong>%1</strong> and all of "
+"its redirections?"
+
+#: root/src/redir/lista.tt2:26
+msgid "Are you sure you want to delete this URL redirection?"
+msgstr "Are you sure you want to delete this URL redirection?"
+
+#: root/src/termos.tt2:5
+msgid ""
+"As any other free service, we have defined some rules which must be followed "
+"by every RG3.Net user."
+msgstr ""
+"As any other free service, we have defined some rules which must be followed "
+"by every RG3.Net user."
+
+#: root/src/novo_login.tt2:31
+msgid "Attention:"
+msgstr "Attention:"
+
+#: lib/RG3Redir/Controller/Login.pm:167
+msgid "Authentication failure."
+msgstr "Authentication failure."
+
+#: root/src/nao_lembrei.tt2:7 root/src/termos.tt2:35
+msgid "Back"
+msgstr "Back"
+
+#: root/src/termos.tt2:31
+msgid ""
+"By clicking &quot;I accept the terms&quot; and completing your registration, "
+"you are agreeing with the terms above."
+msgstr ""
+"By clicking &quot;I accept the terms&quot; and completing your registration, "
+"you are agreeing with the terms above."
+
+#: root/src/usuarios/excluir.tt2:5
+msgid ""
+"By clicking the button below, your account and all your redirections will be "
+"deleted. There will be no way of reverting this procedure. The redirections "
+"below will be deleted:"
+msgstr ""
+"By clicking the button below, your account and all your redirections will be "
+"deleted. There will be no way of reverting this procedure. The redirections "
+"below will be deleted:"
+
+#: root/lib/site/header:35
+msgid "Cancel my account"
+msgstr "Cancel my account"
+
+#: root/lib/site/header:34
+msgid "Change e-mail and/or password"
+msgstr "Change e-mail and/or password"
+
+#: root/src/novo_login.tt2:31
+msgid ""
+"Check if the e-mail address was typed correctly. The password for your "
+"account will be sent to the e-mail address specified above."
+msgstr ""
+"Check if the e-mail address was typed correctly. The password for your "
+"account will be sent to the e-mail address specified above."
+
+#: root/src/termos.tt2:12
+msgid "Child pornography, hate or racism spreading."
+msgstr "Child pornography, hate or racism spreading."
+
+#: root/src/login.tt2:40
+msgid "Click here"
+msgstr "Click here"
+
+#: root/src/login.tt2:33
+msgid "Click here to create your new account"
+msgstr "Click here to create your new account"
+
+#: root/src/termos.tt2:16
+msgid ""
+"Computer data containing viruses or corrupted files, which could damage a "
+"visitor's computer, as well as illegal or pirate softwares."
+msgstr ""
+"Computer data containing viruses or corrupted files, which could damage a "
+"visitor's computer, as well as illegal or pirate softwares."
+
+#: root/lib/site/footer:9
+msgid "Copyright (c) 2008 Justsoft Informatica Ltda."
+msgstr "Copyright (c) 2008 Justsoft Informatica Ltda."
+
+#: root/src/redir/lista.tt2:6 root/src/usuarios/inicio.tt2:10
+msgid "Create a new URL redirection"
+msgstr "Create a new URL redirection"
+
+#: root/src/login.tt2:31 root/src/login.tt2:33
+msgid "Create your account"
+msgstr "Create your account"
+
+#: lib/RG3Redir/Controller/Usuarios.pm:130
+msgid "Data successfully saved."
+msgstr "Data successfully saved."
+
+#: root/src/redir/lista.tt2:26
+msgid "Delete"
+msgstr "Delete"
+
+#: root/src/redir/novo_url.tt2:47
+msgid "Description:"
+msgstr "Description:"
+
+#: root/src/login.tt2:45
+msgid "Developed by Justsoft Informatica Ltda."
+msgstr "Developed by Justsoft Informatica Ltda."
+
+#. ([ usuario.login, usuario.email ])
+#: root/src/novo_login_ok.tt2:5
+msgid ""
+"Done! The account <strong>%1</strong> have been created. A temporary "
+"password have been sent to <strong>%2</strong>. Check your inbox to see your "
+"password and log into your new account."
+msgstr ""
+"Done! The account <strong>%1</strong> have been created. A temporary "
+"password have been sent to <strong>%2</strong>. Check your inbox to see your "
+"password and log into your new account."
+
+#: root/src/novo_login.tt2:23
+msgid "E-mail address"
+msgstr "E-mail address"
+
+#: root/src/usuarios/editar.tt2:19
+msgid "E-mail address:"
+msgstr "E-mail address:"
+
+#: root/src/redir/lista.tt2:25
+msgid "Edit"
+msgstr "Edit"
+
+#: root/src/redir/novo_url.tt2:35
+msgid "Ex.: http://www.mycurrentfuzzyaddress.com/members/john"
+msgstr "Ex.: http://www.mycurrentfuzzyaddress.com/members/john"
+
+#: root/src/novo_login.tt2:17 root/src/redir/novo_url.tt2:16
+msgid "Ex.: john"
+msgstr "Ex.: john"
+
+#: root/src/login.tt2:38
+msgid "Forgot your password?"
+msgstr "Forgot your password?"
+
+#: root/lib/site/html:9
+msgid "Free URL redirection service without ads."
+msgstr "Free URL redirection service without ads."
+
+#: root/src/esqueci.tt2:12 root/src/esqueci.tt2:20 root/src/esqueci.tt2:37
+msgid "Get a new password"
+msgstr "Get a new password"
+
+#: root/src/lembrei.tt2:11
+msgid "Go back to the log in page"
+msgstr "Go back to the log in page"
+
+#: root/src/novo_login_ok.tt2:9
+msgid "Go to the home page"
+msgstr "Go to the home page"
+
+#. ([ usuario.login, usuario.email ])
+#: root/src/lembrei.tt2:5
+msgid ""
+"Great! The account <strong>%1</strong> was localized and a new password was "
+"generated and sent to <strong>%2</strong>."
+msgstr ""
+"Great! The account <strong>%1</strong> was localized and a new password was "
+"generated and sent to <strong>%2</strong>."
+
+#: root/src/redir/lista.tt2:15
+msgid "Hits"
+msgstr "Hits"
+
+#: root/lib/site/header:38
+msgid "Home page"
+msgstr "Home page"
+
+#: root/src/termos.tt2:34
+msgid "I accept the terms"
+msgstr "I accept the terms"
+
+#: root/src/esqueci.tt2:41
+msgid "I don't remember anything!"
+msgstr "I don't remember anything!"
+
+#: root/src/esqueci.tt2:3
+msgid "I forgot my password :-( or even my username :p"
+msgstr "I forgot my password :-( or even my username :p"
+
+#: root/src/login.tt2:47
+msgid "Icons by"
+msgstr "Icons by"
+
+#: root/src/lembrei.tt2:9
+msgid ""
+"If the e-mail address above is incorrect or doesn't existe anymore, it won't "
+"be possible get a new password. In the case of a deactivated e-mail, re-"
+"activate it and request your new password again. If the e-mail address is "
+"incorrect, nothing can be done :-("
+msgstr ""
+"If the e-mail address above is incorrect or doesn't existe anymore, it won't "
+"be possible get a new password. In the case of a deactivated e-mail, re-"
+"activate it and request your new password again. If the e-mail address is "
+"incorrect, nothing can be done :-("
+
+#: root/src/esqueci.tt2:25
+msgid ""
+"If you don't remember your username or the e-mail address you used to create "
+"your account, type any URL redirection address you own in the field below "
+"and our system will find your account."
+msgstr ""
+"If you don't remember your username or the e-mail address you used to create "
+"your account, type any URL redirection address you own in the field below "
+"and our system will find your account."
+
+#: root/src/esqueci.tt2:17
+msgid ""
+"If you forgot your username, but still remember the e-mail address you used "
+"when created your account, you can type the e-mail address in the field "
+"below to get a new password."
+msgstr ""
+"If you forgot your username, but still remember the e-mail address you used "
+"when created your account, you can type the e-mail address in the field "
+"below to get a new password."
+
+#: root/src/bloqueado.tt2:9
+msgid "If you own this account and want to know why you are blocked,"
+msgstr "If you own this account and want to know why you are blocked,"
+
+#: root/src/esqueci.tt2:9
+msgid ""
+"If you still remember your username, just type it in this field to get your "
+"password. Our system will generate a new password and send it to your e-mail "
+"address."
+msgstr ""
+"If you still remember your username, just type it in this field to get your "
+"password. Our system will generate a new password and send it to your e-mail "
+"address."
+
+#: root/src/lembrei.tt2:7
+msgid ""
+"In a few minutes, check your inbox and use your new password to log into "
+"your account."
+msgstr ""
+"In a few minutes, check your inbox and use your new password to log into "
+"your account."
+
+#: root/src/usuarios/editar.tt2:9
+msgid ""
+"In case you don't want to change your password, just leave the password "
+"fields below empty."
+msgstr ""
+"In case you don't want to change your password, just leave the password "
+"fields below empty."
+
+#: root/src/esqueci.tt2:5
+msgid ""
+"In case you have forgotten your password or even your username, it's "
+"possible to recover them. You just need to use one of the methods below."
+msgstr ""
+"In case you have forgotten your password or even your username, it's "
+"possible to recover them. You just need to use one of the methods below."
+
+#: root/src/novo_login.tt2:33
+msgid "Join"
+msgstr "Join"
+
+#: root/src/redir/novo_url.tt2:51
+msgid "Keywords (separated by spaces):"
+msgstr "Keywords (separated by spaces):"
+
+#: root/src/login.tt2:22 root/src/login.tt2:7
+msgid "Log in"
+msgstr "Log in"
+
+#: root/src/novo_login_ok.tt2:7
+msgid ""
+"Log into your new account as soon as you get your temporary password. The "
+"accounts which are not logged in on their first week are automatically "
+"deleted."
+msgstr ""
+"Log into your new account as soon as you get your temporary password. The "
+"accounts which are not logged in on their first week are automatically "
+"deleted."
+
+#: root/lib/site/header:36
+msgid "Log out"
+msgstr "Log out"
+
+#: root/src/termos.tt2:18
+msgid ""
+"Material which defames RG3.Net services or the companies RG3.Net Comercio e "
+"Servicos Ltda. and Justsoft Informatica Ltda."
+msgstr ""
+"Material which defames RG3.Net services or the companies RG3.Net Comercio e "
+"Servicos Ltda. and Justsoft Informatica Ltda."
+
+#: root/src/novo_login.tt2:3
+msgid "New RG3.Net user"
+msgstr "New RG3.Net user"
+
+#: root/src/novo_login_ok.tt2:3
+msgid "New RG3.Net user registered"
+msgstr "New RG3.Net user registered"
+
+#: root/src/redir/novo_url.tt2:3
+msgid "New URL redirection"
+msgstr "New URL redirection"
+
+#: root/src/usuarios/editar.tt2:23
+msgid "New password:"
+msgstr "New password:"
+
+#: root/src/login.tt2:17
+msgid "Password:"
+msgstr "Password:"
+
+#: root/lib/site/html:10
+msgid "RG3.Net - URL redirections"
+msgstr "RG3.Net - URL redirections"
+
+#: root/src/usuarios/editar.tt2:27
+msgid "Re-type your new password:"
+msgstr "Re-type your new password:"
+
+#: root/src/redir/lista.tt2:13 root/src/redir/novo_url.tt2:12
+msgid "Redirection's address"
+msgstr "Redirection's address"
+
+#: root/src/usuarios/inicio.tt2:17
+msgid "Registered e-mail:"
+msgstr "Registered e-mail:"
+
+#: root/src/redir/novo_url.tt2:55 root/src/usuarios/editar.tt2:32
+msgid "Save"
+msgstr "Save"
+
+#: root/src/termos.tt2:17
+msgid "Sending of SPAM with any reference to any RG3.Net sub-domain."
+msgstr "Sending of SPAM with any reference to any RG3.Net sub-domain."
+
+#: root/lib/site/header:33
+msgid "Show my URL redirections"
+msgstr "Show my URL redirections"
+
+#: root/src/redir/novo_url.tt2:39
+msgid "Site information (optional)"
+msgstr "Site information (optional)"
+
+#: root/src/redir/novo_url.tt2:43
+msgid "Site title:"
+msgstr "Site title:"
+
+#: root/src/novo_login.tt2:6 root/src/redir/novo_url.tt2:6
+#: root/src/usuarios/editar.tt2:6
+msgid "Some mandatory fields are missing."
+msgstr "Some mandatory fields are missing."
+
+#: root/src/redir/lista.tt2:14 root/src/redir/novo_url.tt2:31
+msgid "Target address"
+msgstr "Target address"
+
+#: root/src/login.tt2:49 root/src/termos.tt2:3
+msgid "Terms of service"
+msgstr "Terms of service"
+
+#. (usuario.login)
+#: root/src/bloqueado.tt2:5
+msgid ""
+"The account and redirections of user <strong>%1</strong> are blocked by the "
+"reason below:"
+msgstr ""
+"The account and redirections of user <strong>%1</strong> are blocked by the "
+"reason below:"
+
+#: lib/RG3Redir/Controller/Redir.pm:91
+msgid "The choosen address has already been taken. Please, choose another one."
+msgstr ""
+"The choosen address has already been taken. Please, choose another one."
+
+#: lib/RG3Redir/Controller/Login.pm:210
+msgid ""
+"The choosen username has already been taken. Please, choose another one."
+msgstr ""
+"The choosen username has already been taken. Please, choose another one."
+
+#: lib/RG3Redir/Controller/Login.pm:215
+msgid ""
+"The typed e-mail address has already been registered. Please, use another e-"
+"mail address."
+msgstr ""
+"The typed e-mail address has already been registered. Please, use another e-"
+"mail address."
+
+#: lib/RG3Redir/Controller/Usuarios.pm:92
+msgid ""
+"The typed e-mail address has already been registered. Please, use another "
+"one to update your registry."
+msgstr ""
+"The typed e-mail address has already been registered. Please, use another "
+"one to update your registry."
+
+#: lib/RG3Redir/Controller/Usuarios.pm:107
+msgid "The typed passwords don't match."
+msgstr "The typed passwords don't match."
+
+#: root/src/usuarios/excluir.tt2:8
+msgid "This user doesn't have any redirection registered."
+msgstr "This user doesn't have any redirection registered."
+
+#: root/src/bloqueado.tt2:3
+msgid "This user is blocked!"
+msgstr "This user is blocked!"
+
+#: root/src/redir/novo_url.tt2:14
+msgid ""
+"Type the redirection's address in the field below and choose a sub-domain in "
+"the list aside. Only letters, digits, hyphens (-) and undersocres (_) are "
+"allowed. You don't need to type &quot;www.&quot; before the address."
+msgstr ""
+"Type the redirection's address in the field below and choose a sub-domain in "
+"the list aside. Only letters, digits, hyphens (-) and undersocres (_) are "
+"allowed. You don't need to type &quot;www.&quot; before the address."
+
+#: root/src/redir/novo_url.tt2:33
+msgid "Type the target address of your new URL redirection in the field below."
+msgstr ""
+"Type the target address of your new URL redirection in the field below."
+
+#: root/src/novo_login.tt2:15
+msgid ""
+"Type the username you would like to use in the field below. You will need an "
+"username to log into your new account."
+msgstr ""
+"Type the username you would like to use in the field below. You will need an "
+"username to log into your new account."
+
+#: root/src/novo_login.tt2:25
+msgid ""
+"Type your e-mail address in the field below, so we can send you a password."
+msgstr ""
+"Type your e-mail address in the field below, so we can send you a password."
+
+#: lib/RG3Redir/Controller/Redir.pm:142
+msgid "URL redirection deleted."
+msgstr "URL redirection deleted."
+
+#: lib/RG3Redir/Controller/Redir.pm:144
+msgid "URL redirection not found."
+msgstr "URL redirection not found."
+
+#: lib/RG3Redir/Controller/Redir.pm:127
+msgid "URL redirection successfully created/edited."
+msgstr "URL redirection successfully created/edited."
+
+#: root/src/redir/lista.tt2:3
+msgid "URL redirections"
+msgstr "URL redirections"
+
+#: root/src/usuarios/inicio.tt2:21
+msgid "URL redirections:"
+msgstr "URL redirections:"
+
+#: root/src/redir/lista.tt2:9
+msgid "URLs"
+msgstr "URLs"
+
+#: root/src/esqueci.tt2:43
+msgid ""
+"Unfortunately, in this case, we can't help you. We suggest that you create a "
+"new account with new URL redirections :-("
+msgstr ""
+"Unfortunately, in this case, we can't help you. We suggest that you create a "
+"new account with new URL redirections :-("
+
+#: root/src/nao_lembrei.tt2:5
+msgid ""
+"Unfortunately, we didn't find any account with the information provided. Go "
+"back to the previous page and try to remember your username, registered e-"
+"mail address or any URL redirection of your account."
+msgstr ""
+"Unfortunately, we didn't find any account with the information provided. Go "
+"back to the previous page and try to remember your username, registered e-"
+"mail address or any URL redirection of your account."
+
+#: root/src/novo_login.tt2:13
+msgid "Username"
+msgstr "Username"
+
+#: root/src/login.tt2:13 root/src/usuarios/editar.tt2:15
+msgid "Username:"
+msgstr "Username:"
+
+#: root/src/esqueci.tt2:15
+msgid "Using my e-mail address"
+msgstr "Using my e-mail address"
+
+#: root/src/esqueci.tt2:7
+msgid "Using my username"
+msgstr "Using my username"
+
+#: root/src/esqueci.tt2:23
+msgid "Using one of my URL redirections"
+msgstr "Using one of my URL redirections"
+
+#: root/src/nao_lembrei.tt2:3
+msgid "We couldn't find your password"
+msgstr "We couldn't find your password"
+
+#: root/src/lembrei.tt2:3
+msgid "We have found your password"
+msgstr "We have found your password"
+
+#: root/src/novo_login.tt2:11
+msgid ""
+"We thank you the interest of joining our group of users. You just need to "
+"fill the two fields below to complete your registration."
+msgstr ""
+"We thank you the interest of joining our group of users. You just need to "
+"fill the two fields below to complete your registration."
+
+#. (usuario.login)
+#: root/src/usuarios/inicio.tt2:3
+msgid "Welcome, %1."
+msgstr "Welcome, %1."
+
+#: root/src/usuarios/excluir.tt2:21
+msgid "Yes, I want to delete my account!"
+msgstr "Yes, I want to delete my account!"
+
+#: lib/RG3Redir/Controller/Usuarios.pm:43
+msgid "You are not allowed to access this resource."
+msgstr "You are not allowed to access this resource."
+
+#: root/src/redir/novo_url.tt2:41
+msgid ""
+"You can fill the fields below with some information about your site, which "
+"can be later included in some search engines."
+msgstr ""
+"You can fill the fields below with some information about your site, which "
+"can be later included in some search engines."
+
+#. ([ data2normal(data_uacesso), ip_uacesso ])
+#: root/src/usuarios/inicio.tt2:6
+msgid "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
+msgstr "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
+
+#: root/src/bloqueado.tt2:9
+msgid "contact us"
+msgstr "contact us"
+
+#: root/src/login.tt2:40
+msgid "in case you have forgotten your password or username."
+msgstr "in case you have forgotten your password or username."
+
+#: root/src/login.tt2:33
+msgid ""
+"now for free and start using our URL redirection service. The creation of an "
+"account is easy and takes less than one minute."
+msgstr ""
+"now for free and start using our URL redirection service. The creation of an "
+"account is easy and takes less than one minute."

@@ -1,24 +1,24 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Bem-vindo(a), [_1].', usuario.login) %]</h2>
+<h2>[% l('Welcome, [_1].', usuario.login) %]</h2>
 
 [% IF data_uacesso %]
-<p>[% l('Seu último acesso foi em <strong>[_1]</strong> pelo computador <strong>[_2]</strong>.', data2normal(data_uacesso), ip_uacesso) %]</p>
+<p>[% l('Your last visit was on <strong>[_1]</strong> from <strong>[_2]</strong>.', [data2normal(data_uacesso), ip_uacesso]) %]</p>
 [% END %]
 
 <p>
-	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Criar redirecionamento de URL') %]</a>
+	<a href="[% Catalyst.uri_for('/redir/novo_url') %]"><img src="/redirapp/static/images/world_add.png" align="top"> [% l('Create a new URL redirection') %]</a>
 </p>
 
-<h3>[% l('Status da conta') %]</h3>
+<h3>[% l('Account status') %]</h3>
 
 <table>
 	<tr>
-		<td>[% l('E-mail registrado:') %]</td>
+		<td>[% l('Registered e-mail:') %]</td>
 		<td>[% usuario.email %]</td>
 	</tr>
 	<tr>
-		<td>[% l('Redirecionamentos de URL:') %]</td>
+		<td>[% l('URL redirections:') %]</td>
 		<td>[% urls.size %]</td>
 	</tr>
 </table>

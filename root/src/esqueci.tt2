@@ -1,28 +1,28 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Esqueci a senha :-( ou o login também :p') %]</h2>
+<h2>[% l('I forgot my password :-( or even my username :p') %]</h2>
 
-<p>[% l('Caso tenha esquecido sua senha ou até mesmo seu nome de usuário, é possível recuperá-los. Basta usar um dos métodos abaixo.') %]</p>
+<p>[% l("In case you have forgotten your password or even your username, it's possible to recover them. You just need to use one of the methods below.") %]</p>
 
-<h3>[% l('Através do nome de usuário') %]</h3>
+<h3>[% l('Using my username') %]</h3>
 
-<p>[% l('Se você ainda se lembra do nome de usuário cadastrado, basta digitá-lo no campo abaixo e pedir para receber a senha. O sistema irá gerar uma nova senha e enviar para o e-mail que consta no seu cadastro.') %]</p>
+<p>[% l('If you still remember your username, just type it in this field to get your password. Our system will generate a new password and send it to your e-mail address.') %]</p>
 
 <form action="[% Catalyst.uri_for('/login/resgate_login') %]" method="POST">
-<p><input type="text" name="login" size="20"> <input type="submit" value="[% l('Receber nova senha') %]"></p>
+<p><input type="text" name="login" size="20"> <input type="submit" value="[% l('Get a new password') %]"></p>
 </form>
 
-<h3>[% l('Através do e-mail de cadastro') %]</h3>
+<h3>[% l('Using my e-mail address') %]</h3>
 
-<p>[% l('Se você também esqueceu o nome de usuário mas ainda lembra do e-mail que cadastrou no sistema, basta digitar este e-mail no campo abaixo e pedir para receber uma nova senha.') %]</p>
+<p>[% l('If you forgot your username, but still remember the e-mail address you used when created your account, you can type the e-mail address in the field below to get a new password.') %]</p>
 
 <form action="[% Catalyst.uri_for('/login/resgate_email') %]" method="POST">
-<p><input type="text" name="email" size="20"> <input type="submit" value="[% l('Receber nova senha') %]"></p>
+<p><input type="text" name="email" size="20"> <input type="submit" value="[% l('Get a new password') %]"></p>
 </form>
 
-<h3>[% l('Através de um redirecionamento') %]</h3>
+<h3>[% l('Using one of my URL redirections') %]</h3>
 
-<p>[% l('Se você não lembra mais do nome de usuário nem do e-mail, digite o endereço de algum redirecionamento que você tem cadastrado que o sistema procura a conta pra você.') %]</p>
+<p>[% l("If you don't remember your username or the e-mail address you used to create your account, type any URL redirection address you own in the field below and our system will find your account.") %]</p>
 
 <form action="[% Catalyst.uri_for('/login/resgate_redir') %]" method="POST">
 <p>
@@ -34,10 +34,10 @@
 	<option value="[% dominio.id %]">[% dominio.nome %]</option>
 	[% END %]
 </select>
-<input type="submit" value="[% l('Receber nova senha') %]">
+<input type="submit" value="[% l('Get a new password') %]">
 </p>
 </form>
 
-<h3>[% l('Não lembro de mais nada!') %]</h3>
+<h3>[% l("I don't remember anything!") %]</h3>
 
-<p>[% l('Infelizmente, neste caso, não podemos ajudá-lo. Sugerimos criar uma nova conta e conseqüentemente, novos redirecionamentos :-(') %]</p>
+<p>[% l("Unfortunately, in this case, we can't help you. We suggest that you create a new account with new URL redirections :-(") %]</p>

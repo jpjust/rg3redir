@@ -1,11 +1,11 @@
 [% PROCESS site/macros %]
 
-<h2>[% l('Cancelamento de conta') %]</h2>
+<h2>[% l('Account cancelation') %]</h2>
 
-<p><strong>[% l('ATENÇÃO:') %]</strong> [% l('Ao confirmar no botão abaixo, sua conta e todos os seus redirecionamentos serão excluídos. Não haverá como reverter este procedimento. Os redirecionamentos abaixo serão excluídos:') %]</p>
+<p><strong>[% l('ATTENTION:') %]</strong> [% l("By clicking the button below, your account and all your redirections will be deleted. There will be no way of reverting this procedure. The redirections below will be deleted:") %]</p>
 
 [% IF redirs.size == 0 %]
-<p><i>[% l('Este usuário não possui redirecionamentos cadastrados.') %]</i></p>
+<p><i>[% l("This user doesn't have any redirection registered.") %]</i></p>
 [% ELSE %]
 <ul>
 	[% FOREACH url IN redirs %]
@@ -14,10 +14,10 @@
 </ul>
 [% END %]
 
-<p>[% l('Tem certeza que deseja excluir a conta <strong>[_1]</strong> e todos os seus redirecionamentos?', usuario) %]</p>
+<p>[% l('Are you sure you want to delete the account <strong>[_1]</strong> and all of its redirections?', usuario) %]</p>
 
 <form action="[% Catalyst.uri_for('/usuarios/excluir_do') %]" method="POST">
 
-<p align="center"><input type="submit" value="[% l('Sim, quero excluir minha conta!') %]"></p>
+<p align="center"><input type="submit" value="[% l('Yes, I want to delete my account!') %]"></p>
 
 </form>

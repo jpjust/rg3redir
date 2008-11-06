@@ -32,7 +32,7 @@ use Catalyst qw/
 	Unicode
 	/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.9';
 
 # Configure the application. 
 #

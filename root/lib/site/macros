@@ -58,9 +58,12 @@
 [% END %]
 
 [% # Macro para Catalyst.loc %]
-[% MACRO l(text, args) BLOCK %]
-	[% Catalyst.loc(text, args) %]
-[% END %]
+[%- # Deve ser EXATAMENTE como está abaixo, pra não haver
+    # espaços, tabs ou enters antes nem depois da string
+    # de saída -%]
+[% MACRO l(text, args) BLOCK;
+	Catalyst.loc(text, args);
+END; %]
 
 [% ### JavaScripts %]
 <script type="text/javascript">
