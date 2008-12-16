@@ -6,7 +6,7 @@
 	<p class="errorbox">[% l('Some mandatory fields are missing.') %]</p>
 [% END %]
 
-<p>[% l("In case you don't want to change your password, just leave the password fields below empty.") %]</p>
+<p>[% l("If you don't want to change your password, just leave the password fields below empty.") %]</p>
 
 <form action="[% Catalyst.uri_for('/usuarios/editar_do') %]" method="POST">
 

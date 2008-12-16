@@ -2,7 +2,7 @@
 
 <h2>[% l('This user is blocked!') %]</h2>
 
-<p>[% l('The account and redirections of user <strong>[_1]</strong> are blocked by the reason below:', usuario.login) %]</p>
+<p>[% l('The account and redirections of the user <strong>[_1]</strong> are blocked by the reason below:', usuario.login) %]</p>
 
 <p><i>[% usuario.motivo_bloqueio.motivo %]</i></p>
 

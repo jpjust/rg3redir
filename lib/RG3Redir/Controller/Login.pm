@@ -74,7 +74,7 @@ sub mail_cadastro : Private {
 		$c->loc("Your account has been created. To activate it, go to http://www.rg3.net and log into your account using the username and password below.\n\n") .
 		$c->loc("Username: [_1]\n", $login) .
 		$c->loc("Password: [_1]\n\n", $senha) .
-		$c->loc("We recommend you change this password as soon as you log into your account.\n\n") .
+		$c->loc("We suggest you to change this password as soon as you log into your account.\n\n") .
 		$c->loc("Thank you for preferring RG3.Net.\n");
 
 	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
@@ -98,7 +98,7 @@ sub mail_resgate : Private {
 		$c->loc("As requested, a new password has been generated.\n\n") .
 		$c->loc("Username: [_1]\n", $login) .
 		$c->loc("Password: [_1]\n\n", $senha) .
-		$c->loc("We recommend you change this password as soon as you log into your account.\n");
+		$c->loc("We suggest you to change this password as soon as you log into your account.\n");
 
 	open(SENDMAIL, '|/usr/sbin/sendmail -t -oi');
 	print SENDMAIL $mail;

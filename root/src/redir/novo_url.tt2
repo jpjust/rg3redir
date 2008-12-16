@@ -9,9 +9,9 @@
 <form action="[% Catalyst.uri_for('/redir/novo_url_do') %]" method="POST">
 <input type="hidden" name="id" value="[% redir.id %]">
 
-<h3>[% l("Redirection's address") %]</h3>
+<h3>[% l("Redirection address") %]</h3>
 
-<p>[% l("Type the redirection's address in the field below and choose a sub-domain in the list aside. Only letters, digits, hyphens (-) and undersocres (_) are allowed. You don't need to type &quot;www.&quot; before the address.") %]</p>
+<p>[% l("Type the redirection address in the field below and choose a sub-domain in the beside list. Only letters, digits, hyphens (-) and underscores (_) are allowed. You don't need to type &quot;www.&quot; before the address.") %]</p>
 
 <p><i>[% l('Ex.: john') %]</i></p>
 

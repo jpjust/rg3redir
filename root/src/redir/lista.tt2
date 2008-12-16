@@ -10,7 +10,7 @@
 
 <table width="100%">
 	<tr>
-		<th>[% l("Redirection's address") %]</th>
+		<th>[% l("Redirection address") %]</th>
 		<th>[% l('Target address') %]</th>
 		<th>[% l('Hits') %]</th>
 		<th>[% l('Actions') %]</th>

@@ -158,7 +158,7 @@ msgstr ""
 msgid "Description:"
 msgstr ""
 
-#: root/src/login.tt2:52
+#: root/src/login.tt2:56
 msgid "Developed by Justsoft Informatica Ltda."
 msgstr ""
 
@@ -219,6 +219,10 @@ msgid ""
 "\n"
 msgstr ""
 
+#: root/src/login.tt2:44
+msgid "Hello, folks! We have upgrade our main server this week in order to provide a better service. Some users have been complaining about system downtimes; with this new server, we hope our service will keep up and running forever! We are sorry for the problems we had. The downtime era has over!"
+msgstr ""
+
 #: root/src/redir/lista.tt2:15
 msgid "Hits"
 msgstr ""
@@ -239,7 +243,7 @@ msgstr ""
 msgid "I forgot my password :-( or even my username :p"
 msgstr ""
 
-#: root/src/login.tt2:54
+#: root/src/login.tt2:58
 msgid "Icons by"
 msgstr ""
 
@@ -315,6 +319,10 @@ msgstr ""
 msgid "New password:"
 msgstr ""
 
+#: root/src/login.tt2:42
+msgid "New upgraded server!"
+msgstr ""
+
 #: root/src/login.tt2:17
 msgid "Password:"
 msgstr ""
@@ -382,7 +390,7 @@ msgstr ""
 msgid "Target address"
 msgstr ""
 
-#: root/src/login.tt2:56 root/src/termos.tt2:3
+#: root/src/login.tt2:60 root/src/termos.tt2:3
 msgid "Terms of service"
 msgstr ""
 
@@ -549,7 +557,7 @@ msgstr ""
 
 #: root/src/usuarios/inicio.tt2:6
 #. ([ data2normal(data_uacesso), ip_uacesso ])
-msgid "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
+msgid "Your last visit was on <strong>%1 BRT</strong> from <strong>%2</strong>."
 msgstr ""
 
 #: root/src/bloqueado.tt2:11

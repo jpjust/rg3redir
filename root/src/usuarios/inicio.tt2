@@ -3,7 +3,7 @@
 <h2>[% l('Welcome, [_1].', usuario.login) %]</h2>
 
 [% IF data_uacesso %]
-<p>[% l('Your last visit was on <strong>[_1]</strong> from <strong>[_2]</strong>.', [data2normal(data_uacesso), ip_uacesso]) %]</p>
+<p>[% l('Your last visit was on <strong>[_1] BRT</strong> from <strong>[_2]</strong>.', [data2normal(data_uacesso), ip_uacesso]) %]</p>
 [% END %]
 
 <p>

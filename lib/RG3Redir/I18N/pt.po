@@ -17,14 +17,14 @@ msgstr ""
 #: root/src/termos.tt2:9
 msgid ""
 "1. All kind of sites are allowed, including adult ones. However, the "
-"contents and kinds of sites listed below are forbidden:"
+"contents and the ones listed below are not allowed:"
 msgstr ""
 "1. Todos os tipos de sites são permitidos, incluindo sites adultos. Porém, "
 "os sites com os conteúdos abaixo são proibidos:"
 
 #: root/src/termos.tt2:21
 msgid ""
-"2. Users who try to prejudice our service, in any way, including attacks to "
+"2. Users who try to damage our service, in any way, including attacks to "
 "our servers or to our services, will have their accounts blocked and their e-"
 "mail addresses banned from our system."
 msgstr ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: root/src/termos.tt2:23
 msgid ""
-"3. As a free service, RG3.Net will not take any responsibilities for any "
+"3. As a free service, RG3.Net will not take any responsibility for any "
 "kind of damage caused by system failures, servers failures or temporary "
 "interruptions."
 msgstr ""
@@ -45,7 +45,7 @@ msgstr ""
 #: root/src/termos.tt2:25
 msgid ""
 "4. RG3.Net can, at any moment, change the terms of this service, being "
-"users' responsability of keep up to date with the rules here described."
+"users' responsability of keeping up to date with the rules here described."
 msgstr ""
 "4. A RG3.Net pode, a qualquer momento, alterar os termos do serviço, sendo "
 "responsabilidade do usuário manter-se atualizado com as regras aqui "
@@ -214,15 +214,15 @@ msgstr "Excluir"
 msgid "Description:"
 msgstr "Descrição:"
 
-#: root/src/login.tt2:52
+#: root/src/login.tt2:56
 msgid "Developed by Justsoft Informatica Ltda."
 msgstr "Desenvolvido pela Justsoft Informática Ltda."
 
 #. ([ usuario.login, usuario.email ])
 #: root/src/novo_login_ok.tt2:5
 msgid ""
-"Done! The account <strong>%1</strong> have been created. A temporary "
-"password have been sent to <strong>%2</strong>. Check your inbox to see your "
+"Done! The account <strong>%1</strong> has been created. A temporary "
+"password has been sent to <strong>%2</strong>. Check your inbox to see your "
 "password and log into your new account."
 msgstr ""
 "Pronto! A conta <strong>%1</strong> foi criada. Uma senha temporária foi "
@@ -272,7 +272,7 @@ msgstr "Ir para a página inicial"
 #. ([ usuario.login, usuario.email ])
 #: root/src/lembrei.tt2:5
 msgid ""
-"Great! The account <strong>%1</strong> was localized and a new password was "
+"Great! The account <strong>%1</strong> was found and a new password was "
 "generated and sent to <strong>%2</strong>."
 msgstr ""
 "Pronto! A conta <strong>%1</strong> foi localizada e uma nova senha foi "
@@ -287,6 +287,18 @@ msgstr ""
 "Olá, %1.\n"
 "\n"
 
+#: root/src/login.tt2:44
+msgid ""
+"Hello, folks! We have upgrade our main server this week in order to provide "
+"a better service. Some users have been complaining about system downtimes; "
+"with this new server, we hope our service will keep up and running forever! "
+"We are sorry for the problems we had. The downtime era has over!"
+msgstr ""
+"Olá, pessoal! Atualizamos nosso servidor principal essa semana para provermos "
+"um serviço melhor. Alguns usuários haviam reclamado sobre o sistema estar fora do ar; "
+"com esse novo servidor, esperamos que nosso serviço continue funcionando para sempre! "
+"Pedimos desculpas pelos problemas que tivemos. A tempo fora do ar acabou!"
+
 #: root/src/redir/lista.tt2:15
 msgid "Hits"
 msgstr "Acessos"
@@ -300,21 +312,21 @@ msgid "I accept the terms"
 msgstr "Aceito os termos"
 
 #: root/src/esqueci.tt2:41
-msgid "I don't remember anything!"
+msgid "I don't remember anything at all!"
 msgstr "Não lembro de mais nada!"
 
 #: root/src/esqueci.tt2:3
 msgid "I forgot my password :-( or even my username :p"
 msgstr "Esqueci minha senha :-( e o nome de usuário também :p"
 
-#: root/src/login.tt2:54
+#: root/src/login.tt2:58
 msgid "Icons by"
 msgstr "Ícones por"
 
 #: root/src/lembrei.tt2:9
 msgid ""
-"If the e-mail address above is incorrect or doesn't existe anymore, it won't "
-"be possible get a new password. In the case of a deactivated e-mail, re-"
+"If the e-mail address above is incorrect or doesn't exist anymore, it won't "
+"be possible get a new password. In case of a deactivated e-mail, re-"
 "activate it and request your new password again. If the e-mail address is "
 "incorrect, nothing can be done :-("
 msgstr ""
@@ -336,7 +348,7 @@ msgstr ""
 #: root/src/esqueci.tt2:17
 msgid ""
 "If you forgot your username, but still remember the e-mail address you used "
-"when created your account, you can type the e-mail address in the field "
+"when you created your account, you can type the e-mail address in the field "
 "below to get a new password."
 msgstr ""
 "Se você esqueceu seu nome de usuário, mas ainda se lembra do endereço de e-"
@@ -367,7 +379,7 @@ msgstr ""
 
 #: root/src/usuarios/editar.tt2:9
 msgid ""
-"In case you don't want to change your password, just leave the password "
+"If you don't want to change your password, just leave the password "
 "fields below empty."
 msgstr ""
 "Caso não queira mudar a senha, basta deixar os campos de senha abaixo em "
@@ -375,7 +387,7 @@ msgstr ""
 
 #: root/src/esqueci.tt2:5
 msgid ""
-"In case you have forgotten your password or even your username, it's "
+"If you have forgotten your password or even your username, it's "
 "possible to recover them. You just need to use one of the methods below."
 msgstr ""
 "Caso tenha esquecido sua senha ou até mesmo seu nome de usuário, é possível "
@@ -396,7 +408,7 @@ msgstr "Log in"
 #: root/src/novo_login_ok.tt2:7
 msgid ""
 "Log into your new account as soon as you get your temporary password. The "
-"accounts which are not logged in on their first week are automatically "
+"accounts that are not logged in on their first week are automatically "
 "deleted."
 msgstr ""
 "Entre na sua nova conta assim que receber sua senha temporária. As contas "
@@ -430,6 +442,10 @@ msgstr "Novo redirecionamento de URL"
 msgid "New password:"
 msgstr "Nova senha:"
 
+#: root/src/login.tt2:42
+msgid "New upgraded server!"
+msgstr ""
+
 #: root/src/login.tt2:17
 msgid "Password:"
 msgstr "Senha:"
@@ -452,7 +468,7 @@ msgid "Re-type your new password:"
 msgstr "Confirme sua nova senha:"
 
 #: root/src/redir/lista.tt2:13 root/src/redir/novo_url.tt2:12
-msgid "Redirection's address"
+msgid "Redirection address"
 msgstr "Endereço do redirecionamento"
 
 #: root/src/usuarios/inicio.tt2:17
@@ -464,7 +480,7 @@ msgid "Save"
 msgstr "Salvar"
 
 #: root/src/termos.tt2:17
-msgid "Sending of SPAM with any reference to any RG3.Net sub-domain."
+msgid "SPAM sending with any reference to any RG3.Net sub-domain."
 msgstr ""
 "Envio de SPAM com qualquer referência a qualquer subdomínio da RG3.Net."
 
@@ -505,7 +521,7 @@ msgstr ""
 msgid "Target address"
 msgstr "Endereço de destino"
 
-#: root/src/login.tt2:56 root/src/termos.tt2:3
+#: root/src/login.tt2:60 root/src/termos.tt2:3
 msgid "Terms of service"
 msgstr "Termos do serviço"
 
@@ -516,7 +532,7 @@ msgstr "Obrigado por preferir a RG3.Net.\n"
 #. (usuario.login)
 #: root/src/bloqueado.tt2:5
 msgid ""
-"The account and redirections of user <strong>%1</strong> are blocked by the "
+"The account and redirections of the user <strong>%1</strong> are blocked by the "
 "reason below:"
 msgstr ""
 "A conta e os redirecionamentos do usuário <strong>%1</strong> estão "
@@ -554,7 +570,7 @@ msgid "The typed passwords don't match."
 msgstr "As senhas digitadas não coincidem."
 
 #: root/src/usuarios/excluir.tt2:8
-msgid "This user doesn't have any redirections registered."
+msgid "This user doesn't have any redirection registered."
 msgstr "Este usuário não possui nenhum redirecionamento cadastrado."
 
 #: root/src/bloqueado.tt2:3
@@ -563,8 +579,8 @@ msgstr "Este usuário está bloqueado!"
 
 #: root/src/redir/novo_url.tt2:14
 msgid ""
-"Type the redirection's address in the field below and choose a sub-domain in "
-"the list aside. Only letters, digits, hyphens (-) and undersocres (_) are "
+"Type the redirection address in the field below and choose a sub-domain in "
+"the beside list. Only letters, digits, hyphens (-) and underscores (_) are "
 "allowed. You don't need to type &quot;www.&quot; before the address."
 msgstr ""
 "Digite o endereço do redirecionamento no campo abaixo e escolha um "
@@ -619,7 +635,7 @@ msgstr "URLs"
 
 #: root/src/esqueci.tt2:43
 msgid ""
-"Unfortunately, in this case, we can't help you. We suggest that you create a "
+"Unfortunately, in this case, we can't help you. We suggest you to create a "
 "new account with new URL redirections :-("
 msgstr ""
 "Infelizmente, neste caso, não podemos ajudá-lo. Sugerimos que você crie uma "
@@ -670,18 +686,18 @@ msgstr "Encontramos sua senha"
 
 #: lib/RG3Redir/Controller/Login.pm:100
 msgid ""
-"We recommend you change this password as soon as you log into your account.\n"
+"We suggest you to change this password as soon as you log into your account.\n"
 msgstr "Recomendamos que você mude essa senha logo após entrar na sua conta.\n"
 
 #: lib/RG3Redir/Controller/Login.pm:75
 msgid ""
-"We recommend you change this password as soon as you log into your account.\n"
+"We suggest you to change this password as soon as you log into your account.\n"
 "\n"
 msgstr "Recomendamos que você mude essa senha logo após entrar na sua conta.\n"
 
 #: root/src/novo_login.tt2:11
 msgid ""
-"We thank you the interest of joining our group of users. You just need to "
+"Thank you for joining our group of users. You just need to "
 "fill the two fields below to complete your registration."
 msgstr ""
 "Agradecemos o interesse de se juntar ao nosso grupo de usuários. Você só "
@@ -728,9 +744,11 @@ msgstr ""
 
 #. ([ data2normal(data_uacesso), ip_uacesso ])
 #: root/src/usuarios/inicio.tt2:6
-msgid "Your last visit was on <strong>%1</strong> from <strong>%2</strong>."
+msgid ""
+"Your last visit was on <strong>%1 BRT</strong> from <strong>%2</strong>."
 msgstr ""
-"Sua última visita foi em <strong>%1</strong> através de <strong>%2</strong>."
+"Sua última visita foi em <strong>%1 BRT</strong> através de <strong>%2</"
+"strong>."
 
 #: root/src/bloqueado.tt2:11
 msgid "contact us"

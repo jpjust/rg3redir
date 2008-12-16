@@ -5,7 +5,7 @@
 <p><strong>[% l('ATTENTION:') %]</strong> [% l("By clicking the button below, your account and all your redirections will be deleted. There will be no way of reverting this procedure. The redirections below will be deleted:") %]</p>
 
 [% IF redirs.size == 0 %]
-<p><i>[% l("This user doesn't have any redirections registered.") %]</i></p>
+<p><i>[% l("This user doesn't have any redirection registered.") %]</i></p>
 [% ELSE %]
 <ul>
 	[% FOREACH url IN redirs %]

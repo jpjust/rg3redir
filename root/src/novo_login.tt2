@@ -8,7 +8,7 @@
 
 <form action="[% Catalyst.uri_for('/login/novo_do') %]" method="POST">
 
-<p>[% l('We thank you the interest of joining our group of users. You just need to fill the two fields below to complete your registration.') %]</p>
+<p>[% l('Thank you for joining our group of users. You just need to fill the two fields below to complete your registration.') %]</p>
 
 <h3>[% l('Username') %]</h3>
 

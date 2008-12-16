@@ -39,6 +39,10 @@
 
 <p><a href="[% Catalyst.uri_for('/login/esqueci') %]">[% l('Click here') %]</a> [% l('in case you have forgotten your password or username.') %]</p>
 
+<h3>[% l('New upgraded server!') %]</h3>
+
+<p>[% l('Hello, folks! We have upgrade our main server this week in order to provide a better service. Some users have been complaining about system downtimes; with this new server, we hope our service will keep up and running forever! We are sorry for the problems we had. The downtime era has over!') %]</p>
+
 [% IF Catalyst.language == 'en' %]
 <br><br>
 <h3>Procurando o site em portugues?</h3>

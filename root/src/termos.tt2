@@ -6,7 +6,7 @@
 
 <div class="mytextbox">
 
-<p>[% l('1. All kind of sites are allowed, including adult ones. However, the contents and kinds of sites listed below are forbidden:') %]</p>
+<p>[% l('1. All kind of sites are allowed, including adult ones. However, the contents and the ones listed below are not allowed:') %]</p>
 
 <ul>
 	<li>[% l('Child pornography, hate or racism spreading.') %]</li>
@@ -14,15 +14,15 @@
 	<li>[% l('Any abusive, defamatory or privacy breaking materials.') %]</li>
 	<li>[% l('Any kind of advertising or material which promotes illegal activities.') %]</li>
 	<li>[% l("Computer data containing viruses or corrupted files, which could damage a visitor's computer, as well as illegal or pirate softwares.") %]</li>
-	<li>[% l('Sending of SPAM with any reference to any RG3.Net sub-domain.') %]</li>
+	<li>[% l('SPAM sending with any reference to any RG3.Net sub-domain.') %]</li>
 	<li>[% l('Material which defames RG3.Net services or the companies RG3.Net Comercio e Servicos Ltda. and Justsoft Informatica Ltda.') %]</li>
 </ul>
 
-<p>[% l('2. Users who try to prejudice our service, in any way, including attacks to our servers or to our services, will have their accounts blocked and their e-mail addresses banned from our system.') %]</p>
+<p>[% l('2. Users who try to damage our service, in any way, including attacks to our servers or to our services, will have their accounts blocked and their e-mail addresses banned from our system.') %]</p>
 
-<p>[% l('3. As a free service, RG3.Net will not take any responsibilities for any kind of damage caused by system failures, servers failures or temporary interruptions.') %]</p>
+<p>[% l('3. As a free service, RG3.Net will not take any responsibility for any kind of damage caused by system failures, servers failures or temporary interruptions.') %]</p>
 
-<p>[% l("4. RG3.Net can, at any moment, change the terms of this service, being users' responsability of keep up to date with the rules here described.") %]</p>
+<p>[% l("4. RG3.Net can, at any moment, change the terms of this service, being users' responsability of keeping up to date with the rules here described.") %]</p>
 
 <p>[% l("5. RG3.Net can give users' information, as registration date, last visit date and IP address, to authorities when requested.") %]</p>
 
