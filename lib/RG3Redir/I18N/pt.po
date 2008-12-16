@@ -444,7 +444,7 @@ msgstr "Nova senha:"
 
 #: root/src/login.tt2:42
 msgid "New upgraded server!"
-msgstr ""
+msgstr "Novo servidor atualizado!"
 
 #: root/src/login.tt2:17
 msgid "Password:"
