@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RG 3Redir\n"
+"Project-Id-Version: RG3Redir\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2008-11-05 16:32+0000\n"
 "Last-Translator: Joao Paulo Just <just@rg3.net>\n"
@@ -13,107 +13,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: root/src/termos.tt2:9
-msgid ""
-"1. All kind of sites are allowed, including adult ones. However, the "
-"contents and the ones listed below are not allowed:"
-msgstr ""
-"1. Todos os tipos de sites são permitidos, incluindo sites adultos. Porém, "
-"os sites com os conteúdos abaixo são proibidos:"
-
-#: root/src/termos.tt2:21
-msgid ""
-"2. Users who try to damage our service, in any way, including attacks to "
-"our servers or to our services, will have their accounts blocked and their e-"
-"mail addresses banned from our system."
-msgstr ""
-"2. Usuários que tentarem prejudicar o serviço, de qualquer maneira, "
-"incluindo ataques ao servidor ou ao nosso serviço, terão suas contas "
-"bloqueadas e seus endereçosde e-mail banidos do nosso sistema."
-
-#: root/src/termos.tt2:23
-msgid ""
-"3. As a free service, RG3.Net will not take any responsibility for any "
-"kind of damage caused by system failures, servers failures or temporary "
-"interruptions."
-msgstr ""
-"3. Por ser um serviço gratuito, a RG3.Net não se responsabilizará por "
-"qualquer dano causado por falhas no sistema, falhas nos servidores ou "
-"interrupções temporárias."
-
-#: root/src/termos.tt2:25
-msgid ""
-"4. RG3.Net can, at any moment, change the terms of this service, being "
-"users' responsability of keeping up to date with the rules here described."
-msgstr ""
-"4. A RG3.Net pode, a qualquer momento, alterar os termos do serviço, sendo "
-"responsabilidade do usuário manter-se atualizado com as regras aqui "
-"descritas."
-
-#: root/src/termos.tt2:27
-msgid ""
-"5. RG3.Net can give users' information, as registration date, last visit "
-"date and IP address, to authorities when requested."
-msgstr ""
-"5. A RG3.Net pode fornecer informações dos usuários, como data de registro, "
-"data da última visita e endereço IP, para autoridades quando solicitado."
-
-#: root/src/usuarios/excluir.tt2:5
-msgid "ATTENTION:"
-msgstr "ATENÇÃO:"
-
-#: root/src/usuarios/excluir.tt2:3
-msgid "Account cancelation"
-msgstr "Cancelamento da conta"
-
-#: root/src/usuarios/editar.tt2:3
-msgid "Account information"
-msgstr "Informações da conta"
-
-#: root/lib/site/header:32 root/src/usuarios/inicio.tt2:13
-msgid "Account status"
-msgstr "Status da conta"
-
-#: root/src/redir/lista.tt2:16
-msgid "Actions"
-msgstr "Ações"
-
-#: root/src/termos.tt2:14
-msgid "Any abusive, defamatory or privacy breaking materials."
-msgstr "Qualquer material abusivo, difamatório ou de invasão de privacidade."
-
-#: root/src/termos.tt2:15
-msgid "Any kind of advertising or material which promotes illegal activities."
-msgstr ""
-"Qualquer tipo de propaganda ou material que promovam atividades ilegais."
-
-#: root/src/termos.tt2:13
-msgid "Any kind of material which violates patents, trademarks or copyrights."
-msgstr ""
-"Qualquer tipo de material que viole patentes, marcas registradas ou direitos "
-"autorais."
-
-#. (usuario)
-#: root/src/usuarios/excluir.tt2:17
-msgid ""
-"Are you sure you want to delete the account <strong>%1</strong> and all of "
-"its redirections?"
-msgstr ""
-"Tem certeza que deseja excluir a conta <strong>%1</strong> e todos os seus "
-"redirecionamentos?"
-
-#: root/src/redir/lista.tt2:26
-msgid "Are you sure you want to delete this URL redirection?"
-msgstr "Tem certeza que deseja excluir este redirecionamento de URL?"
-
-#: root/src/termos.tt2:5
-msgid ""
-"As any other free service, we have defined some rules which must be followed "
-"by every RG3.Net user."
-msgstr ""
-"Como qualquer outro serviço gratuito, definimos algumas regras que devem ser "
-"seguidas por todos os usuários do RG3.Net."
 
 #: lib/RG3Redir/Controller/Login.pm:96
 msgid ""
@@ -123,160 +22,13 @@ msgstr ""
 "Como solicitado, uma nova senha foi gerada.\n"
 "\n"
 
-#: root/src/novo_login.tt2:31
-msgid "Attention:"
-msgstr "Atenção:"
-
 #: lib/RG3Redir/Controller/Login.pm:149
 msgid "Authentication failure."
 msgstr "Falha de autenticação."
 
-#: root/src/nao_lembrei.tt2:7 root/src/termos.tt2:35
-msgid "Back"
-msgstr "Voltar"
-
-#: root/src/termos.tt2:31
-msgid ""
-"By clicking &quot;I accept the terms&quot; and completing your registration, "
-"you are agreeing with the terms above."
-msgstr ""
-"Clicando em &quot;Aceito os termos&quot; e efetuando o cadastro, Você está "
-"concordando com os termos acima."
-
-#: root/src/usuarios/excluir.tt2:5
-msgid ""
-"By clicking the button below, your account and all your redirections will be "
-"deleted. There will be no way of reverting this procedure. The redirections "
-"below will be deleted:"
-msgstr ""
-"Clicando no botão abaixo, sua conta e todos os seus redirecionamentos serão "
-"excluídos. Não haverá como reverter esse procedimento. Os redirecionamentos "
-"abaixo serão excluídos:"
-
-#: root/lib/site/header:35
-msgid "Cancel my account"
-msgstr "Cancelar conta"
-
-#: root/lib/site/header:34
-msgid "Change e-mail and/or password"
-msgstr "Alterar e-mail e/ou senha"
-
-#: root/src/novo_login.tt2:31
-msgid ""
-"Check if the e-mail address was typed correctly. The password for your "
-"account will be sent to the e-mail address specified above."
-msgstr ""
-"Verifique se digitou o endereço de e-mail corretamente. A senha da sua conta "
-"será enviada para o e-mail especificado acima."
-
-#: root/src/termos.tt2:12
-msgid "Child pornography, hate or racism spreading."
-msgstr "Pornografia infantil, disseminação de ódio ou racismo."
-
-#: root/src/bloqueado.tt2:9 root/src/login.tt2:40
-msgid "Click here"
-msgstr "Clique aqui"
-
-#: root/src/login.tt2:33
-msgid "Click here to create your new account"
-msgstr "Clique aqui para criar sua nova conta"
-
-#: root/src/termos.tt2:16
-msgid ""
-"Computer data containing viruses or corrupted files, which could damage a "
-"visitor's computer, as well as illegal or pirate softwares."
-msgstr ""
-"Dados de computador contendo vírus ou arquivos corrompidos, que possam "
-"danificar o computador de algum visitante, como também softwares piratas ou "
-"ilegais."
-
-#: root/lib/site/footer:9
-msgid "Copyright (c) 2008 Justsoft Informatica Ltda."
-msgstr "Copyright (c) Justsoft Informática Ltda."
-
-#: root/src/redir/lista.tt2:6 root/src/usuarios/inicio.tt2:10
-msgid "Create a new URL redirection"
-msgstr "Criar um novo redirecionamento de URL"
-
-#: root/src/login.tt2:31 root/src/login.tt2:33
-msgid "Create your account"
-msgstr "Crie sua conta"
-
 #: lib/RG3Redir/Controller/Usuarios.pm:130
 msgid "Data successfully saved."
 msgstr "Dados salvos com sucesso."
-
-#: root/src/redir/lista.tt2:26
-msgid "Delete"
-msgstr "Excluir"
-
-#: root/src/redir/novo_url.tt2:47
-msgid "Description:"
-msgstr "Descrição:"
-
-#: root/src/login.tt2:56
-msgid "Developed by Justsoft Informatica Ltda."
-msgstr "Desenvolvido pela Justsoft Informática Ltda."
-
-#. ([ usuario.login, usuario.email ])
-#: root/src/novo_login_ok.tt2:5
-msgid ""
-"Done! The account <strong>%1</strong> has been created. A temporary "
-"password has been sent to <strong>%2</strong>. Check your inbox to see your "
-"password and log into your new account."
-msgstr ""
-"Pronto! A conta <strong>%1</strong> foi criada. Uma senha temporária foi "
-"enviada para <strong>%2</strong>. Verifique seu e-mail para ver sua senha e "
-"acessar sua nova conta."
-
-#: root/src/novo_login.tt2:23
-msgid "E-mail address"
-msgstr "Endereço de e-mail"
-
-#: root/src/usuarios/editar.tt2:19
-msgid "E-mail address:"
-msgstr "Endereço de e-mail:"
-
-#: root/src/redir/lista.tt2:25
-msgid "Edit"
-msgstr "Editar"
-
-#: root/src/redir/novo_url.tt2:35
-msgid "Ex.: http://www.mycurrentfuzzyaddress.com/members/john"
-msgstr "Ex.: http://www.meuenderecoconfuso.com.br/membros/joao"
-
-#: root/src/novo_login.tt2:17 root/src/redir/novo_url.tt2:16
-msgid "Ex.: john"
-msgstr "Ex.: joão"
-
-#: root/src/login.tt2:38
-msgid "Forgot your password?"
-msgstr "Esqueceu sua senha?"
-
-#: root/lib/site/html:9
-msgid "Free URL redirection service without ads."
-msgstr "Redirecionamento de URLs gratuito e sem propagandas."
-
-#: root/src/esqueci.tt2:12 root/src/esqueci.tt2:20 root/src/esqueci.tt2:37
-msgid "Get a new password"
-msgstr "Receber nova senha"
-
-#: root/src/lembrei.tt2:11
-msgid "Go back to the log in page"
-msgstr "Volte para a página de log in"
-
-#: root/src/novo_login_ok.tt2:9
-msgid "Go to the home page"
-msgstr "Ir para a página inicial"
-
-#. ([ usuario.login, usuario.email ])
-#: root/src/lembrei.tt2:5
-msgid ""
-"Great! The account <strong>%1</strong> was found and a new password was "
-"generated and sent to <strong>%2</strong>."
-msgstr ""
-"Pronto! A conta <strong>%1</strong> foi localizada e uma nova senha foi "
-"gerada e enviada para <strong>%2</strong>."
 
 #. ($login)
 #: lib/RG3Redir/Controller/Login.pm:95
@@ -287,169 +39,6 @@ msgstr ""
 "Olá, %1.\n"
 "\n"
 
-#: root/src/login.tt2:44
-msgid ""
-"Hello, folks! We have upgrade our main server this week in order to provide "
-"a better service. Some users have been complaining about system downtimes; "
-"with this new server, we hope our service will keep up and running forever! "
-"We are sorry for the problems we had. The downtime era has over!"
-msgstr ""
-"Olá, pessoal! Atualizamos nosso servidor principal essa semana para provermos "
-"um serviço melhor. Alguns usuários haviam reclamado sobre o sistema estar fora do ar; "
-"com esse novo servidor, esperamos que nosso serviço continue funcionando para sempre! "
-"Pedimos desculpas pelos problemas que tivemos. A tempo fora do ar acabou!"
-
-#: root/src/redir/lista.tt2:15
-msgid "Hits"
-msgstr "Acessos"
-
-#: root/lib/site/header:38
-msgid "Home page"
-msgstr "Página inicial"
-
-#: root/src/termos.tt2:34
-msgid "I accept the terms"
-msgstr "Aceito os termos"
-
-#: root/src/esqueci.tt2:41
-msgid "I don't remember anything at all!"
-msgstr "Não lembro de mais nada!"
-
-#: root/src/esqueci.tt2:3
-msgid "I forgot my password :-( or even my username :p"
-msgstr "Esqueci minha senha :-( e o nome de usuário também :p"
-
-#: root/src/login.tt2:58
-msgid "Icons by"
-msgstr "Ícones por"
-
-#: root/src/lembrei.tt2:9
-msgid ""
-"If the e-mail address above is incorrect or doesn't exist anymore, it won't "
-"be possible get a new password. In case of a deactivated e-mail, re-"
-"activate it and request your new password again. If the e-mail address is "
-"incorrect, nothing can be done :-("
-msgstr ""
-"Se o endereço de e-mail acima está incorreto ou não existe mais, não será "
-"possível obter uma nova senha. Em caso de e-mail desativado, reative-o e "
-"solicite uma nova senha novamente. Se o endereço de e-mail está incorreto, "
-"nada pode ser feito :-("
-
-#: root/src/esqueci.tt2:25
-msgid ""
-"If you don't remember your username or the e-mail address you used to create "
-"your account, type any URL redirection address you own in the field below "
-"and our system will find your account."
-msgstr ""
-"Se você não se lembra do seu nome de usuário nem do endereço de e-mail que "
-"usou para criar sua conta, digite o endereço de qualquer redirecionamento de "
-"URL que você possua no campo abaixo e o sistema irá encontrar sua conta."
-
-#: root/src/esqueci.tt2:17
-msgid ""
-"If you forgot your username, but still remember the e-mail address you used "
-"when you created your account, you can type the e-mail address in the field "
-"below to get a new password."
-msgstr ""
-"Se você esqueceu seu nome de usuário, mas ainda se lembra do endereço de e-"
-"mail que usou para criar sua conta, digite o e-mail no campo abaixo para "
-"receber uma nova senha."
-
-#: root/src/bloqueado.tt2:11
-msgid "If you own this account and want to know why you are blocked,"
-msgstr "Se você é o dono desta e gostaria de saber porque está bloquedo, "
-
-#: root/src/esqueci.tt2:9
-msgid ""
-"If you still remember your username, just type it in this field to get your "
-"password. Our system will generate a new password and send it to your e-mail "
-"address."
-msgstr ""
-"Se você ainda se lembra do seu nome de usuário, basta digitá-lo neste campo "
-"para receber sua senha. Nosso sistema irá gerar uma senha nova e enviá-la "
-"para seu e-mail."
-
-#: root/src/lembrei.tt2:7
-msgid ""
-"In a few minutes, check your inbox and use your new password to log into "
-"your account."
-msgstr ""
-"Em alguns minutos, verifique seu e-mail e use sua nova senha para acessar "
-"sua conta."
-
-#: root/src/usuarios/editar.tt2:9
-msgid ""
-"If you don't want to change your password, just leave the password "
-"fields below empty."
-msgstr ""
-"Caso não queira mudar a senha, basta deixar os campos de senha abaixo em "
-"branco."
-
-#: root/src/esqueci.tt2:5
-msgid ""
-"If you have forgotten your password or even your username, it's "
-"possible to recover them. You just need to use one of the methods below."
-msgstr ""
-"Caso tenha esquecido sua senha ou até mesmo seu nome de usuário, é possível "
-"recuperá-los. Basta usar um dos métodos abaixo."
-
-#: root/src/novo_login.tt2:33
-msgid "Join"
-msgstr "Cadastrar"
-
-#: root/src/redir/novo_url.tt2:51
-msgid "Keywords (separated by spaces):"
-msgstr "Palavras-chave (separadas por espaços):"
-
-#: root/src/login.tt2:22 root/src/login.tt2:7
-msgid "Log in"
-msgstr "Log in"
-
-#: root/src/novo_login_ok.tt2:7
-msgid ""
-"Log into your new account as soon as you get your temporary password. The "
-"accounts that are not logged in on their first week are automatically "
-"deleted."
-msgstr ""
-"Entre na sua nova conta assim que receber sua senha temporária. As contas "
-"que não são acessadas na primeira semana são automaticamente excluídas."
-
-#: root/lib/site/header:36
-msgid "Log out"
-msgstr "Sair"
-
-#: root/src/termos.tt2:18
-msgid ""
-"Material which defames RG3.Net services or the companies RG3.Net Comercio e "
-"Servicos Ltda. and Justsoft Informatica Ltda."
-msgstr ""
-"Material que difame os serviços da RG3.Net ou as empresas RG3.Net Comércio e "
-"Serviços Ltda. e Justsoft Informática Ltda."
-
-#: root/src/novo_login.tt2:3
-msgid "New RG3.Net user"
-msgstr "Novo usuário RG3.Net"
-
-#: root/src/novo_login_ok.tt2:3
-msgid "New RG3.Net user registered"
-msgstr "Novo usuário RG3.Net cadastrado"
-
-#: root/src/redir/novo_url.tt2:3
-msgid "New URL redirection"
-msgstr "Novo redirecionamento de URL"
-
-#: root/src/usuarios/editar.tt2:23
-msgid "New password:"
-msgstr "Nova senha:"
-
-#: root/src/login.tt2:42
-msgid "New upgraded server!"
-msgstr "Novo servidor atualizado!"
-
-#: root/src/login.tt2:17
-msgid "Password:"
-msgstr "Senha:"
-
 #. ($senha)
 #: lib/RG3Redir/Controller/Login.pm:74 lib/RG3Redir/Controller/Login.pm:98
 msgid ""
@@ -458,48 +47,6 @@ msgid ""
 msgstr ""
 "Senha: %1\n"
 "\n"
-
-#: root/lib/site/html:10
-msgid "RG3.Net - URL redirections"
-msgstr "RG3.Net - Redirecionamento de URLs"
-
-#: root/src/usuarios/editar.tt2:27
-msgid "Re-type your new password:"
-msgstr "Confirme sua nova senha:"
-
-#: root/src/redir/lista.tt2:13 root/src/redir/novo_url.tt2:12
-msgid "Redirection address"
-msgstr "Endereço do redirecionamento"
-
-#: root/src/usuarios/inicio.tt2:17
-msgid "Registered e-mail:"
-msgstr "E-mail cadastrado:"
-
-#: root/src/redir/novo_url.tt2:55 root/src/usuarios/editar.tt2:32
-msgid "Save"
-msgstr "Salvar"
-
-#: root/src/termos.tt2:17
-msgid "SPAM sending with any reference to any RG3.Net sub-domain."
-msgstr ""
-"Envio de SPAM com qualquer referência a qualquer subdomínio da RG3.Net."
-
-#: root/lib/site/header:33
-msgid "Show my URL redirections"
-msgstr "Listar redirecionamentos de URL"
-
-#: root/src/redir/novo_url.tt2:39
-msgid "Site information (optional)"
-msgstr "Informações do site (opcional)"
-
-#: root/src/redir/novo_url.tt2:43
-msgid "Site title:"
-msgstr "Título do site:"
-
-#: root/src/novo_login.tt2:6 root/src/redir/novo_url.tt2:6
-#: root/src/usuarios/editar.tt2:6
-msgid "Some mandatory fields are missing."
-msgstr "Alguns campos obrigatórios estão faltando."
 
 #: lib/RG3Redir/Controller/Login.pm:94
 msgid ""
@@ -517,31 +64,19 @@ msgstr ""
 "Subject: Cadastro RG3.Net\n"
 "\n"
 
-#: root/src/redir/lista.tt2:14 root/src/redir/novo_url.tt2:31
-msgid "Target address"
-msgstr "Endereço de destino"
-
-#: root/src/login.tt2:60 root/src/termos.tt2:3
-msgid "Terms of service"
-msgstr "Termos do serviço"
-
 #: lib/RG3Redir/Controller/Login.pm:77
 msgid "Thank you for preferring RG3.Net.\n"
 msgstr "Obrigado por preferir a RG3.Net.\n"
 
-#. (usuario.login)
-#: root/src/bloqueado.tt2:5
-msgid ""
-"The account and redirections of the user <strong>%1</strong> are blocked by the "
-"reason below:"
-msgstr ""
-"A conta e os redirecionamentos do usuário <strong>%1</strong> estão "
-"bloqueados pelo motivo abaixo:"
-
-#: lib/RG3Redir/Controller/Redir.pm:91
+#: lib/RG3Redir/Controller/Redir.pm:102
 msgid "The choosen address has already been taken. Please, choose another one."
 msgstr ""
-"O endereço escolhido já está sendo usado. Por favos, escolha outro endereço."
+"O endereço escolhido já está sendo usado. Por favor, escolha outro endereço."
+
+#: lib/RG3Redir/Controller/Redir.pm:92
+msgid "The choosen address is forbidden. Please, choose another one."
+msgstr ""
+"O endereço escolhido está proibido. Por favor, escolha outro endereço."
 
 #: lib/RG3Redir/Controller/Login.pm:192
 msgid ""
@@ -569,139 +104,36 @@ msgstr ""
 msgid "The typed passwords don't match."
 msgstr "As senhas digitadas não coincidem."
 
-#: root/src/usuarios/excluir.tt2:8
-msgid "This user doesn't have any redirection registered."
-msgstr "Este usuário não possui nenhum redirecionamento cadastrado."
-
-#: root/src/bloqueado.tt2:3
-msgid "This user is blocked!"
-msgstr "Este usuário está bloqueado!"
-
-#: root/src/redir/novo_url.tt2:14
-msgid ""
-"Type the redirection address in the field below and choose a sub-domain in "
-"the beside list. Only letters, digits, hyphens (-) and underscores (_) are "
-"allowed. You don't need to type &quot;www.&quot; before the address."
-msgstr ""
-"Digite o endereço do redirecionamento no campo abaixo e escolha um "
-"subdomínio na lista ao lado. Apenas letras, números, hífens (-) e "
-"sublinhados (_) são permitidos. Você não precisa digitar &quot;www.&quot; "
-"antes do endereço."
-
-#: root/src/redir/novo_url.tt2:33
-msgid "Type the target address of your new URL redirection in the field below."
-msgstr ""
-"Digite no campo abaixo o endereço de destino do seu novo redirecionamento de "
-"URL."
-
-#: root/src/novo_login.tt2:15
-msgid ""
-"Type the username you would like to use in the field below. You will need an "
-"username to log into your new account."
-msgstr ""
-"Digite o nome de usuário que deseja usar no campo abaixo. Você vai precisar "
-"de um nome de usuário para acessar sua nova conta."
-
-#: root/src/novo_login.tt2:25
-msgid ""
-"Type your e-mail address in the field below, so we can send you a password."
-msgstr ""
-"Digite seu endereço de e-mail no campo abaixo, para que possamos enviar sua "
-"senha."
-
-#: lib/RG3Redir/Controller/Redir.pm:142
+#: lib/RG3Redir/Controller/Redir.pm:158
 msgid "URL redirection deleted."
 msgstr "Redirecionamento de URL excluído."
 
-#: lib/RG3Redir/Controller/Redir.pm:144
+#: lib/RG3Redir/Controller/Redir.pm:160
 msgid "URL redirection not found."
 msgstr "Redirecionamento de URL não encontrado."
 
-#: lib/RG3Redir/Controller/Redir.pm:127
+#: lib/RG3Redir/Controller/Redir.pm:143
 msgid "URL redirection successfully created/edited."
 msgstr "Redirecionamento de URL criado/editado com sucesso."
-
-#: root/src/redir/lista.tt2:3
-msgid "URL redirections"
-msgstr "Redirecionamentos de URL"
-
-#: root/src/usuarios/inicio.tt2:21
-msgid "URL redirections:"
-msgstr "Redirecionamentos de URL:"
-
-#: root/src/redir/lista.tt2:9
-msgid "URLs"
-msgstr "URLs"
-
-#: root/src/esqueci.tt2:43
-msgid ""
-"Unfortunately, in this case, we can't help you. We suggest you to create a "
-"new account with new URL redirections :-("
-msgstr ""
-"Infelizmente, neste caso, não podemos ajudá-lo. Sugerimos que você crie uma "
-"nova conta com novos redirecionamentos de URL :-("
-
-#: root/src/nao_lembrei.tt2:5
-msgid ""
-"Unfortunately, we didn't find any account with the information provided. Go "
-"back to the previous page and try to remember your username, registered e-"
-"mail address or any URL redirection of your account."
-msgstr ""
-"Infelizmente, não encontrados nenhuma conta com a informação fornecida. "
-"Volte para a página anterior e tente lembrar seu nome de usuário, e-mail "
-"cadastrado ou qualquer redirecionamento de URL cadastrado na sua conta."
-
-#: root/src/novo_login.tt2:13
-msgid "Username"
-msgstr "Nome de usuário"
-
-#: root/src/login.tt2:13 root/src/usuarios/editar.tt2:15
-msgid "Username:"
-msgstr "Nome de usuário:"
 
 #. ($login)
 #: lib/RG3Redir/Controller/Login.pm:74 lib/RG3Redir/Controller/Login.pm:98
 msgid "Username: %1\n"
 msgstr "Nome de usuário: %1\n"
 
-#: root/src/esqueci.tt2:15
-msgid "Using my e-mail address"
-msgstr "Através do meu endereço de e-mail"
-
-#: root/src/esqueci.tt2:7
-msgid "Using my username"
-msgstr "Através do meu nome de usuário"
-
-#: root/src/esqueci.tt2:23
-msgid "Using one of my URL redirections"
-msgstr "Através de um dos meus redirecionamentos de URL"
-
-#: root/src/nao_lembrei.tt2:3
-msgid "We couldn't find your password"
-msgstr "Não pudemos encontrar sua senha"
-
-#: root/src/lembrei.tt2:3
-msgid "We have found your password"
-msgstr "Encontramos sua senha"
-
 #: lib/RG3Redir/Controller/Login.pm:100
 msgid ""
-"We suggest you to change this password as soon as you log into your account.\n"
+"We suggest you to change this password as soon as you log into your "
+"account.\n"
 msgstr "Recomendamos que você mude essa senha logo após entrar na sua conta.\n"
 
 #: lib/RG3Redir/Controller/Login.pm:75
 msgid ""
-"We suggest you to change this password as soon as you log into your account.\n"
+"We suggest you to change this password as soon as you log into your "
+"account.\n"
 "\n"
 msgstr "Recomendamos que você mude essa senha logo após entrar na sua conta.\n"
-
-#: root/src/novo_login.tt2:11
-msgid ""
-"Thank you for joining our group of users. You just need to "
-"fill the two fields below to complete your registration."
-msgstr ""
-"Agradecemos o interesse de se juntar ao nosso grupo de usuários. Você só "
-"precisa preencher os dois campos abaixo para completar seu cadastro."
+"\n"
 
 #: lib/RG3Redir/Controller/Login.pm:71
 msgid ""
@@ -711,26 +143,9 @@ msgstr ""
 "Bem-vindo(a) à RG3.Net!\n"
 "\n"
 
-#. (usuario.login)
-#: root/src/usuarios/inicio.tt2:3
-msgid "Welcome, %1."
-msgstr "Bem-vindo(a), %1."
-
-#: root/src/usuarios/excluir.tt2:21
-msgid "Yes, I want to delete my account!"
-msgstr "Sim, quero excluir minha conta!"
-
 #: lib/RG3Redir/Controller/Usuarios.pm:43
 msgid "You are not allowed to access this resource."
 msgstr "Você não tem permissão para acessar este recurso."
-
-#: root/src/redir/novo_url.tt2:41
-msgid ""
-"You can fill the fields below with some information about your site, which "
-"can be later included in some search engines."
-msgstr ""
-"Você pode preencher os campos abaixo com algumas informações sobre seu site, "
-"que poderão ser incluídas em alguns sites de buscas."
 
 #: lib/RG3Redir/Controller/Login.pm:72
 msgid ""
@@ -742,34 +157,494 @@ msgstr ""
 "sua conta usando o nome de usuário e a senha abaixo.\n"
 "\n"
 
-#. ([ data2normal(data_uacesso), ip_uacesso ])
-#: root/src/usuarios/inicio.tt2:6
+msgid ""
+"1. All kind of sites are allowed, including adult ones. However, the "
+"contents and the ones listed below are not allowed:"
+msgstr ""
+"1. Todos os tipos de sites são permitidos, incluindo sites adultos. "
+"Porém, os sites com os conteúdos abaixo são proibidos:"
+
+msgid ""
+"2. Users who try to damage our service, in any way, including attacks to our servers or to our services, will have their accounts blocked and their e-mail addresses banned from our system."
+msgstr ""
+"2. Usuários que tentarem prejudicar o serviço, de qualquer maneira, "
+"incluindo ataques ao servidor ou ao nosso serviço, terão suas contas "
+"bloqueadas e seus endereçosde e-mail banidos do nosso sistema."
+
+msgid ""
+"3. As a free service, RG3.Net will not take any responsibility for any kind of damage caused by system failures, servers failures or temporary interruptions."
+msgstr ""
+"3. Por ser um serviço gratuito, a RG3.Net não se responsabilizará por "
+"qualquer dano causado por falhas no sistema, falhas nos servidores ou "
+"interrupções temporárias."
+
+msgid ""
+"4. RG3.Net can, at any moment, change the terms of this service, being users' responsability of keeping up to date with the rules here described."
+msgstr ""
+"4. A RG3.Net pode, a qualquer momento, alterar os termos do serviço, "
+"sendo responsabilidade do usuário manter-se atualizado com as regras aqui "
+"descritas."
+
+"5. RG3.Net can give users' information, as registration date, last visit date and IP address, to authorities when requested."
+msgstr ""
+"5. A RG3.Net pode fornecer informações dos usuários, como data de "
+"registro, data da última visita e endereço IP, para autoridades quando "
+"solicitado."
+
+msgid "ATTENTION:"
+msgstr "ATENÇÃO:"
+
+msgid "Account cancelation"
+msgstr "Cancelamento da conta"
+
+msgid "Account information"
+msgstr "Informações da conta"
+
+msgid "Account status"
+msgstr "Status da conta"
+
+msgid "Actions"
+msgstr "Ações"
+
+msgid "Any abusive, defamatory or privacy breaking materials."
+msgstr ""
+"Qualquer material abusivo, difamatório ou de invasão de privacidade."
+
+msgid ""
+"Any kind of advertising or material which promotes illegal activities."
+msgstr ""
+"Qualquer tipo de propaganda ou material que promovam atividades ilegais."
+
+msgid ""
+"Any kind of material which violates patents, trademarks or copyrights."
+msgstr ""
+"Qualquer tipo de material que viole patentes, marcas registradas ou "
+"direitos autorais."
+
+msgid ""
+"Are you sure you want to delete the account <strong>%1</strong> and all "
+"of its redirections?"
+msgstr ""
+"Tem certeza que deseja excluir a conta <strong>%1</strong> e todos os "
+"seus redirecionamentos?"
+
+msgid "Are you sure you want to delete this URL redirection?"
+msgstr "Tem certeza que deseja excluir este redirecionamento de URL?"
+
+msgid ""
+"As any other free service, we have defined some rules which must be "
+"followed by every RG3.Net user."
+msgstr ""
+"Como qualquer outro serviço gratuito, definimos algumas regras que devem "
+"ser seguidas por todos os usuários do RG3.Net."
+
+msgid "Attention:"
+msgstr "Atenção:"
+
+msgid "Back"
+msgstr "Voltar"
+
+msgid ""
+"By clicking &quot;I accept the terms&quot; and completing your "
+"registration, you are agreeing with the terms above."
+msgstr ""
+"Clicando em &quot;Aceito os termos&quot; e efetuando o cadastro, Você "
+"está concordando com os termos acima."
+
+msgid ""
+"By clicking the button below, your account and all your redirections will "
+"be deleted. There will be no way of reverting this procedure. The "
+"redirections below will be deleted:"
+msgstr ""
+"Clicando no botão abaixo, sua conta e todos os seus redirecionamentos "
+"serão excluídos. Não haverá como reverter esse procedimento. Os "
+"redirecionamentos abaixo serão excluídos:"
+
+msgid "Cancel my account"
+msgstr "Cancelar conta"
+
+msgid "Change e-mail and/or password"
+msgstr "Alterar e-mail e/ou senha"
+
+msgid ""
+"Check if the e-mail address was typed correctly. The password for your "
+"account will be sent to the e-mail address specified above."
+msgstr ""
+"Verifique se digitou o endereço de e-mail corretamente. A senha da sua "
+"conta será enviada para o e-mail especificado acima."
+
+msgid "Child pornography, hate or racism spreading."
+msgstr "Pornografia infantil, disseminação de ódio ou racismo."
+
+msgid "Click here"
+msgstr "Clique aqui"
+
+msgid "Click here to create your new account"
+msgstr "Clique aqui para criar sua nova conta"
+
+msgid ""
+"Computer data containing viruses or corrupted files, which could damage a "
+"visitor's computer, as well as illegal or pirate softwares."
+msgstr ""
+"Dados de computador contendo vírus ou arquivos corrompidos, que possam "
+"danificar o computador de algum visitante, como também softwares piratas "
+"ou ilegais."
+
+msgid "Copyright (c) 2008 Justsoft Informatica Ltda."
+msgstr "Copyright (c) Justsoft Informática Ltda."
+
+msgid "Create a new URL redirection"
+msgstr "Criar um novo redirecionamento de URL"
+
+msgid "Create your account"
+msgstr "Crie sua conta"
+
+msgid "Delete"
+msgstr "Excluir"
+
+msgid "Description:"
+msgstr "Descrição:"
+
+msgid "Developed by Justsoft Informatica Ltda."
+msgstr "Desenvolvido pela Justsoft Informática Ltda."
+
+msgid ""
+"Done! The account <strong>%1</strong> have been created. A temporary "
+"password have been sent to <strong>%2</strong>. Check your inbox to see "
+"your password and log into your new account."
+msgstr ""
+"Pronto! A conta <strong>%1</strong> foi criada. Uma senha temporária foi "
+"enviada para <strong>%2</strong>. Verifique seu e-mail para ver sua senha "
+"e acessar sua nova conta."
+
+msgid "E-mail address"
+msgstr "Endereço de e-mail"
+
+msgid "E-mail address:"
+msgstr "Endereço de e-mail:"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Ex.: http://www.mycurrentfuzzyaddress.com/members/john"
+msgstr "Ex.: http://www.meuenderecoconfuso.com.br/membros/joao"
+
+msgid "Ex.: john"
+msgstr "Ex.: joão"
+
+msgid "Forgot your password?"
+msgstr "Esqueceu sua senha?"
+
+msgid "Free URL redirection service without ads."
+msgstr "Redirecionamento de URLs gratuito e sem propagandas."
+
+msgid "Get a new password"
+msgstr "Receber nova senha"
+
+msgid "Go back to the log in page"
+msgstr "Volte para a página de log in"
+
+msgid "Go to the home page"
+msgstr "Ir para a página inicial"
+
+msgid ""
+"Great! The account <strong>%1</strong> was localized and a new password "
+"was generated and sent to <strong>%2</strong>."
+msgstr ""
+"Pronto! A conta <strong>%1</strong> foi localizada e uma nova senha foi "
+"gerada e enviada para <strong>%2</strong>."
+
+msgid "Hits"
+msgstr "Acessos"
+
+msgid "Home page"
+msgstr "Página inicial"
+
+msgid "I accept the terms"
+msgstr "Aceito os termos"
+
+msgid "I don't remember anything at all!"
+msgstr "Não lembro de mais nada!"
+
+msgid "I forgot my password :-( or even my username :p"
+msgstr "Esqueci minha senha :-( e o nome de usuário também :p"
+
+msgid "Icons by"
+msgstr "Ícones por"
+
+msgid ""
+"If the e-mail address above is incorrect or doesn't existe anymore, it "
+"won't be possible get a new password. In the case of a deactivated e-"
+"mail, re-activate it and request your new password again. If the e-mail "
+"address is incorrect, nothing can be done :-("
+msgstr ""
+"Se o endereço de e-mail acima está incorreto ou não existe mais, não será "
+"possível obter uma nova senha. Em caso de e-mail desativado, reative-o e "
+"solicite uma nova senha novamente. Se o endereço de e-mail está "
+"incorreto, nada pode ser feito :-("
+
+msgid ""
+"If you don't remember your username or the e-mail address you used to "
+"create your account, type any URL redirection address you own in the "
+"field below and our system will find your account."
+msgstr ""
+"Se você não se lembra do seu nome de usuário nem do endereço de e-mail "
+"que usou para criar sua conta, digite o endereço de qualquer "
+"redirecionamento de URL que você possua no campo abaixo e o sistema irá "
+"encontrar sua conta."
+
+msgid ""
+"If you forgot your username, but still remember the e-mail address you used when you created your account, you can type the e-mail address in the field below to get a new password."
+msgstr ""
+"Se você esqueceu seu nome de usuário, mas ainda se lembra do endereço de "
+"e-mail que usou para criar sua conta, digite o e-mail no campo abaixo "
+"para receber uma nova senha."
+
+msgid "If you own this account and want to know why you are blocked,"
+msgstr "Se você é o dono desta e gostaria de saber porque está bloquedo, "
+
+msgid ""
+"If you still remember your username, just type it in this field to get "
+"your password. Our system will generate a new password and send it to "
+"your e-mail address."
+msgstr ""
+"Se você ainda se lembra do seu nome de usuário, basta digitá-lo neste "
+"campo para receber sua senha. Nosso sistema irá gerar uma senha nova e "
+"enviá-la para seu e-mail."
+
+msgid ""
+"In a few minutes, check your inbox and use your new password to log into "
+"your account."
+msgstr ""
+"Em alguns minutos, verifique seu e-mail e use sua nova senha para acessar "
+"sua conta."
+
+msgid ""
+"In case you don't want to change your password, just leave the password "
+"fields below empty."
+msgstr ""
+"Caso não queira mudar a senha, basta deixar os campos de senha abaixo em "
+"branco."
+
+msgid ""
+"If you have forgotten your password or even your username, it's possible to recover them. You just need to use one of the methods below."
+msgstr ""
+"Caso tenha esquecido sua senha ou até mesmo seu nome de usuário, é "
+"possível recuperá-los. Basta usar um dos métodos abaixo."
+
+msgid "Join"
+msgstr "Cadastrar"
+
+msgid "Keywords (separated by spaces):"
+msgstr "Palavras-chave (separadas por espaços):"
+
+msgid "Log in"
+msgstr "Log in"
+
+msgid ""
+"Log into your new account as soon as you get your temporary password. The "
+"accounts which are not logged in on their first week are automatically "
+"deleted."
+msgstr ""
+"Entre na sua nova conta assim que receber sua senha temporária. As contas "
+"que não são acessadas na primeira semana são automaticamente excluídas."
+
+msgid "Log out"
+msgstr "Sair"
+
+msgid ""
+"Material which defames RG3.Net services or the companies RG3.Net Comercio "
+"e Servicos Ltda. and Justsoft Informatica Ltda."
+msgstr ""
+"Material que difame os serviços da RG3.Net ou as empresas RG3.Net "
+"Comércio e Serviços Ltda. e Justsoft Informática Ltda."
+
+msgid "New RG3.Net user"
+msgstr "Novo usuário RG3.Net"
+
+msgid "New RG3.Net user registered"
+msgstr "Novo usuário RG3.Net cadastrado"
+
+msgid "New URL redirection"
+msgstr "Novo redirecionamento de URL"
+
+msgid "New password:"
+msgstr "Nova senha:"
+
+msgid "Password:"
+msgstr "Senha:"
+
+msgid "RG3.Net - URL redirections"
+msgstr "RG3.Net - Redirecionamento de URLs"
+
+msgid "Re-type your new password:"
+msgstr "Confirme sua nova senha:"
+
+msgid "Redirection's address"
+msgstr "Endereço do redirecionamento"
+
+msgid "Registered e-mail:"
+msgstr "E-mail cadastrado:"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "SPAM sending with any reference to any RG3.Net sub-domain."
+msgstr ""
+"Envio de SPAM com qualquer referência a qualquer subdomínio da RG3.Net."
+
+msgid "Show my URL redirections"
+msgstr "Listar redirecionamentos de URL"
+
+msgid "Site information (optional)"
+msgstr "Informações do site (opcional)"
+
+msgid "Site title:"
+msgstr "Título do site:"
+
+msgid "Some mandatory fields are missing."
+msgstr "Alguns campos obrigatórios estão faltando."
+
+msgid "Target address"
+msgstr "Endereço de destino"
+
+msgid "Terms of service"
+msgstr "Termos do serviço"
+
+msgid ""
+"The account and redirections of the user <strong>%1</strong> are blocked by "
+"the reason below:"
+msgstr ""
+"A conta e os redirecionamentos do usuário <strong>%1</strong> estão "
+"bloqueados pelo motivo abaixo:"
+
+msgid "This user doesn't have any redirections registered."
+msgstr "Este usuário não possui nenhum redirecionamento cadastrado."
+
+msgid "This user is blocked!"
+msgstr "Este usuário está bloqueado!"
+
+msgid "Redirection address"
+msgstr "Endereço do redirecionamento"
+
+msgid ""
+"Type the redirection address in the field below and choose a sub-domain "
+"in the beside list. Only letters, digits, hyphens (-) and underscores (_) "
+"are allowed. You don't need to type &quot;www.&quot; before the address."
+msgstr ""
+"Digite o endereço do redirecionamento no campo abaixo e escolha um "
+"subdomínio na lista ao lado. Apenas letras, números, hífens (-) e "
+"sublinhados (_) são permitidos. Você não precisa digitar &quot;www.&quot; "
+"antes do endereço."
+
+msgid ""
+"Type the target address of your new URL redirection in the field below."
+msgstr ""
+"Digite no campo abaixo o endereço de destino do seu novo redirecionamento "
+"de URL."
+
+msgid ""
+"Type the username you would like to use in the field below. You will need "
+"an username to log into your new account."
+msgstr ""
+"Digite o nome de usuário que deseja usar no campo abaixo. Você vai "
+"precisar de um nome de usuário para acessar sua nova conta."
+
+msgid ""
+"Type your e-mail address in the field below, so we can send you a "
+"password."
+msgstr ""
+"Digite seu endereço de e-mail no campo abaixo, para que possamos enviar "
+"sua senha."
+
+msgid "URL redirections"
+msgstr "Redirecionamentos de URL"
+
+msgid "URL redirections:"
+msgstr "Redirecionamentos de URL:"
+
+msgid "URLs"
+msgstr "URLs"
+
+msgid ""
+"Unfortunately, in this case, we can't help you. We suggest you to create a new account with new URL redirections :-("
+msgstr ""
+"Infelizmente, neste caso, não podemos ajudá-lo. Sugerimos que você crie "
+"uma nova conta com novos redirecionamentos de URL :-("
+
+msgid ""
+"Unfortunately, we didn't find any account with the information provided. "
+"Go back to the previous page and try to remember your username, "
+"registered e-mail address or any URL redirection of your account."
+msgstr ""
+"Infelizmente, não encontrados nenhuma conta com a informação fornecida. "
+"Volte para a página anterior e tente lembrar seu nome de usuário, e-mail "
+"cadastrado ou qualquer redirecionamento de URL cadastrado na sua conta."
+
+msgid "Username"
+msgstr "Nome de usuário"
+
+msgid "Username:"
+msgstr "Nome de usuário:"
+
+msgid "Using my e-mail address"
+msgstr "Através do meu endereço de e-mail"
+
+msgid "Using my username"
+msgstr "Através do meu nome de usuário"
+
+msgid "Using one of my URL redirections"
+msgstr "Através de um dos meus redirecionamentos de URL"
+
+msgid "We couldn't find your password"
+msgstr "Não pudemos encontrar sua senha"
+
+msgid "We have found your password"
+msgstr "Encontramos sua senha"
+
+msgid ""
+"Thank you for joining our group of users. You just need to fill the two fields below to complete your registration."
+msgstr ""
+"Agradecemos o interesse de se juntar ao nosso grupo de usuários. Você só "
+"precisa preencher os dois campos abaixo para completar seu cadastro."
+
+msgid "Welcome, %1."
+msgstr "Bem-vindo(a), %1."
+
+msgid "Yes, I want to delete my account!"
+msgstr "Sim, quero excluir minha conta!"
+
+msgid ""
+"You can fill the fields below with some information about your site, "
+"which can be later included in some search engines."
+msgstr ""
+"Você pode preencher os campos abaixo com algumas informações sobre seu "
+"site, que poderão ser incluídas em alguns sites de buscas."
+
 msgid ""
 "Your last visit was on <strong>%1 BRT</strong> from <strong>%2</strong>."
 msgstr ""
 "Sua última visita foi em <strong>%1 BRT</strong> através de <strong>%2</"
 "strong>."
 
-#: root/src/bloqueado.tt2:11
 msgid "contact us"
 msgstr "contate-nos"
 
-#: root/src/bloqueado.tt2:9
 msgid "http://education.apwg.org/r/en/index.html"
 msgstr "http://cartilha.cert.br/"
 
-#: root/src/login.tt2:40
 msgid "in case you have forgotten your password or username."
 msgstr "caso tenha esquecido sua senha ou nome de usuário."
 
-#: root/src/login.tt2:33
 msgid ""
-"now for free and start using our URL redirection service. The creation of an "
-"account is easy and takes less than one minute."
+"now for free and start using our URL redirection service. The creation of "
+"an account is easy and takes less than one minute."
 msgstr ""
 "gratuitamente e comece a usar nosso serviço de redirecionamento de URL. O "
 "cadastro de uma conta nova é fácil e leva menos de um minuto."
 
-#: root/src/bloqueado.tt2:9
 msgid "to learn how to protect yourself from fraudulent sites and e-mails."
 msgstr "para aprender como se proteger de sites e e-mails fraudulentos."
+
+msgid "If you don't want to change your password, just leave the password fields below empty."
+msgstr "Se não quiser alterar sua senha, basta deixar os campos de senha em branco."

@@ -85,6 +85,33 @@ sub novo_url_do : Local {
 	$p->{descricao}	= undef if ($p->{descricao} =~ /[\"<>]/);
 	$p->{keywords}	= undef if ($p->{keywords} =~ /[\"<>]/);
 
+	# Verifica a lista de redirecionamentos proibidos
+	my @proibidos = qw/
+		rg3
+		visa
+		financeir[o0]
+		master-*card
+		[o0]rkut
+		gmail
+		yah[o0]
+		h[o0]tmail
+		msn
+		g[o0]+gle
+		twit+er
+		faceb[o0]+k
+		bradesc[o0]
+		cadastr[o0]+
+		m+o+e+d+.*v+e+r+d+e
+	/;
+	foreach my $str (@proibidos) {
+		if ($p->{de} =~ /$str/) {
+			$c->stash->{erro_redir} = $c->loc('The choosen address is forbidden. Please, choose another one.');
+			$c->stash->{redir} = $p;
+			$c->forward('novo_url');
+			return;
+		}
+	}
+
 	# Verifica se o redirecionamento já existe
 	my $ver = $c->model('RG3RedirDB::RedirURL')->search({de => $p->{de}, id_dominio => $p->{dominio}})->first;
 	if (($ver) && ($ver->id != $p->{id})) {
@@ -112,6 +139,11 @@ sub novo_url_do : Local {
 		$dados,
 		{required => [qw(uid de id_dominio para)]}
 	);
+		
+	# Verifica se a URL de destino está completa
+	#if ($dados->{para} !~ /^\w\:\/\//) {
+	#	$dados->{para} = 'http://' . $dados->{para};
+	#}
 	
 	if (!$val->success()) {
 		$c->stash->{val} = $val;

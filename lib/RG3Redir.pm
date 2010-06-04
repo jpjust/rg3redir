@@ -14,7 +14,6 @@ use Catalyst::Runtime '5.70';
 #                 directory
 
 use Catalyst qw/
-	-Debug
 	ConfigLoader
 	Static::Simple
 	
@@ -32,7 +31,7 @@ use Catalyst qw/
 	Unicode
 	/;
 
-our $VERSION = '0.9';
+our $VERSION = '0.10';
 
 # Configure the application. 
 #
@@ -43,17 +42,21 @@ our $VERSION = '0.9';
 # with a external configuration file acting as an override for
 # local deployment.
 
-__PACKAGE__->config( name => 'RG3Redir' );
+__PACKAGE__->config(
+	name => 'RG3Redir'
+);
 
 # Start the application
 __PACKAGE__->setup;
 
-sub begin : Private {
-	my ($self, $c) = @_;
-
-	$c->response->headers->push_header( 'Vary' => 'Accept-Language' );
-	$c->languages(undef);
-}
+#sub begin : Private {
+#	my ($self, $c) = @_;
+#
+#	my $locale = $c->request->param('locale');
+#
+#	$c->response->headers->push_header('Vary' => 'Accept-Language');
+#	$c->languages($locale ? [ $locale ] : undef);
+#}
 
 =head1 NAME
 
