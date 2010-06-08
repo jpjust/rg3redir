@@ -102,6 +102,7 @@ sub novo_url_do : Local {
 		bradesc[o0]
 		cadastr[o0]+
 		m+o+e+d+.*v+e+r+d+e
+		c+o+l+h+e+i+t+a+f+e+l+i+z
 	/;
 	foreach my $str (@proibidos) {
 		if ($p->{de} =~ /$str/) {
