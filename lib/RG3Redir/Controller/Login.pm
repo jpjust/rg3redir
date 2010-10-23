@@ -184,6 +184,10 @@ Efetua o cadastro do novo usuário.
 sub novo_do : Local {
 	my ($self, $c) = @_;
 	
+	# Novos redirecionamentos temporariamente bloqueados
+	$c->stash->{template} = 'login.tt2';
+	return;
+	
 	# Parâmetros
 	my $p = $c->request->params;
 
