@@ -28,9 +28,13 @@
 </td>
 <td valign="top" width="50%">
 
-<h2>[% l('Create your account') %]</h2>
+<h2>[% l('ATTENTION') %]</h2>
 
-<p><a href="[% Catalyst.uri_for('/login/termos') %]">[% l('Create your account') %]</a> [% l("now for free and start using our URL redirection service. The creation of an account is easy and takes less than one minute.") %] <a href="[% Catalyst.uri_for('/login/termos') %]">[% l('Click here to create your new account') %]</a>.</p>
+<p>[% l('After Jan 31 2011, we will no longer offer free URL redirections. Our focus is to provide Broadband Internet access and other networking services in our region and the URL redirections service is taking too much of our time and effort with no return. That\'s why we are ending this service.') %]</p>
+
+<p>[% l('We thank everyone who stayed with us in this long jorney. After Jan 31 2011, all addresses will redirect to the ISP page.') %]</p>
+
+<p>[% l('Merry Christmas and have a great new years eve!') %]</p>
 
 </td>
 </table>

@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -34,6 +35,10 @@ msgstr ""
 msgid "5. RG3.Net can give users' information, as registration date, last visit date and IP address, to authorities when requested."
 msgstr ""
 
+#: root/src/login.tt2:31
+msgid "ATTENTION"
+msgstr ""
+
 #: root/src/usuarios/excluir.tt2:5
 msgid "ATTENTION:"
 msgstr ""
@@ -52,6 +57,10 @@ msgstr ""
 
 #: root/src/redir/lista.tt2:16
 msgid "Actions"
+msgstr ""
+
+#: root/src/login.tt2:33
+msgid "After Jan 31 2011, we will no longer offer free URL redirections. Our focus is to provide Broadband Internet access and other networking services in our region and the URL redirections service is taking too much of our time and effort with no return. That's why we are ending this service."
 msgstr ""
 
 #: root/src/termos.tt2:14
@@ -121,12 +130,8 @@ msgstr ""
 msgid "Child pornography, hate or racism spreading."
 msgstr ""
 
-#: root/src/bloqueado.tt2:9 root/src/login.tt2:40
+#: root/src/bloqueado.tt2:9 root/src/login.tt2:44
 msgid "Click here"
-msgstr ""
-
-#: root/src/login.tt2:33
-msgid "Click here to create your new account"
 msgstr ""
 
 #: root/src/termos.tt2:16
@@ -141,10 +146,6 @@ msgstr ""
 msgid "Create a new URL redirection"
 msgstr ""
 
-#: root/src/login.tt2:31 root/src/login.tt2:33
-msgid "Create your account"
-msgstr ""
-
 #: lib/RG3Redir/Controller/Usuarios.pm:130
 msgid "Data successfully saved."
 msgstr ""
@@ -157,7 +158,7 @@ msgstr ""
 msgid "Description:"
 msgstr ""
 
-#: root/src/login.tt2:52
+#: root/src/login.tt2:56
 msgid "Developed by Justsoft Informatica Ltda."
 msgstr ""
 
@@ -186,7 +187,7 @@ msgstr ""
 msgid "Ex.: john"
 msgstr ""
 
-#: root/src/login.tt2:38
+#: root/src/login.tt2:42
 msgid "Forgot your password?"
 msgstr ""
 
@@ -238,7 +239,7 @@ msgstr ""
 msgid "I forgot my password :-( or even my username :p"
 msgstr ""
 
-#: root/src/login.tt2:54
+#: root/src/login.tt2:58
 msgid "Icons by"
 msgstr ""
 
@@ -296,6 +297,10 @@ msgstr ""
 
 #: root/src/termos.tt2:18
 msgid "Material which defames RG3.Net services or the companies RG3.Net Comercio e Servicos Ltda. and Justsoft Informatica Ltda."
+msgstr ""
+
+#: root/src/login.tt2:37
+msgid "Merry Christmas and have a great new years eve!"
 msgstr ""
 
 #: root/src/novo_login.tt2:3
@@ -385,7 +390,7 @@ msgstr ""
 msgid "Target address"
 msgstr ""
 
-#: root/src/login.tt2:56 root/src/termos.tt2:3
+#: root/src/login.tt2:60 root/src/termos.tt2:3
 msgid "Terms of service"
 msgstr ""
 
@@ -410,11 +415,11 @@ msgstr ""
 msgid "The choosen address is forbidden. Please, choose another one."
 msgstr ""
 
-#: lib/RG3Redir/Controller/Login.pm:195
+#: lib/RG3Redir/Controller/Login.pm:196
 msgid "The choosen username has already been taken. Please, choose another one."
 msgstr ""
 
-#: lib/RG3Redir/Controller/Login.pm:200
+#: lib/RG3Redir/Controller/Login.pm:201
 msgid "The typed e-mail address has already been registered. Please, use another e-mail address."
 msgstr ""
 
@@ -525,6 +530,10 @@ msgid ""
 "\n"
 msgstr ""
 
+#: root/src/login.tt2:35
+msgid "We thank everyone who stayed with us in this long jorney. After Jan 31 2011, all addresses will redirect to the ISP page."
+msgstr ""
+
 #: lib/RG3Redir/Controller/Login.pm:71
 msgid ""
 "Welcome to RG3.Net!\n"
@@ -567,12 +576,8 @@ msgstr ""
 msgid "http://education.apwg.org/r/en/index.html"
 msgstr ""
 
-#: root/src/login.tt2:40
+#: root/src/login.tt2:44
 msgid "in case you have forgotten your password or username."
-msgstr ""
-
-#: root/src/login.tt2:33
-msgid "now for free and start using our URL redirection service. The creation of an account is easy and takes less than one minute."
 msgstr ""
 
 #: root/src/bloqueado.tt2:9

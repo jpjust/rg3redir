@@ -59,6 +59,10 @@ msgstr ""
 "5. A RG3.Net pode fornecer informações dos usuários, como data de registro, "
 "data da última visita e endereço IP, para autoridades quando solicitado."
 
+#: root/src/login.tt2:31
+msgid "ATTENTION"
+msgstr "ATENÇÃO"
+
 #: root/src/usuarios/excluir.tt2:5
 msgid "ATTENTION:"
 msgstr "ATENÇÃO:"
@@ -78,6 +82,19 @@ msgstr "Status da conta"
 #: root/src/redir/lista.tt2:16
 msgid "Actions"
 msgstr "Ações"
+
+#: root/src/login.tt2:33
+msgid ""
+"After Jan 31 2011, we will no longer offer free URL redirections. Our focus "
+"is to provide Broadband Internet access and other networking services in our "
+"region and the URL redirections service is taking too much of our time and "
+"effort with no return. That's why we are ending this service."
+msgstr ""
+"Após 31 de janeiro de 2011, não iremos mais oferecer redirecionamentos gratuitos "
+"de URLs. Nosso foco é prover acesso à Internet Banda Larga e outros serviços de rede "
+"em nossa região e o serviço de redirecionamento de URLs está tomando muito do "
+"nosso tempo e esforço sem nenhum retorno. Esta é a razão de estarmos encerrando "
+"este serviço."
 
 #: root/src/termos.tt2:14
 msgid "Any abusive, defamatory or privacy breaking materials."
@@ -173,13 +190,9 @@ msgstr ""
 msgid "Child pornography, hate or racism spreading."
 msgstr "Pornografia infantil, disseminação de ódio ou racismo."
 
-#: root/src/bloqueado.tt2:9 root/src/login.tt2:40
+#: root/src/bloqueado.tt2:9 root/src/login.tt2:44
 msgid "Click here"
 msgstr "Clique aqui"
-
-#: root/src/login.tt2:33
-msgid "Click here to create your new account"
-msgstr "Clique aqui para criar sua nova conta"
 
 #: root/src/termos.tt2:16
 msgid ""
@@ -198,10 +211,6 @@ msgstr "Copyright (c) Justsoft Informática Ltda."
 msgid "Create a new URL redirection"
 msgstr "Criar um novo redirecionamento de URL"
 
-#: root/src/login.tt2:31 root/src/login.tt2:33
-msgid "Create your account"
-msgstr "Crie sua conta"
-
 #: lib/RG3Redir/Controller/Usuarios.pm:130
 msgid "Data successfully saved."
 msgstr "Dados salvos com sucesso."
@@ -214,7 +223,7 @@ msgstr "Excluir"
 msgid "Description:"
 msgstr "Descrição:"
 
-#: root/src/login.tt2:52
+#: root/src/login.tt2:56
 msgid "Developed by Justsoft Informatica Ltda."
 msgstr "Desenvolvido pela Justsoft Informática Ltda."
 
@@ -250,7 +259,7 @@ msgstr "Ex.: http://www.meuenderecoconfuso.com.br/membros/joao"
 msgid "Ex.: john"
 msgstr "Ex.: joão"
 
-#: root/src/login.tt2:38
+#: root/src/login.tt2:42
 msgid "Forgot your password?"
 msgstr "Esqueceu sua senha?"
 
@@ -309,7 +318,7 @@ msgstr "Não lembro de mais nada!"
 msgid "I forgot my password :-( or even my username :p"
 msgstr "Esqueci minha senha :-( e o nome de usuário também :p"
 
-#: root/src/login.tt2:54
+#: root/src/login.tt2:58
 msgid "Icons by"
 msgstr "Ícones por"
 
@@ -417,6 +426,10 @@ msgstr ""
 "Material que difame os serviços da RG3.Net ou as empresas RG3.Net Comércio e "
 "Serviços Ltda. e Justsoft Informática Ltda."
 
+#: root/src/login.tt2:37
+msgid "Merry Christmas and have a great new years eve!"
+msgstr "Tenham um feliz Natal e um ótimo ano novo!"
+
 #: root/src/novo_login.tt2:3
 msgid "New RG3.Net user"
 msgstr "Novo usuário RG3.Net"
@@ -493,8 +506,8 @@ msgid ""
 "Sorry! We are not accepting new registrations at this time. Please, come "
 "back later."
 msgstr ""
-"Desculpe! Não estamos aceitando novos registros no momento. Por favor, volte mais tarde."
-
+"Desculpe! Não estamos aceitando novos registros no momento. Por favor, volte "
+"mais tarde."
 
 #: lib/RG3Redir/Controller/Login.pm:94
 msgid ""
@@ -516,7 +529,7 @@ msgstr ""
 msgid "Target address"
 msgstr "Endereço de destino"
 
-#: root/src/login.tt2:56 root/src/termos.tt2:3
+#: root/src/login.tt2:60 root/src/termos.tt2:3
 msgid "Terms of service"
 msgstr "Termos do serviço"
 
@@ -550,14 +563,14 @@ msgstr ""
 msgid "The choosen address is forbidden. Please, choose another one."
 msgstr "O endereço escolhido está proibido. Por favor, escolha outro endereço."
 
-#: lib/RG3Redir/Controller/Login.pm:195
+#: lib/RG3Redir/Controller/Login.pm:196
 msgid ""
 "The choosen username has already been taken. Please, choose another one."
 msgstr ""
 "O nome de usuário escolhido já está sendo usado. Por favor, escolha outro "
 "nome de usuário."
 
-#: lib/RG3Redir/Controller/Login.pm:200
+#: lib/RG3Redir/Controller/Login.pm:201
 msgid ""
 "The typed e-mail address has already been registered. Please, use another e-"
 "mail address."
@@ -707,6 +720,14 @@ msgstr ""
 "Recomendamos que você mude essa senha logo após entrar na sua conta.\n"
 "\n"
 
+#: root/src/login.tt2:35
+msgid ""
+"We thank everyone who stayed with us in this long jorney. After Jan 31 2011, "
+"all addresses will redirect to the ISP page."
+msgstr ""
+"Agradecemos a todos que estiveram conosco nesta longa jornada. Após 31 de janeiro de 2011, "
+"todos os endereços irão redirecionar para a página do nosso provedor."
+
 #: lib/RG3Redir/Controller/Login.pm:71
 msgid ""
 "Welcome to RG3.Net!\n"
@@ -762,21 +783,26 @@ msgstr "contate-nos"
 msgid "http://education.apwg.org/r/en/index.html"
 msgstr "http://cartilha.cert.br/"
 
-#: root/src/login.tt2:40
+#: root/src/login.tt2:44
 msgid "in case you have forgotten your password or username."
 msgstr "caso tenha esquecido sua senha ou nome de usuário."
-
-#: root/src/login.tt2:33
-msgid ""
-"now for free and start using our URL redirection service. The creation of an "
-"account is easy and takes less than one minute."
-msgstr ""
-"gratuitamente e comece a usar nosso serviço de redirecionamento de URL. O "
-"cadastro de uma conta nova é fácil e leva menos de um minuto."
 
 #: root/src/bloqueado.tt2:9
 msgid "to learn how to protect yourself from fraudulent sites and e-mails."
 msgstr "para aprender como se proteger de sites e e-mails fraudulentos."
+
+#~ msgid "Click here to create your new account"
+#~ msgstr "Clique aqui para criar sua nova conta"
+
+#~ msgid "Create your account"
+#~ msgstr "Crie sua conta"
+
+#~ msgid ""
+#~ "now for free and start using our URL redirection service. The creation of "
+#~ "an account is easy and takes less than one minute."
+#~ msgstr ""
+#~ "gratuitamente e comece a usar nosso serviço de redirecionamento de URL. O "
+#~ "cadastro de uma conta nova é fácil e leva menos de um minuto."
 
 #~ msgid ""
 #~ "In case you don't want to change your password, just leave the password "
